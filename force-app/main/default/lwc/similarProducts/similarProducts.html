@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Similar Products" icon-name="standard:link">
+        <div class="slds-var-m-horizontal_medium">
+            <template if:true={similarProducts.data}>
+                <template for:each={similarProducts.data} for:item="product">
+                    <c-product-list-item
+                        key={product.Id}
+                        product={product}
+                    ></c-product-list-item>
+                </template>
+                <template if:false={similarProducts.data.length}>
+                    <c-placeholder
+                        message="No similar products"
+                    ></c-placeholder>
+                </template>
+            </template>
+            <template if:true={errors}>
+                <c-error-panel
+                    friendly-message="An error has occurred while retrieving similar products"
+                    errors={errors}
+                ></c-error-panel>
+            </template>
+        </div>
+    </lightning-card>
+</template>

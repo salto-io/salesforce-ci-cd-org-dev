@@ -1,0 +1,19 @@
+<template>
+    <div class="slds-card">
+        <template if:true={markers.length}>
+            <lightning-map
+                map-markers={markers}
+                zoom-level={zoomLevel}
+            ></lightning-map>
+        </template>
+        <template if:false={markers.length}>
+            <c-error-panel friendly-message="No address to map"></c-error-panel>
+        </template>
+        <template if:true={error}>
+            <c-error-panel
+                friendly-message="Error retrieving map data"
+                errors={error}
+            ></c-error-panel>
+        </template>
+    </div>
+</template>
