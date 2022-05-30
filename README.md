@@ -54,3 +54,4 @@ We are using the `sfdx scanner` to scan the code in the delta directory.
 We decided not to fail the entire job just because there are warnings. Instead, the warnings are logged directly in the PR for your team to review. We think this is better than failing the job because it allows your team to review the code and have a conversation about it. If the same warning keeps showing up every now and then, then it might be worth to configure the job to fail.
 
 ####
+#######
