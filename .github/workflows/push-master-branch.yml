@@ -49,7 +49,7 @@ jobs:
 
             # Authenticate to org
             - name: 'Authenticate to Production Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_PRODUCTION_URL.txt -s -a production
+              run: sfdx force://3MVG9wt4IL4O5wvI1iJzo..8HMcG.Z_.IriaQVo9l1DME6BdDNfOXSx5.Rr46TPoWiz4rUaB1lwIgbmIAPOMk:06CEB40B053F71D4E340F1C56F9129B0BD7D26C1F16DB7F7FE0BF91CCCE93840:opKt5G4d3NnqYeOqNS8tuMPMQ@https://login.salesforce.com/services/oauth2/success
 
             - name: 'Deploy the entire branch to Production org'
               run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json
