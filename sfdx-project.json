@@ -7,6 +7,6 @@
   ],
   "name": "Salesforce-Org-Development",
   "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sfdcLoginUrl": "https://a3smarthome--crdev.my.salesforce.com/",
   "sourceApiVersion": "52.0"
 }
