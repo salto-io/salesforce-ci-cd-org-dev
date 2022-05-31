@@ -36,6 +36,7 @@
     ],
     "**/{aura,lwc}/**": [
       "eslint"
+      //Testing this file 
     ]
   }
 }
