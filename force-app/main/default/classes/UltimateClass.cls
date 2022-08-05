@@ -5,5 +5,6 @@ public with sharing class UltimateClass {
         if(a == 'hi'){
             b = 'great';
         }
+        System.debug(a + ' ' + b);
     }
 }
