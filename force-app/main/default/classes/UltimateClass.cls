@@ -1,8 +1,12 @@
+/**
+ * @description       : 
+ * @last modified on  : 12-07-2022
+**/
 public with sharing class UltimateClass {
     public UltimateClass() {
-        String a = 'hi';
+        String a = 'hello';
         String b = null;
-        if(a == 'hi'){
+        if(a == 'hello'){
             b = 'great';
         }
     }
