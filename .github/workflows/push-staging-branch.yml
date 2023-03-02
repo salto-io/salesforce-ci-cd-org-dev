@@ -1,10 +1,10 @@
 # Unique name for this workflow
-name: Deploy integration branch to integration and staging/uat orgs
+name: Deploy staging branch to Staging org
 
 # Definition when the workflow should run
 on:
     push:
-      branches: [ integration ]
+      branches: [ staging ]
       paths:
         - 'src/**'
             
@@ -49,17 +49,7 @@ jobs:
                   sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source src/
 
             # Authenticate to org
-            - name: 'Authenticate to Integration Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_INTEGRATION_URL.txt -s -a integration
-
-            - name: 'Deploy the entire branch to Integration org'
-              run: sfdx force:source:deploy -p src --testlevel RunLocalTests --json
-
-            - name: 'Deploy destructive changes (if any) to Integration org'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
-
-            # Authenticate to org
-            - name: 'Authenticate to Staging Org to Staging org'
+            - name: 'Authenticate to Staging Org'
               run: sfdx auth:sfdxurl:store -f ./SFDX_STAGING_URL.txt -s -a staging
 
             - name: 'Deploy the entire branch'
