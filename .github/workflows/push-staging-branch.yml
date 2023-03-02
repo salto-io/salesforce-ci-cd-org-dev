@@ -37,10 +37,9 @@ jobs:
                 fetch-depth: 0
 
             # Store secret for both otgs
-            - name: 'Populate auth file with SFDX_URL secret of the integration and staging orgs'
+            - name: 'Populate auth file with SFDX_URL secret of the staging org'
               shell: bash
               run: |
-                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
                   echo ${{ secrets.SFDX_STAGING_URL}} > ./SFDX_STAGING_URL.txt
 
             - name: 'Create delta packages for new, modified or deleted metadata'
