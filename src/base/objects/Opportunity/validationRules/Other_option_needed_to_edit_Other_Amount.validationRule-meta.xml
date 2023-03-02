@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_option_needed_to_edit_Other_Amount</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, &quot;Closed Won&quot;),
+  INCLUDES(Product_Interest__c, &quot;Other (Unspecified)&quot;),
+  ISBLANK(Other_Amount__c) || Other_Amount__c == 0
+)</errorConditionFormula>
+    <errorDisplayField>Other_Amount__c</errorDisplayField>
+    <errorMessage>&quot;Other Amount&quot; is required only if &quot;Other (Unspecified)&quot; is selected from Product Interest</errorMessage>
+</ValidationRule>

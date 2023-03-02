@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coinbase_Wallet_Integtn_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Coinbase Wallet Integration&apos;),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+OR(
+ISNEW(),
+ISCHANGED(Wallet_Opportunity_Type__c)
+),
+OR(
+ISBLANK( Dapp_Url__c),
+ISBLANK(Competitors__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Required to fill Dapp Url and Wallet Competitors When Wallet Opportunity Type = &apos;Coinbase Wallet Integration&apos;</errorMessage>
+</ValidationRule>

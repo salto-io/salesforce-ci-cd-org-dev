@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Replacement</fullName>
+        <default>true</default>
+        <label>Replacement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upgrade</fullName>
+        <default>false</default>
+        <label>Upgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Crossgrade</fullName>
+        <default>false</default>
+        <label>Crossgrade</label>
+    </standardValue>
+</StandardValueSet>

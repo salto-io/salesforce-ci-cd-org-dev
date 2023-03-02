@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Close_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Lead Close Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unqualified</fullName>
+                <default>false</default>
+                <label>Unqualified</label>
+            </value>
+            <value>
+                <fullName>Unresponsive</fullName>
+                <default>false</default>
+                <label>Unresponsive</label>
+            </value>
+            <value>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+                <label>Not Interested</label>
+            </value>
+            <value>
+                <fullName>Alternative / Competitor</fullName>
+                <default>false</default>
+                <label>Alternative / Competitor</label>
+            </value>
+            <value>
+                <fullName>Incorrect / Incomplete Information</fullName>
+                <default>false</default>
+                <label>Incorrect / Incomplete Information</label>
+            </value>
+            <value>
+                <fullName>Spam / Phishing</fullName>
+                <default>false</default>
+                <label>Spam / Phishing</label>
+            </value>
+            <value>
+                <fullName>Other Coinbase</fullName>
+                <default>false</default>
+                <label>Other Coinbase</label>
+            </value>
+            <value>
+                <fullName>Doesn&apos;t want to work with Coinbase</fullName>
+                <default>false</default>
+                <label>Doesn&apos;t want to work with Coinbase</label>
+            </value>
+            <value>
+                <fullName>Prioritization</fullName>
+                <default>false</default>
+                <label>Prioritization</label>
+            </value>
+            <value>
+                <fullName>Project Paused/Discontinued</fullName>
+                <default>false</default>
+                <label>Project Paused/Discontinued</label>
+            </value>
+            <value>
+                <fullName>Quid Pro-Quo</fullName>
+                <default>false</default>
+                <label>Quid Pro-Quo</label>
+            </value>
+            <value>
+                <fullName>Technical Blocker</fullName>
+                <default>false</default>
+                <label>Technical Blocker</label>
+            </value>
+            <value>
+                <fullName>Unsupported Protocol</fullName>
+                <default>false</default>
+                <label>Unsupported Protocol</label>
+            </value>
+            <value>
+                <fullName>Unresponsive (60 days+)</fullName>
+                <default>false</default>
+                <label>Unresponsive (60 days+)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Limited Engagement</fullName>
+                <default>false</default>
+                <label>Limited Engagement</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

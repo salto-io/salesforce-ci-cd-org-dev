@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <description>The type of product for this asset.</description>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>true</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Delegation</fullName>
+                <default>false</default>
+                <label>Delegation</label>
+            </value>
+            <value>
+                <fullName>Participation</fullName>
+                <default>false</default>
+                <label>Participation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Node</fullName>
+                <default>false</default>
+                <label>Node</label>
+            </value>
+            <value>
+                <fullName>Coinbase Pay SDK</fullName>
+                <default>false</default>
+                <label>Coinbase Pay SDK</label>
+            </value>
+            <value>
+                <fullName>Wallet-as-a-Service</fullName>
+                <default>false</default>
+                <label>Wallet-as-a-Service</label>
+            </value>
+            <value>
+                <fullName>QT</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>QT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

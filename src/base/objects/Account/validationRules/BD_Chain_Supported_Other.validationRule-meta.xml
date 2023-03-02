@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BD_Chain_Supported_Other</fullName>
+    <active>true</active>
+    <description>SFCC-986: Mandatory if Chains Supported has &quot;Other&quot; value selected</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;Business_Development_Partnerships&apos;,
+ INCLUDES(Chains_Supported__c, &apos;Other&apos;),
+ ISBLANK(Chains_Supported_Other__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Chains_Supported_Other__c</errorDisplayField>
+    <errorMessage>This field should be filled in when Chain Supported as &quot;Other&quot; value</errorMessage>
+</ValidationRule>

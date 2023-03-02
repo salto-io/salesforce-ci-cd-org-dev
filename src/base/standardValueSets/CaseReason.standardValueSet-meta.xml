@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Account Plan Creation</fullName>
+        <default>false</default>
+        <label>Account Plan Creation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Audit</fullName>
+        <default>false</default>
+        <label>Audit</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Change to Validator Info (fee, commission, name , address, etc)</fullName>
+        <default>false</default>
+        <label>Change to Validator Info (fee, commission, name , address, etc)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance with asks from a Protocol Team</fullName>
+        <default>false</default>
+        <label>Compliance with asks from a Protocol Team</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Decommission Node</fullName>
+        <default>false</default>
+        <label>Decommission Node</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Fund/Stake To/Activate Validator</fullName>
+        <default>false</default>
+        <label>Fund/Stake To/Activate Validator</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Governance</fullName>
+        <default>false</default>
+        <label>Governance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Incident</fullName>
+        <default>false</default>
+        <label>Incident</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Infrastructure Activity</fullName>
+        <default>false</default>
+        <label>Infrastructure Activity</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Liquidation</fullName>
+        <default>false</default>
+        <label>Liquidation</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Meeting</fullName>
+        <default>false</default>
+        <label>Meeting</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Network Incident</fullName>
+        <default>false</default>
+        <label>Network Incident</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Network Launch</fullName>
+        <default>false</default>
+        <label>Network Launch</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>New Feature / Functionality</fullName>
+        <default>false</default>
+        <label>New Feature / Functionality</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Node Failure</fullName>
+        <default>false</default>
+        <label>Node Failure</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Node Performance/Issues</fullName>
+        <default>false</default>
+        <label>Node Performance/Issues</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Offboarding</fullName>
+        <default>false</default>
+        <label>Offboarding</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboarding Close-out</fullName>
+        <default>false</default>
+        <label>Onboarding Close-out</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Platform</fullName>
+        <default>false</default>
+        <label>Platform</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Proactive Outreach</fullName>
+        <default>false</default>
+        <label>Proactive Outreach</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>QBR</fullName>
+        <default>false</default>
+        <label>QBR</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Reporting</fullName>
+        <default>false</default>
+        <label>Reporting</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Request for help (not node related)</fullName>
+        <default>false</default>
+        <label>Request for help (not node related)</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Research</fullName>
+        <default>false</default>
+        <label>Research</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Re-Staking Assistance</fullName>
+        <default>false</default>
+        <label>Re-Staking Assistance</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Rewards Calling/Withdrawl Assistance / Inquiry</fullName>
+        <default>false</default>
+        <label>Rewards Calling/Withdrawl Assistance / Inquiry</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Unbond/Unstake from Node</fullName>
+        <default>false</default>
+        <label>Unbond/Unstake from Node</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Upgrade</fullName>
+        <default>false</default>
+        <label>Upgrade</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+    <standardValue>
+        <fullName>Upsell</fullName>
+        <default>false</default>
+        <label>Upsell</label>
+        <cssExposed>false</cssExposed>
+    </standardValue>
+</StandardValueSet>

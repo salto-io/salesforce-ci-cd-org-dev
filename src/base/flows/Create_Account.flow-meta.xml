@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>51.0</apiVersion>
+    <dynamicChoiceSets>
+        <name>AccountSizePicklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Size__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>IndustryPicklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Industry</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <name>TimezonePicklist</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>Ideal_Timezone__c</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Create Account {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Create Account</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Account_Record</name>
+        <label>Create Account Record</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <inputAssignments>
+            <field>BD_Owner__c</field>
+            <value>
+                <elementReference>BD_Owner.recordId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Ideal_Timezone__c</field>
+            <value>
+                <elementReference>Timezone</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Industry</field>
+            <value>
+                <elementReference>Industry</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>Account_Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Size__c</field>
+            <value>
+                <elementReference>Estimated_Market_Cap</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <screens>
+        <name>Create_Account</name>
+        <label>Create Account</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Create_Account_Record</targetReference>
+        </connector>
+        <fields>
+            <name>Account_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Account Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Estimated_Market_Cap</name>
+            <choiceReferences>AccountSizePicklist</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Estimated Market Cap</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Industry</name>
+            <choiceReferences>IndustryPicklist</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Industry</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>Timezone</name>
+            <choiceReferences>TimezonePicklist</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Timezone</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>BD_Owner</name>
+            <extensionName>flowruntime:lookup</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldApiName</name>
+                <value>
+                    <stringValue>BD_Owner__c</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>label</name>
+                <value>
+                    <stringValue>BD Owner</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>objectApiName</name>
+                <value>
+                    <stringValue>Account</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Account</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

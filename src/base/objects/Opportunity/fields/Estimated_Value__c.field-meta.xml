@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimated_Value__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is an estimate of the Opportunity&apos;s value. This should only be used in early stages of the pipeline.</inlineHelpText>
+    <label>Estimated Value</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Low (&lt;70k)</fullName>
+                <default>false</default>
+                <label>Low (&lt;70k)</label>
+            </value>
+            <value>
+                <fullName>Mid (&gt;70k, &lt;300k)</fullName>
+                <default>false</default>
+                <label>Mid (&gt;70k, &lt;300k)</label>
+            </value>
+            <value>
+                <fullName>High (&gt;300k)</fullName>
+                <default>false</default>
+                <label>High (&gt;300k)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

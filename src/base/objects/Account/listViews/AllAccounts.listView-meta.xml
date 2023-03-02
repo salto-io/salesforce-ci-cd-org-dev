@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAccounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Size__c</columns>
+    <columns>ACCOUNT.INDUSTRY</columns>
+    <columns>CS_Owner__c</columns>
+    <columns>BD_Owner__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>BD_Owner__c</field>
+        <operation>contains</operation>
+        <value>joey</value>
+    </filters>
+    <label>All Accounts</label>
+    <sharedTo>
+        <group>Bison_Team</group>
+    </sharedTo>
+</ListView>

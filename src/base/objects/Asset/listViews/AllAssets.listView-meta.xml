@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllAssets</fullName>
+    <columns>ASSET.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Protocol__c</columns>
+    <columns>Product_Type__c</columns>
+    <columns>CONTACT.NAME</columns>
+    <columns>ASSET.STATUS</columns>
+    <columns>CREATEDBY_USER.ALIAS</columns>
+    <columns>ASSET.PURCHASE_DATE</columns>
+    <columns>ASSET.USAGE_END_DATE</columns>
+    <columns>ASSET.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <label>All Assets</label>
+</ListView>

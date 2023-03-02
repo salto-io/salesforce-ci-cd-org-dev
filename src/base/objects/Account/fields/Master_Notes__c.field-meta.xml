@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Master_Notes__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <description>Used for linking to a notes document (Google Docs) URL.</description>
+    <externalId>false</externalId>
+    <label>Master Notes</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Url</type>
+</CustomField>

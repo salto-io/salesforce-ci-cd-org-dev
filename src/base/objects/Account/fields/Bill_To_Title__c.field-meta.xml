@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Bill_To_Title__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <complianceGroup>PCI</complianceGroup>
+    <description>https://coinbase.atlassian.net/browse/SSCM1-3286</description>
+    <externalId>false</externalId>
+    <label>Bill To Title</label>
+    <length>255</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

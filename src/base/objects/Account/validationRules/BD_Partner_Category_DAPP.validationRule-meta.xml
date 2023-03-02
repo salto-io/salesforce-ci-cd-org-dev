@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BD_Partner_Category_DAPP</fullName>
+    <active>true</active>
+    <description>SFCC-986: When BD_Partner_Category__c = Dapp, set Dapp_Sub_Type__c value</description>
+    <errorConditionFormula>AND(
+    OR(ISNEW(),ISCHANGED(BD_Partner_Category__c)),
+    RecordType.DeveloperName =&apos;Business_Development_Partnerships&apos;,
+    ISPICKVAL(BD_Partner_Category__c,&apos;Dapp&apos;),
+    ISBLANK(Dapp_Sub_Type__c) 
+ )</errorConditionFormula>
+    <errorDisplayField>Dapp_Sub_Type__c</errorDisplayField>
+    <errorMessage>This field should be filled in when BD Partner Category field has &quot;Dapp&quot; value</errorMessage>
+</ValidationRule>

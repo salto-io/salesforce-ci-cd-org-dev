@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Case_Compact</fullName>
+    <fields>AccountId</fields>
+    <fields>RecordTypeId</fields>
+    <fields>OwnerId</fields>
+    <fields>Subject</fields>
+    <label>Custom Case Compact</label>
+</CompactLayout>

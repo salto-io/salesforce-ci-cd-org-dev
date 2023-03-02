@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BT_Product__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>This asset&apos;s opportunity node.</description>
+    <externalId>false</externalId>
+    <label>BT Product</label>
+    <referenceTo>BT_Product__c</referenceTo>
+    <relationshipLabel>Assets</relationshipLabel>
+    <relationshipName>Assets</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

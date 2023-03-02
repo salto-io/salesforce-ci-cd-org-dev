@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_Required__c</fullName>
+    <description>OPS-5156</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please denote whether this customer requires an Onboarding or New Asset Case created. This field is required when the Opportunity is Closed Won.</inlineHelpText>
+    <label>Onboarding Required</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>New Customer - Onboard</fullName>
+                <default>false</default>
+                <label>New Customer - Onboard</label>
+            </value>
+            <value>
+                <fullName>Existing Customer - Onboard</fullName>
+                <default>false</default>
+                <label>Existing Customer - Onboard</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Yes</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

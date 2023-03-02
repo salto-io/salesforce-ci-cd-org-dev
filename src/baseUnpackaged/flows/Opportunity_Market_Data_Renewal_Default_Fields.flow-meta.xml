@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>Market_Data_Renewal_Opportunity</name>
+        <label>Market Data Renewal Opportunity</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Market_Data_Renewal</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Market_Data_Renewal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Original_Opportunity__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Original_Opportunity</targetReference>
+            </connector>
+            <label>Market Data Renewal</label>
+        </rules>
+    </decisions>
+    <description>This flow runs when a new Market Data Renewal opportunity is created, and defaults fields on the Market Data Renewal opportunity using the Original Opportunity related to the record.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>RenewalOpportunityName</name>
+        <dataType>String</dataType>
+        <expression>&quot;MDA Renewal&quot;&amp; &quot; - &quot; &amp;
+IF ( AND(INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Prime Analytics&quot; )), &quot;Marketplace&quot;,
+
+IF ( AND(INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Prime Analytics&quot; )), &quot;Marketplace, Prime Analytics&quot;,
+
+IF ( AND(INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),!INCLUDES ( {!Get_Original_Opportunity.Products__c}, &quot;Prime Analytics&quot; )), &quot;Marketplace, Exchange API&quot;,
+
+IF ( AND(INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c}, &quot;Prime Analytics&quot; )), &quot;Marketplace, Exchange API, Prime Analytics&quot;,
+
+IF ( AND(!INCLUDES ({!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Prime Analytics&quot; )), &quot;Exchange API&quot;,
+
+IF ( AND(!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Prime Analytics&quot; )), &quot;Exchange API, Prime Analytics&quot;,
+
+IF ( AND(!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Marketplace&quot; ),!INCLUDES ( {!Get_Original_Opportunity.Products__c} , &quot;Exchange API&quot; ),INCLUDES ({!Get_Original_Opportunity.Products__c} , &quot;Prime Analytics&quot; )), &quot;Prime Analytics&quot;,
+
+{!Get_Original_Opportunity.Account.Name}
+)
+
+)
+
+)
+
+)
+
+)
+
+)
+
+)</expression>
+    </formulas>
+    <interviewLabel>Opportunity Market Data Renewal Default Fields {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity Market Data Renewal Default Fields</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Original_Opportunity</name>
+        <label>Get Original Opportunity</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Renewal_Opportunity</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Original_Opportunity__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Renewal_Opportunity</name>
+        <label>Update Renewal Opportunity</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>AccountId</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.AccountId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>CloseDate</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.Contract_End_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Data_Utilization_Exchange_API__c</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.Data_Utilization_Exchange_API__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Data_Utilization_Marketplace__c</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.Data_Utilization_Marketplace__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Data_Utilization_Prime_Analytics__c</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.Data_Utilization_Prime_Analytics__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>License_Type__c</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.License_Type__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>RenewalOpportunityName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.OwnerId</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Products__c</field>
+            <value>
+                <elementReference>Get_Original_Opportunity.Products__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+            <value>
+                <stringValue>Pending Renewal</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Market_Data_Renewal_Opportunity</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

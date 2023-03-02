@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+        <description>You&apos;ve contacted the prospect and they&apos;re interested.</description>
+        <label>Qualification</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Discovery/Scoping</fullName>
+        <default>false</default>
+        <description>Interactions to understand the individual needs for the deal are in progress. Meetings are being scheduled and notes are being taken to shape the upcoming proposal. Vendor diligence may occur during this stage.</description>
+        <label>Discovery/Scoping</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>30</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial</fullName>
+        <default>false</default>
+        <label>Trial</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluation</fullName>
+        <default>false</default>
+        <label>Evaluation</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>40</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal</fullName>
+        <default>false</default>
+        <description>You&apos;re developing a sales proposal for the prospect.</description>
+        <label>Proposal</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>65</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <description>You&apos;re working with the prospect on the proposal you delivered.
+Used by Earn.com AirDrops</description>
+        <label>Negotiation</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Deal Negotiation</fullName>
+        <default>false</default>
+        <label>Deal Negotiation</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Renewal</fullName>
+        <default>false</default>
+        <label>Pending Renewal</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>60</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <description>This stage should be used when a deal is slightly delayed, but not stale.</description>
+        <label>On Hold</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Verbal Commitment</fullName>
+        <default>false</default>
+        <label>Verbal Commitment</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>70</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Renewal Negotiation</fullName>
+        <default>false</default>
+        <description>This is used for MDA Renewal Negotiation</description>
+        <label>Renewal Negotiation</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>80</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Review</fullName>
+        <default>false</default>
+        <description>[SFCC-578]: Added for Wallet Record Type process</description>
+        <label>Internal Review</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>86</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Signed</fullName>
+        <default>false</default>
+        <description>[SFCC-578]: Added for Wallet Record Type process</description>
+        <label>Signed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Executed</fullName>
+        <default>false</default>
+        <label>Executed</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Contract Review</fullName>
+        <default>false</default>
+        <label>Contract Review</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+        <description>Sold!</description>
+        <label>Closed Won</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <description>No sale.</description>
+        <label>Closed Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stalled</fullName>
+        <default>false</default>
+        <label>Stalled</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stale</fullName>
+        <default>false</default>
+        <description>The customer has not responded to us or has not progressed from a deal stage in 30+ days. Tickets will automatically be moved to this stage after 30 days.</description>
+        <label>Stale</label>
+        <closed>false</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

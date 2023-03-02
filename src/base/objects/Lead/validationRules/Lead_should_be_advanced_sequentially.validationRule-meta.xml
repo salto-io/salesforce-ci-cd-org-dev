@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_should_be_advanced_sequentially</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  RecordType.DeveloperName = &apos;Standard_Lead&apos;,
+  IsChanged(Status),
+  OR(
+    ISPICKVAL(PRIORVALUE(Status), &apos;Open&apos;) &amp;&amp; OR(ISPICKVAL(Status, &apos;Contacted&apos;), ISPICKVAL(Status, &apos;Eligible&apos;), ISPICKVAL(Status, &apos;Converted&apos;)),
+    ISPICKVAL(PRIORVALUE(Status), &apos;Screened&apos;) &amp;&amp; OR(ISPICKVAL(Status, &apos;Eligible&apos;), ISPICKVAL(Status, &apos;Converted&apos;)),
+    ISPICKVAL(PRIORVALUE(Status), &apos;Contacted&apos;) &amp;&amp; OR(ISPICKVAL(Status, &apos;Converted&apos;), ISPICKVAL(Status, &apos;Open&apos;)),
+    ISPICKVAL(PRIORVALUE(Status), &apos;Eligible&apos;) &amp;&amp; OR(ISPICKVAL(Status, &apos;Screened&apos;), ISPICKVAL(Status, &apos;Open&apos;))
+  )
+)</errorConditionFormula>
+    <errorMessage>Lead should be advanced sequentially</errorMessage>
+</ValidationRule>

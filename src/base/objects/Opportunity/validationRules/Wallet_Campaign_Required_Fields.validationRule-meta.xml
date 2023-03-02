@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wallet_Campaign_Required_Fields</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED(Wallet_Opportunity_Type__c)
+),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+ISBLANK( TEXT(Wallet_Campaign_Type__c)),
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Wallet Campaign/Quest&apos;)
+)</errorConditionFormula>
+    <errorMessage>Wallet Campaign Type is required for Wallet Opportunity Type = Wallet Campaign/Quest</errorMessage>
+</ValidationRule>

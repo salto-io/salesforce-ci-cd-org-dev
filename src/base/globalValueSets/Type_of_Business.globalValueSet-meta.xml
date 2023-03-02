@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Institutional Investor</fullName>
+        <default>false</default>
+        <label>Institutional Investor</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Service - Traditional</fullName>
+        <default>false</default>
+        <label>Financial Service - Traditional</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Service - Crypto Native</fullName>
+        <default>false</default>
+        <label>Financial Service - Crypto Native</label>
+    </customValue>
+    <customValue>
+        <fullName>Enterprise</fullName>
+        <default>false</default>
+        <label>Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Developer</fullName>
+        <default>false</default>
+        <label>Developer</label>
+    </customValue>
+    <customValue>
+        <fullName>Individual</fullName>
+        <default>false</default>
+        <label>Individual</label>
+    </customValue>
+    <masterLabel>Type of Business</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

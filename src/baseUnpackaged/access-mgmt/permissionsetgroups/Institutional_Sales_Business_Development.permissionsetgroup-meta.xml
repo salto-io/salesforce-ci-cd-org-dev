@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Institutional Sales: Business Development</label>
+    <permissionSets>Account_Contact_Relationship_Read_Default</permissionSets>
+    <permissionSets>Account_Create_Read</permissionSets>
+    <permissionSets>Account_Edit_Read</permissionSets>
+    <permissionSets>Account_Institutional</permissionSets>
+    <permissionSets>Account_Read_Default</permissionSets>
+    <permissionSets>Activities_Edit_Default</permissionSets>
+    <permissionSets>Apex_Class_Access_Default</permissionSets>
+    <permissionSets>Asset_Read_Default</permissionSets>
+    <permissionSets>Contact_Create_Read</permissionSets>
+    <permissionSets>Contact_Edit_Read</permissionSets>
+    <permissionSets>Contact_Institutional</permissionSets>
+    <permissionSets>Contact_Read_Default</permissionSets>
+    <permissionSets>Opportunity_Read_Default</permissionSets>
+    <permissionSets>Sales_InstitutionalSalesApp</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

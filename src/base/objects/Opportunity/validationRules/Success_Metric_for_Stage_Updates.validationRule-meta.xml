@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Success_Metric_for_Stage_Updates</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        ISNEW(),
+        ISCHANGED(StageName)
+    ),
+    RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+    ISPICKVAL(StageName,&apos;Closed Won&apos;),
+    ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Wallet Campaign/Quest&apos;),
+    ISBLANK( TEXT(Success_Metric__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Success_Metric__c</errorDisplayField>
+    <errorMessage>In order to move to Closed Won, Success Metric must be filled out for Wallet Opportunity Type is Wallet Campaign/Quest</errorMessage>
+</ValidationRule>

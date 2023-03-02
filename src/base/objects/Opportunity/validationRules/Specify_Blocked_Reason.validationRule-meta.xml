@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Specify_Blocked_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Blocked__c,
+ISBLANK(TEXT(Blocked_Reason__c))
+)</errorConditionFormula>
+    <errorDisplayField>Blocked_Reason__c</errorDisplayField>
+    <errorMessage>You must specify a Blocked Reason on any Blocked Opportunities</errorMessage>
+</ValidationRule>

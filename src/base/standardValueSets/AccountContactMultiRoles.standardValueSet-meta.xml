@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Agent</fullName>
+        <default>false</default>
+        <label>Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Asset Manager</fullName>
+        <default>false</default>
+        <label>Asset Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing Primary</fullName>
+        <default>false</default>
+        <label>Billing Primary</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contractor</fullName>
+        <default>false</default>
+        <label>Contractor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Director</fullName>
+        <default>false</default>
+        <label>Director</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee</fullName>
+        <default>false</default>
+        <label>Employee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Officer</fullName>
+        <default>false</default>
+        <label>Officer</label>
+    </standardValue>
+</StandardValueSet>

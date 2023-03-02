@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Onboarding_Required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>OPS 5156 - This field is now deprecated/no longer in use.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This field is deprecated. Check this box if this Opportunity does not require a CS Onboarding ticket.</inlineHelpText>
+    <label>No Onboarding Required</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

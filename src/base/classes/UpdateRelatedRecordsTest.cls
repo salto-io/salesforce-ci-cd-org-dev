@@ -1,0 +1,5 @@
+/**
+	//DEPRECATED
+**/
+public class UpdateRelatedRecordsTest {
+}

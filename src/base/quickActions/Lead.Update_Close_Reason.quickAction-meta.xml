@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>[SFCC-1490]: Update lead Status to &quot;Closed&quot; and user select Close Reason field from list view pop up</description>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>Closed</literalValue>
+    </fieldOverrides>
+    <label>Update Close Reason</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Lead_Close_Reason__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Congrats, All Leads are updated to Closed with Closed Reason!</successMessage>
+    <type>Update</type>
+</QuickAction>

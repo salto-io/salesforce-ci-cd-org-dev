@@ -1,0 +1,28 @@
+<aura:component controller="ProtocolController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningquickactionwithoutheader" access="global" >
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:attribute name="protocolList" type="List" default="[]" description=" Picklist Values"/>
+    <aura:attribute name="selectedPrtocolList" type="List" default="[]" description="Selected Picklist Values"/>
+    <aura:attribute name="recordId" type="String"/>
+    
+    <div class="modal-header slds-modal__header slds-size_1-of-1">
+        <h4 class="title slds-text-heading--medium">Protocol List</h4>
+    </div>
+    
+    <div class="slds-m-around_xx-large">
+        <lightning:dualListbox aura:id="selectProtocol"
+                               name="Protocol"
+                               label="Select Protocol"
+                               sourceLabel="Available Protocol"
+                               selectedLabel="Selected Protocol"
+                               options="{!v.protocolList}"
+                               value="{!v.selectedPrtocolList}"
+                               onchange="{!c.handleProtocolChange}"/>
+    </div>
+    
+    <div class="modal-footer slds-modal__footer slds-size_1-of-1">
+        <div class="forceChangeRecordTypeFooter">
+            <ui:button class="slds-button slds-button_neutral" label="Cancel" press="{!c.cancelPopup}"/> 
+            <ui:button class="slds-button slds-button--brand" label="Save" press="{!c.submitProtocol}"/>
+        </div>
+    </div>
+</aura:component>

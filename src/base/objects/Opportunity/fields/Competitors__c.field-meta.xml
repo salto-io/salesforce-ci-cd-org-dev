@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Competitors__c</fullName>
+    <description>[SFCC-671] Opportunity Wallet Record Type Field</description>
+    <externalId>false</externalId>
+    <label>Wallet Competitors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Competitors</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

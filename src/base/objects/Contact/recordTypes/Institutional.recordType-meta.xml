@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Institutional</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>Contact_Institutional_Compact_Layout</compactLayoutAssignment>
+    <label>Institutional</label>
+    <picklistValues>
+        <picklist>Job_Seniority__c</picklist>
+        <values>
+            <fullName>Associate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C-suite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entry level</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Executive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mid-senior</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Client Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marketing Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UBO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - Data Marketplace Sales Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - Exchange Resources</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - In-Kind Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - Insights Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - Interest Form</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - LinkedIn Lead Gen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web Form - Prime Resources</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Assessment__c</picklist>
+        <values>
+            <fullName>Qualified but Did Not Pass Rejection Rules</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Contact_Method__c</picklist>
+        <values>
+            <fullName>Discord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telegram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

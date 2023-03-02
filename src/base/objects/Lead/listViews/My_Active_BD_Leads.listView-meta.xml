@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Active_BD_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>Type_of_Business__c</columns>
+    <columns>Product_Interest__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.Business_Development_Partnerships</value>
+    </filters>
+    <label>My Active BD Leads</label>
+    <sharedTo>
+        <group>BD_Public_Group</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Event</fullName>
+        <default>true</default>
+        <label>Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Demo Signup / Trial</fullName>
+        <default>false</default>
+        <label>Demo Signup / Trial</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Referral Program</fullName>
+        <default>false</default>
+        <label>Referral Program</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Search</fullName>
+        <default>false</default>
+        <label>Search</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Thought Leadership</fullName>
+        <default>false</default>
+        <label>Thought Leadership</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Website Direct</fullName>
+        <default>false</default>
+        <label>Website Direct</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>

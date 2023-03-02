@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Other (Unspecified)</fullName>
+        <default>false</default>
+        <label>Other (Unspecified)</label>
+    </customValue>
+    <customValue>
+        <fullName>Delegate</fullName>
+        <default>false</default>
+        <label>Delegate</label>
+    </customValue>
+    <customValue>
+        <fullName>Participate</fullName>
+        <default>false</default>
+        <label>Participate</label>
+    </customValue>
+    <customValue>
+        <fullName>Wallet SDK</fullName>
+        <default>false</default>
+        <label>Wallet SDK</label>
+    </customValue>
+    <customValue>
+        <fullName>Coinbase Pay SDK</fullName>
+        <default>false</default>
+        <label>Coinbase Pay SDK</label>
+    </customValue>
+    <customValue>
+        <fullName>Commerce</fullName>
+        <default>false</default>
+        <label>Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Exchange &amp; Pro APIs</fullName>
+        <default>false</default>
+        <label>Exchange &amp; Pro APIs</label>
+    </customValue>
+    <customValue>
+        <fullName>Sign in with Coinbase</fullName>
+        <default>false</default>
+        <label>Sign in with Coinbase</label>
+    </customValue>
+    <customValue>
+        <fullName>Prime APIs</fullName>
+        <default>false</default>
+        <label>Prime APIs</label>
+    </customValue>
+    <customValue>
+        <fullName>Rosetta</fullName>
+        <default>false</default>
+        <label>Rosetta</label>
+    </customValue>
+    <customValue>
+        <fullName>Query &amp; Transact</fullName>
+        <default>false</default>
+        <label>Query &amp; Transact</label>
+    </customValue>
+    <customValue>
+        <fullName>Staking</fullName>
+        <default>false</default>
+        <label>Staking</label>
+    </customValue>
+    <customValue>
+        <fullName>Wallet-as-a-Service</fullName>
+        <default>false</default>
+        <label>Wallet-as-a-Service</label>
+    </customValue>
+    <customValue>
+        <fullName>NFT</fullName>
+        <default>false</default>
+        <label>NFT</label>
+    </customValue>
+    <customValue>
+        <fullName>Data Indexers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Data Indexers</label>
+    </customValue>
+    <customValue>
+        <fullName>Node</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Node</label>
+    </customValue>
+    <masterLabel>Product Interest</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

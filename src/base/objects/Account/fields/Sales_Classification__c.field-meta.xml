@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Classification__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Sales Classification</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BlackRock/Aladdin</fullName>
+                <default>false</default>
+                <label>BlackRock/Aladdin</label>
+            </value>
+            <value>
+                <fullName>In-Kind Distribution</fullName>
+                <default>false</default>
+                <label>In-Kind Distribution</label>
+            </value>
+            <value>
+                <fullName>Introducing Brokers</fullName>
+                <default>false</default>
+                <label>Introducing Brokers</label>
+            </value>
+            <value>
+                <fullName>OEMS</fullName>
+                <default>false</default>
+                <label>OEMS</label>
+            </value>
+            <value>
+                <fullName>Private Client</fullName>
+                <default>false</default>
+                <label>Private Client</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

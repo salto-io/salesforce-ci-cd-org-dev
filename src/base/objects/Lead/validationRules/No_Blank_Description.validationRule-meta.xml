@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Blank_Description</fullName>
+    <active>true</active>
+    <description>Filters out Leads with a blank description.</description>
+    <errorConditionFormula>AND(
+  ISBLANK( Description ), 
+  RecordType.DeveloperName &lt;&gt; &apos;CBDC_Lead&apos;,
+  RecordType.DeveloperName &lt;&gt; &apos;Standard_Lead&apos;,
+RecordType.DeveloperName &lt;&gt; &apos;Business_Development_Partnerships&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Description</errorDisplayField>
+    <errorMessage>Must insert description.</errorMessage>
+</ValidationRule>

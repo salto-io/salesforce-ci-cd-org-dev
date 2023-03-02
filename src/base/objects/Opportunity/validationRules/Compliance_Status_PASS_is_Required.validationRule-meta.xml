@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Status_PASS_is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED(StageName)
+),
+OR(
+ISPICKVAL(StageName,&apos;Signed&apos;),
+ISPICKVAL(StageName,&apos;Executed&apos;),
+ISPICKVAL(StageName,&apos;Closed Won&apos;)
+),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Dapp Discovery Browsers&apos;),
+NOT( ISPICKVAL( Compliance_Status__c , &apos;Pass&apos;) )
+)</errorConditionFormula>
+    <errorDisplayField>Compliance_Status__c</errorDisplayField>
+    <errorMessage>In order to move to Signed stage or beyond, PASS value is required if Wallet Opportunity Type = Dapp Discovery Browsers.</errorMessage>
+</ValidationRule>

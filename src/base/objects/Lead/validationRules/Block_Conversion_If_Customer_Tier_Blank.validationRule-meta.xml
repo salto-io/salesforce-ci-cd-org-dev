@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Conversion_If_Customer_Tier_Blank</fullName>
+    <active>true</active>
+    <description>Customer tier is required at the time of lead conversion for all record types</description>
+    <errorConditionFormula>AND(
+IsConverted,
+ISBLANK(TEXT(Customer_Tier__c))
+)</errorConditionFormula>
+    <errorMessage>Customer Tier should be entered before lead conversion!</errorMessage>
+</ValidationRule>

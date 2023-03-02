@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Size__c</fullName>
+    <description>The valuation of the company.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The valuation of the company. This is a fairly loose metric, as a lot of these values are not public information, but use your best judgement.</inlineHelpText>
+    <label>Size</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Small Cap (&lt; $150M)</fullName>
+                <default>true</default>
+                <label>Small Cap (&lt; $150M)</label>
+            </value>
+            <value>
+                <fullName>Mid Cap ($150M &lt; $1B)</fullName>
+                <default>false</default>
+                <label>Mid Cap ($150M &lt; $1B)</label>
+            </value>
+            <value>
+                <fullName>Large Cap (&gt; $1B)</fullName>
+                <default>false</default>
+                <label>Large Cap (&gt; $1B)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

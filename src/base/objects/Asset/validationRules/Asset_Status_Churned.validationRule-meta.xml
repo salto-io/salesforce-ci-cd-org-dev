@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Asset_Status_Churned</fullName>
+    <active>false</active>
+    <description>SFCC-1562</description>
+    <errorConditionFormula>AND( 
+OR(
+AND(
+ISCHANGED( Status ),
+ISPICKVAL( Status , &apos;Churned&apos;)),
+ISPICKVAL( Status , &apos;Churned&apos;)
+),
+OR(
+ ISBLANK( UsageEndDate ),
+ ISBLANK( TEXT(Churned_Reason__c)),
+ UsageEndDate&gt;TODAY()
+)
+)</errorConditionFormula>
+    <errorMessage>Usage End Date (date cannot be future date) and Churned Reason are required when Asset Status is Churned</errorMessage>
+</ValidationRule>

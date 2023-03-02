@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountSource</fullName>
+    <businessOwnerGroup>Data_Owner_Marketing</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <inlineHelpText>Select the most impactful marketing channel used to source this account.</inlineHelpText>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+</CustomField>

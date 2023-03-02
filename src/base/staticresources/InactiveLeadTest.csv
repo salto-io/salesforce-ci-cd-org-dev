@@ -1,0 +1,6 @@
+RecordTypeId,FirstName,LastName,Email,Company,LeadSource,Customer_Segment__c,Product_Interest__c,CreatedDate,LastModifiedDate
+0124W000000gZ2MQAU,TestFirst,LastOne,test1@nomail.invalid,Test Company 1,Partner,Individual,Participate,2022-01-01T09:30:00.000+0000,2022-01-01T09:30:00.000+0000
+0124W000000gZ2MQAU,TestFirst,LastTwo,test2@nomail.invalid,Test Company 2,Partner,Individual,Participate,2022-01-01T09:30:00.000+0000,2022-01-01T09:30:00.000+0000
+0124W000000gZ2MQAU,TestFirst,LastThree,test3@nomail.invalid,Test Company 3,Partner,Individual,Participate,2022-01-01T09:30:00.000+0000,2022-01-01T09:30:00.000+0000
+0124W000000gZ2MQAU,TestFirst,LastFour,test4@nomail.invalid,Test Company 4,Partner,Individual,Participate,2022-01-01T09:30:00.000+0000,2022-01-01T09:30:00.000+0000
+0124W000000gZ2MQAU,TestFirst,LastFive,test5@nomail.invalid,Test Company 5,Partner,Individual,Participate,2022-01-01T09:30:00.000+0000,2022-01-01T09:30:00.000+0000

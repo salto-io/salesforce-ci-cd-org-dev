@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <enableCanadaIcuFormat>true</enableCanadaIcuFormat>
+    <enableEndUserLanguages>false</enableEndUserLanguages>
+    <enableICULocaleDateFormat>true</enableICULocaleDateFormat>
+    <enableLocalNamesForStdObjects>false</enableLocalNamesForStdObjects>
+    <enablePlatformLanguages>false</enablePlatformLanguages>
+    <enableTranslationWorkbench>true</enableTranslationWorkbench>
+    <useLanguageFallback>false</useLanguageFallback>
+</LanguageSettings>

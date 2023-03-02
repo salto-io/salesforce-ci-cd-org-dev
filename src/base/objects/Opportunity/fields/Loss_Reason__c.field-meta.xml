@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Loss Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BT Decision</fullName>
+                <default>false</default>
+                <label>BT Decision</label>
+            </value>
+            <value>
+                <fullName>BT Service Related - Missing Functionality / Product</fullName>
+                <default>false</default>
+                <label>BT Service Related - Missing Functionality / Product</label>
+            </value>
+            <value>
+                <fullName>BT Service Related - Other</fullName>
+                <default>false</default>
+                <label>BT Service Related - Other</label>
+            </value>
+            <value>
+                <fullName>BT Service Related - Price Sensitivity / Competition</fullName>
+                <default>false</default>
+                <label>BT Service Related - Price Sensitivity / Competition</label>
+            </value>
+            <value>
+                <fullName>Chain support: Optimism</fullName>
+                <default>false</default>
+                <label>Chain support: Optimism</label>
+            </value>
+            <value>
+                <fullName>Chain support: Other</fullName>
+                <default>false</default>
+                <label>Chain support: Other</label>
+            </value>
+            <value>
+                <fullName>Chain support: Polygon</fullName>
+                <default>false</default>
+                <label>Chain support: Polygon</label>
+            </value>
+            <value>
+                <fullName>Clean-up</fullName>
+                <default>false</default>
+                <label>Clean-up</label>
+            </value>
+            <value>
+                <fullName>Competition</fullName>
+                <default>false</default>
+                <label>Competition</label>
+            </value>
+            <value>
+                <fullName>Contract no longer valid</fullName>
+                <default>false</default>
+                <label>Contract no longer valid</label>
+            </value>
+            <value>
+                <fullName>Dead Project</fullName>
+                <default>false</default>
+                <label>Dead Project</label>
+            </value>
+            <value>
+                <fullName>Gambling/High Risk</fullName>
+                <default>false</default>
+                <label>Gambling/High Risk</label>
+            </value>
+            <value>
+                <fullName>Ineligible</fullName>
+                <default>false</default>
+                <label>Ineligible</label>
+            </value>
+            <value>
+                <fullName>Integration On Hold</fullName>
+                <default>false</default>
+                <label>Integration On Hold</label>
+            </value>
+            <value>
+                <fullName>Limited Engagement</fullName>
+                <default>false</default>
+                <label>Limited Engagement</label>
+            </value>
+            <value>
+                <fullName>Negative PR</fullName>
+                <default>false</default>
+                <label>Negative PR</label>
+            </value>
+            <value>
+                <fullName>No Decision / Non-Responsive</fullName>
+                <default>false</default>
+                <label>No Decision / Non-Responsive</label>
+            </value>
+            <value>
+                <fullName>Non-BT Service Related - Asset Liquidation</fullName>
+                <default>false</default>
+                <label>Non-BT Service Related - Asset Liquidation</label>
+            </value>
+            <value>
+                <fullName>Non-BT Service Related - Other</fullName>
+                <default>false</default>
+                <label>Non-BT Service Related - Other</label>
+            </value>
+            <value>
+                <fullName>Non-BT Service Related - Protocol Issues</fullName>
+                <default>false</default>
+                <label>Non-BT Service Related - Protocol Issues</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other (Specify in Description)</label>
+            </value>
+            <value>
+                <fullName>Phishing/Spam</fullName>
+                <default>false</default>
+                <label>Phishing/Spam</label>
+            </value>
+            <value>
+                <fullName>Price</fullName>
+                <default>false</default>
+                <label>Price</label>
+            </value>
+            <value>
+                <fullName>Product does not meet expectations</fullName>
+                <default>false</default>
+                <label>Product does not meet expectations</label>
+            </value>
+            <value>
+                <fullName>Scam</fullName>
+                <default>false</default>
+                <label>Scam</label>
+            </value>
+            <value>
+                <fullName>Terminated</fullName>
+                <default>false</default>
+                <label>Terminated</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BD_CS_Trial_Incidents_Tracker</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Incident_Severity__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <filterScope>Everything</filterScope>
+    <label>BD/CS Trial Incidents Tracker</label>
+    <sharedTo>
+        <group>CS_Team</group>
+        <group>Sales_Team</group>
+    </sharedTo>
+</ListView>

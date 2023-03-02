@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants users the ability to select Institutional when creating an Contact. This permission set assigns the Institutional record type for the Contact object.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Contact Institutional</label>
+    <recordTypeVisibilities>
+        <recordType>Contact.Institutional</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

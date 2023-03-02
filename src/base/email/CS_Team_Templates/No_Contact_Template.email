@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><br></div>Hi&nbsp;{!Case.OwnerFirstName},<div><br></div><div>The Case below has been in the "New" stage of the&nbsp;{!Case.RecordType} for 3 days and has been escalated. This is a friendly reminder that first contact is needed. If the Case is no longer active or should be put on hold, please reclassify it.</div><div><br></div><div><br></div><div>Account:&nbsp;{!Case.Account}</div><div>Opportunity:&nbsp;{!Case.Opportunity__c}</div><div>Case:&nbsp;{!Case.Link}</div><div>Owner:&nbsp;{!Case.OwnerFullName}</div><div><br></div><div>Thank you!</div>]]></td>
+</tr>
+</table>

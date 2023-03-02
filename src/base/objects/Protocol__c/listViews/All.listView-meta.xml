@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Price__c</columns>
+    <columns>Inflation_Rate__c</columns>
+    <columns>Symbol__c</columns>
+    <columns>CoinMarketCap_External_Id__c</columns>
+    <columns>Protocol_Owner__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <group>CS_Team</group>
+        <group>Sales_Team</group>
+    </sharedTo>
+</ListView>

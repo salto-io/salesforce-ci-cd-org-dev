@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validate_Close_Loss_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( Status, &quot;Closed Lost&quot; ),
+ISPICKVAL( Loss_Reason__c, &quot;&quot; ),
+OR (
+RecordType.Name = &quot;Onboarding Pipeline&quot;,
+RecordType.Name = &quot;Trial Pipeline&quot;
+)
+)</errorConditionFormula>
+    <errorDisplayField>Loss_Reason__c</errorDisplayField>
+    <errorMessage>Please specify a loss reason before moving this case to Closed Lost.</errorMessage>
+</ValidationRule>

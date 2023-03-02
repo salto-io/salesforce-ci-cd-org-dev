@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Failure_Reason_is_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        ISNEW(),
+        ISCHANGED(Compliance_Status__c)
+    ),
+    RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+    ISPICKVAL( Compliance_Status__c  , &apos;Fail&apos;),
+     ISBLANK( Compliance_Failure_Reason__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Compliance_Failure_Reason__c</errorDisplayField>
+    <errorMessage>Please fill Compliance Failure Reason when Compliance Status is set to Fail</errorMessage>
+</ValidationRule>

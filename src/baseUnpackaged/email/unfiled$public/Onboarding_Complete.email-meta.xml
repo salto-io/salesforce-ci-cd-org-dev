@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to ensure onboardings are populating the necessary downstream data.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead</letterhead>
+    <name>Onboarding Complete</name>
+    <style>freeForm</style>
+    <subject>Onboarding Complete</subject>
+    <textOnly>Hi,
+
+An onboarding has been completed. Please refer to the case below and ensure the following have occurred:
+
+- An Asset has been created
+- The Asset&apos;s data aligns with that of the original Opportunity
+- The BT Product(s) associated with the Case have been attached to an Asset
+- A Bill has been created and both the BT Product(s) and the Asset(s) have been attached
+
+Case: {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

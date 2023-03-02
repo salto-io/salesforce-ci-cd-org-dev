@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Main Leads Process</fullName>
+    <description>Main leads process.</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>New</fullName>
+        <default>true</default>
+    </values>
+    <values>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Stale</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Working</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

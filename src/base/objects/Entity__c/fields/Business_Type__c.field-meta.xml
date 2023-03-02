@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Business Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Industry__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Risk_Framework_Business_Type</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Animation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Fine Art</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Graphic/Web Design</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Media Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Motion Pictures / Film</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Music Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Newspaper, Magazine, &amp; Book Publishing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Online Publishing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Photography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Media / Arts</controllingFieldValue>
+            <valueName>Printing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Adult Education Programs and Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Advocacy and Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Animal Rights, Welfare, and Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Community Foundations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Diseases, Disorders, and Disciplines</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Early Childhood Programs and Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Educational institutions (receiving donations of crypto)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Education Policy and Reform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Family Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Food Banks, Food Pantries, and Food Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>For-Profit Religious Organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Hate Groups</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Homeless/Social Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Housing and Neighborhood Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Humanitarian Relief Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>International Peace, Security, and Affairs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Libraries, Historical Societies and Landmark Preservation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Medical Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Museums</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Non-Medical Science &amp; Technology Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Non-Profit/Charity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Performing Arts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Public Broadcasting and Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Religious Activities/Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Scholarship and Financial Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Social and Public Policy Research</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Special Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Treatment and Prevention Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>United Ways</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Wildlife/Environmental Conservation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Youth Development, Shelter, and Crisis Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Youth Education Programs and Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Non-Profit/Charity</controllingFieldValue>
+            <valueName>Zoos / Aquariums / Parks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Assigned to Anything but Active</controllingFieldValue>
+            <valueName>Crypto Advisory</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Assigned to Anything but Active</controllingFieldValue>
+            <valueName>Crypto Software Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Assigned to Anything but Active</controllingFieldValue>
+            <valueName>Financial Institution Holding Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Not Assigned to Anything but Active</controllingFieldValue>
+            <valueName>IRA Holding Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Accounting Firm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Actuary</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Affiliate Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Architecture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Bail Bonds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Consulting Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Financial Planner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>HR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Law Practice / Law Firm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Legal (Appointed Receivership)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Legal (Bankruptcy Trustee)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Legal Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Multi-Level Marketing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Public Relations / PR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Staffing/Recruiting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Training &amp; Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Professional Services</controllingFieldValue>
+            <valueName>Translation / Localization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Commercial Real Estate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Property Management / Leasing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Real Estate Holding Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real Estate</controllingFieldValue>
+            <valueName>Realtor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Adult products &amp; services / Pornography</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Alcohol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Apparel &amp; Fashion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Automotive</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Building Materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Business Supplies/Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Cannabis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Car Dealership</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Cash Intensive Businesses (i.e., Restaurants, Bars, Construction)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Chemicals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Computer Hardware/Accessories</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Consumer Electronics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Cosmetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Counterfeit or Unauthorized Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Dietary Supplements</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Drugs &amp; Drug Paraphernalia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Firearms / Gun accessories / Knives</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Fireworks including Firecrackers, tube sparklers and pop up</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Food/Grocery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Furniture</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Gambling (Lottery, Sportsbetting, Casinos)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Game of Skill</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Gunpowder, Explosives, Munitions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Handcuffs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Health &amp; Fitness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Luxury Goods / Jewelry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Online Prescription Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Online Retailer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Online Unregulated Supplemental sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Smoke-shop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Sporting Goods</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Tobacco / Vape Supplies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Toxic, Flammable, Radioactive materials</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Unregulated Pharmaceutical Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Retail</controllingFieldValue>
+            <valueName>Video Games</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Adult Entertainment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Biotechnology / Greentech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Classifieds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Co-location services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Digital Advertising</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>File Sharing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Internet/Telecom Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Network Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Social Media Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Software Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>Video/Music Streaming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Technology/IT (non-crypto)</controllingFieldValue>
+            <valueName>VPN/Hosting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Airline</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Bus Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Car repair</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Container Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Courier Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Freight Forwarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Import/Export</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Marine Transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Shipping</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Transportation Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Transportation &amp; Shipping</controllingFieldValue>
+            <valueName>Trucking</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agriculture</controllingFieldValue>
+            <valueName>Agricultural Supplies/Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agriculture</controllingFieldValue>
+            <valueName>Farming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agriculture</controllingFieldValue>
+            <valueName>Fishery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agriculture</controllingFieldValue>
+            <valueName>Ranching</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>All Industries</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Crypto/Blockchain Software Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Crypto Advisory / Consultancy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Crypto ATM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Crypto Miner / Mining Pool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Crypto VASP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Mining Hardware</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Relayer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Services (non-financial)</controllingFieldValue>
+            <valueName>Spinner/Mixer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Child Care Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>College/University</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Educational Services/Tutoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>E-learning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Pre-K</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Primary Education (up to High school)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Textbooks</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Banking Institution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Check Cashing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Commodities Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crowdfunding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Custody</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Gambling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Lending/Borrowing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto OTC (Agency Desk)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto OTC (Principal Desk)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Debt Collections</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Debt Reductions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>ETF / ETP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Forex Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Fund Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>FX/CFD Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>ICO Issuers / Tokensale</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Initial Coin Offering / Security Token Offering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Institutional Brokerage (Non-Crypto)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Insurance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Investment Advisor/ Robo-advisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Lending/Borrowing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Money Service Business (MSB)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Mortgage Servicers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Mutual Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Non-custodial crypto wallet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>OTC desk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Pay-day loans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Precious Metals Dealer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Pre-paid Cards / Giftcards</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Private Equity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Ransomware Recovery Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Ransomware-Related Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Retail brokerage (non-crypto)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Securities Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Shell Bank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Tokensale Platform</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Venture Capital</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Bar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Catering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Event Planning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Food/Beverage Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Food Processing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Hotels/Motels</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Restaurant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Food &amp; Hospitality</controllingFieldValue>
+            <valueName>Spa/Massage Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government/Politics</controllingFieldValue>
+            <valueName>Government Administration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government/Politics</controllingFieldValue>
+            <valueName>Law Enforcement</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government/Politics</controllingFieldValue>
+            <valueName>Legislative Office</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government/Politics</controllingFieldValue>
+            <valueName>Military/Defense</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government/Politics</controllingFieldValue>
+            <valueName>Political Campaign</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Government/Politics</controllingFieldValue>
+            <valueName>Political Organization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Chiropractor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Dental/Orthodontic Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Gym</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Health Professionals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Health Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Hospital/Hospice Services</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Massage Therapy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Medical Devices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Personal Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Pharmaceuticals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Pharmacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Physical Training</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Professional Sports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Fitness</controllingFieldValue>
+            <valueName>Veterinary Medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Aerospace</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Arms/Weapon Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Chemical Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Construction</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Engineering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Industrial Automation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Manufacturing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Mining</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Oil &amp; Gas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Rail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Textiles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Trade Union</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Utilities</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Waste Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Industrial</controllingFieldValue>
+            <valueName>Welding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Charitable Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Corporate Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Family Office / Wealth Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Fund Administrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Holding Companies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>International Business Corporations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Irrevocable Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Market Maker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Pension Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Pension Fund / SSAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Personal Investment Company (PIC)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Proprietary Trading Firm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Revocable Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Self Directed IRA, 401k</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Investment (Proprietary Funds Only)</controllingFieldValue>
+            <valueName>Special Purpose Vehicles/Special Purpose Entity</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

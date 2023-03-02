@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Coin / Currency</fullName>
+        <default>false</default>
+        <label>Coin / Currency</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Brokerage</fullName>
+        <default>false</default>
+        <label>Crypto Brokerage</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Exchange</fullName>
+        <default>false</default>
+        <label>Crypto Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Lender</fullName>
+        <default>false</default>
+        <label>Crypto Lender</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto OTC Desk</fullName>
+        <default>false</default>
+        <label>Crypto OTC Desk</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank</fullName>
+        <default>false</default>
+        <label>Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Fintech</fullName>
+        <default>false</default>
+        <label>Fintech</label>
+    </customValue>
+    <customValue>
+        <fullName>Prime Brokerage</fullName>
+        <default>false</default>
+        <label>Prime Brokerage</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Brokerage</fullName>
+        <default>false</default>
+        <label>Traditional Brokerage</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Exchange</fullName>
+        <default>false</default>
+        <label>Traditional Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Miner</fullName>
+        <default>false</default>
+        <label>Miner</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining Pool</fullName>
+        <default>false</default>
+        <label>Mining Pool</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Merchant / Business</fullName>
+        <default>false</default>
+        <label>Crypto Merchant / Business</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Payments</fullName>
+        <default>false</default>
+        <label>Crypto Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Wallet</fullName>
+        <default>false</default>
+        <label>Crypto Wallet</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Crypto / Blockchain Company</fullName>
+        <default>false</default>
+        <label>Other Crypto / Blockchain Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Investor</fullName>
+        <default>false</default>
+        <label>Corporate Investor</label>
+    </customValue>
+    <customValue>
+        <fullName>Endowment Plan</fullName>
+        <default>false</default>
+        <label>Endowment Plan</label>
+    </customValue>
+    <customValue>
+        <fullName>Foundation</fullName>
+        <default>false</default>
+        <label>Foundation</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Agency</fullName>
+        <default>false</default>
+        <label>Government Agency</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance Company</fullName>
+        <default>false</default>
+        <label>Insurance Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Investment Bank</fullName>
+        <default>false</default>
+        <label>Investment Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Sector Pension Fund</fullName>
+        <default>false</default>
+        <label>Private Sector Pension Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Pension Fund</fullName>
+        <default>false</default>
+        <label>Public Pension Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Sovereign Wealth Fund</fullName>
+        <default>false</default>
+        <label>Sovereign Wealth Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Supperannuation Scheme</fullName>
+        <default>false</default>
+        <label>Supperannuation Scheme</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Asset Manager</fullName>
+        <default>false</default>
+        <label>Crypto Asset Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Fundamental L/O or L/S Hedge Fund</fullName>
+        <default>false</default>
+        <label>Crypto Fundamental L/O or L/S Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Systematic / Quant Hedge Fund</fullName>
+        <default>false</default>
+        <label>Crypto Systematic / Quant Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Hedge Fund of Fund</fullName>
+        <default>false</default>
+        <label>Crypto Hedge Fund of Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Multi-Strategy Hedge Fund</fullName>
+        <default>false</default>
+        <label>Crypto Multi-Strategy Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Venture Hybrid Fund</fullName>
+        <default>false</default>
+        <label>Crypto Venture Hybrid Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Venture Fund</fullName>
+        <default>false</default>
+        <label>Crypto Venture Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Individual HNWI</fullName>
+        <default>false</default>
+        <label>Individual HNWI</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto HNWI</fullName>
+        <default>false</default>
+        <label>Crypto HNWI</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi Family Offices</fullName>
+        <default>false</default>
+        <label>Multi Family Offices</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Wealth Management</fullName>
+        <default>false</default>
+        <label>Private Wealth Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Single Family Office</fullName>
+        <default>false</default>
+        <label>Single Family Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Mutual Fund</fullName>
+        <default>false</default>
+        <label>Mutual Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed-end Fund</fullName>
+        <default>false</default>
+        <label>Closed-end Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Unit Investment Trust</fullName>
+        <default>false</default>
+        <label>Unit Investment Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>ETF/ETP</fullName>
+        <default>false</default>
+        <label>ETF/ETP</label>
+    </customValue>
+    <customValue>
+        <fullName>Equity Hedge Fund</fullName>
+        <default>false</default>
+        <label>Equity Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Driven Hedge Fund</fullName>
+        <default>false</default>
+        <label>Event Driven Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Credit Hedge Fund</fullName>
+        <default>false</default>
+        <label>Credit Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Relative Value Hedge Fund</fullName>
+        <default>false</default>
+        <label>Relative Value Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Macro Hedge Fund</fullName>
+        <default>false</default>
+        <label>Macro Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Hedge Fund of Fund</fullName>
+        <default>false</default>
+        <label>Hedge Fund of Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Managed Futures / CTA Hedge Fund</fullName>
+        <default>false</default>
+        <label>Managed Futures / CTA Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-Strategy Hedge Fund</fullName>
+        <default>false</default>
+        <label>Multi-Strategy Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Early Stage Only VC</fullName>
+        <default>false</default>
+        <label>Early Stage Only VC</label>
+    </customValue>
+    <customValue>
+        <fullName>Growth Only VC</fullName>
+        <default>false</default>
+        <label>Growth Only VC</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-Stage VC</fullName>
+        <default>false</default>
+        <label>Multi-Stage VC</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Equity Fund</fullName>
+        <default>false</default>
+        <label>Private Equity Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Venture Fund of Fund</fullName>
+        <default>false</default>
+        <label>Venture Fund of Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>High Frequency Trader</fullName>
+        <default>false</default>
+        <label>High Frequency Trader</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Maker / Prop</fullName>
+        <default>false</default>
+        <label>Market Maker / Prop</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrator</fullName>
+        <default>false</default>
+        <label>Administrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Auditor</fullName>
+        <default>false</default>
+        <label>Auditor</label>
+    </customValue>
+    <customValue>
+        <fullName>Tax Advisor</fullName>
+        <default>false</default>
+        <label>Tax Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Law Firm</fullName>
+        <default>false</default>
+        <label>Law Firm</label>
+    </customValue>
+    <customValue>
+        <fullName>OMS</fullName>
+        <default>false</default>
+        <label>OMS</label>
+    </customValue>
+    <customValue>
+        <fullName>PMS</fullName>
+        <default>false</default>
+        <label>PMS</label>
+    </customValue>
+    <customValue>
+        <fullName>EMS</fullName>
+        <default>false</default>
+        <label>EMS</label>
+    </customValue>
+    <customValue>
+        <fullName>Compliance Advisor</fullName>
+        <default>false</default>
+        <label>Compliance Advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporation / Other</fullName>
+        <default>false</default>
+        <label>Corporation / Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Accounting System</fullName>
+        <default>false</default>
+        <label>Accounting System</label>
+    </customValue>
+    <customValue>
+        <fullName>eCommerce / Retail</fullName>
+        <default>false</default>
+        <label>eCommerce / Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Media / Tech</fullName>
+        <default>false</default>
+        <label>Social Media / Tech</label>
+    </customValue>
+    <customValue>
+        <fullName>Re-distribution Partner</fullName>
+        <default>false</default>
+        <label>Re-distribution Partner</label>
+    </customValue>
+    <customValue>
+        <fullName>Payments / Processors</fullName>
+        <default>false</default>
+        <label>Payments / Processors</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Gaming</fullName>
+        <default>false</default>
+        <label>Gaming</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Profit / Non-Governmental Organization (NPO/NGO)</fullName>
+        <default>false</default>
+        <label>Non-Profit / Non-Governmental Organization (NPO/NGO)</label>
+    </customValue>
+    <customValue>
+        <fullName>DeFi</fullName>
+        <default>false</default>
+        <label>DeFi</label>
+    </customValue>
+    <customValue>
+        <fullName>NFTs / Collectibles</fullName>
+        <default>false</default>
+        <label>NFTs / Collectibles</label>
+    </customValue>
+    <customValue>
+        <fullName>GameFi</fullName>
+        <default>false</default>
+        <label>GameFi</label>
+    </customValue>
+    <customValue>
+        <fullName>On-Chain Data</fullName>
+        <default>false</default>
+        <label>On-Chain Data</label>
+    </customValue>
+    <customValue>
+        <fullName>DeSo</fullName>
+        <default>false</default>
+        <label>DeSo</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Custody</fullName>
+        <default>false</default>
+        <label>Crypto Custody</label>
+    </customValue>
+    <masterLabel>Sub Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Open - In Progress</fullName>
+        <default>false</default>
+        <label>Open - In Progress</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Responded</fullName>
+        <default>false</default>
+        <label>Customer Responded</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Internal</fullName>
+        <default>false</default>
+        <label>Pending Internal</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Resolved</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Escalated</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Transferred</fullName>
+        <default>false</default>
+        <label>Transferred</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Waiting on Customer</fullName>
+        <default>false</default>
+        <label>Waiting on Customer</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Ready to Work</fullName>
+        <default>false</default>
+        <label>Ready to Work</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Funding</fullName>
+        <default>false</default>
+        <label>Funding</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Registering</fullName>
+        <default>false</default>
+        <label>Registering</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Scheduled</fullName>
+        <default>false</default>
+        <label>Scheduled</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Delegating</fullName>
+        <default>false</default>
+        <label>Delegating</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>In trial</fullName>
+        <default>false</default>
+        <label>In trial</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial Ended</fullName>
+        <default>false</default>
+        <label>Trial Ended</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <label>Closed Lost</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

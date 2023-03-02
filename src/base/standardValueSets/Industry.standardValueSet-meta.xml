@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Analytics</fullName>
+        <default>false</default>
+        <label>Analytics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Block Explorer</fullName>
+        <default>false</default>
+        <label>Block Explorer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Custodian</fullName>
+        <default>false</default>
+        <label>Custodian</label>
+    </standardValue>
+    <standardValue>
+        <fullName>dApp</fullName>
+        <default>false</default>
+        <label>dApp</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Data Aggregator</fullName>
+        <default>false</default>
+        <label>Data Aggregator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>DeFi / DEX</fullName>
+        <default>false</default>
+        <label>DeFi / DEX</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Exchange</fullName>
+        <default>false</default>
+        <label>Exchange</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </standardValue>
+    <standardValue>
+        <fullName>FinTech</fullName>
+        <default>false</default>
+        <label>FinTech</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fund</fullName>
+        <default>false</default>
+        <label>Fund</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Infrastructure</fullName>
+        <default>false</default>
+        <label>Infrastructure</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Individual Investor</fullName>
+        <default>false</default>
+        <label>Individual Investor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Non-Profit</fullName>
+        <default>false</default>
+        <label>Non-Profit</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Payment Processor</fullName>
+        <default>false</default>
+        <label>Payment Processor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Protocol Foundation</fullName>
+        <default>false</default>
+        <label>Protocol Foundation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Security Auditor</fullName>
+        <default>false</default>
+        <label>Security Auditor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Stablecoins</fullName>
+        <default>false</default>
+        <label>Stablecoins</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trading</fullName>
+        <default>false</default>
+        <label>Trading</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Wallet</fullName>
+        <default>false</default>
+        <label>Wallet</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Electronics</fullName>
+        <default>false</default>
+        <label>Electronics</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Energy</fullName>
+        <default>false</default>
+        <label>Energy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Environmental</fullName>
+        <default>false</default>
+        <label>Environmental</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Government</fullName>
+        <default>false</default>
+        <label>Government</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Healthcare</fullName>
+        <default>false</default>
+        <label>Healthcare</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hospitality</fullName>
+        <default>false</default>
+        <label>Hospitality</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Machinery</fullName>
+        <default>false</default>
+        <label>Machinery</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Media</fullName>
+        <default>false</default>
+        <label>Media</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Recreation</fullName>
+        <default>false</default>
+        <label>Recreation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Shipping</fullName>
+        <default>false</default>
+        <label>Shipping</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technology</fullName>
+        <default>false</default>
+        <label>Technology</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telecommunications</fullName>
+        <default>false</default>
+        <label>Telecommunications</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Real Estate</fullName>
+        <default>false</default>
+        <label>Real Estate</label>
+    </standardValue>
+</StandardValueSet>

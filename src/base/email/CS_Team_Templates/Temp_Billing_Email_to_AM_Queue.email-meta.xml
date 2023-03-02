@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead</letterhead>
+    <name>Temp - Billing Email to AM Queue</name>
+    <style>freeForm</style>
+    <subject>Billing Inquiry Alert - AM Queue</subject>
+    <textOnly>Hello Account Management Team,
+
+There is a new Billing case.
+The case number is: {!Case.CaseNumber}
+Link: https://bisontrails.lightning.force.com/lightning/r/Case/{!Case.Id}/view</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

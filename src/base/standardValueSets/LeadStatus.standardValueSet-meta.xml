@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>false</default>
+        <label>New</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Working</fullName>
+        <default>false</default>
+        <label>Working</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Stale</fullName>
+        <default>false</default>
+        <label>Stale</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualified</fullName>
+        <default>false</default>
+        <label>Qualified</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>true</default>
+        <label>Open</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Screened</fullName>
+        <default>false</default>
+        <label>Screened</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Eligible</fullName>
+        <default>false</default>
+        <label>Eligible</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Converted</fullName>
+        <default>false</default>
+        <label>Converted</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Outreach Sent</fullName>
+        <default>false</default>
+        <label>Outreach Sent</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Response Received</fullName>
+        <default>false</default>
+        <label>Response Received</label>
+        <converted>false</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Successful New Connection</fullName>
+        <default>false</default>
+        <label>Successful New Connection</label>
+        <converted>true</converted>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <label>Closed Lost</label>
+        <converted>false</converted>
+    </standardValue>
+</StandardValueSet>

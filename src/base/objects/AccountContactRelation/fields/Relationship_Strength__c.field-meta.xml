@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_Strength__c</fullName>
+    <externalId>false</externalId>
+    <label>Relationship Strength</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Strong</fullName>
+                <default>false</default>
+                <label>Strong</label>
+            </value>
+            <value>
+                <fullName>Neutral</fullName>
+                <default>false</default>
+                <label>Neutral</label>
+            </value>
+            <value>
+                <fullName>Weak</fullName>
+                <default>false</default>
+                <label>Weak</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

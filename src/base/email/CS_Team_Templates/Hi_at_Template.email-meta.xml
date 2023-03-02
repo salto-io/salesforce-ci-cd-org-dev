@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert additional team members of hi@ emails</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead</letterhead>
+    <name>Hi at Template</name>
+    <style>freeForm</style>
+    <subject>New Hi@ Email Notification</subject>
+    <textOnly>Hi,
+
+There is a new incoming message to the hi@ email inbox.
+
+Subject:
+{!EmailMessage.Subject}
+
+Message:
+{!EmailMessage.TextBody}
+
+Case:
+{!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

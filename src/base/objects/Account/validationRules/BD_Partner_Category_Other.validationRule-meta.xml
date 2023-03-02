@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BD_Partner_Category_Other</fullName>
+    <active>true</active>
+    <description>SFCC-986: Mandatory if BD Partner Category has &quot;Other&quot; value selected</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;Business_Development_Partnerships&apos;,
+ ISPICKVAL(BD_Partner_Category__c , &apos;Other&apos;),
+ ISBLANK( BD_Partner_Category_Other__c) 
+)</errorConditionFormula>
+    <errorDisplayField>BD_Partner_Category_Other__c</errorDisplayField>
+    <errorMessage>This field should be filled in when BD Partner Category has &quot;Other&quot; value</errorMessage>
+</ValidationRule>

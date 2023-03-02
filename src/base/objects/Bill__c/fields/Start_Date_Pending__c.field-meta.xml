@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Start_Date_Pending__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check this if the billing start date is unknown at this time.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this if the billing start date is unknown at this time.</inlineHelpText>
+    <label>Start Date Pending</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

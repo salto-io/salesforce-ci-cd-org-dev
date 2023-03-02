@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Node_Price__c</fullName>
+    <description>LEAVE BLANK UNTIL YOU HAVE THE AGREED UPON VALUE. Price/node/month. This will auto-populate to give an estimate based off our pricing sheet.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>LEAVE BLANK UNTIL YOU HAVE THE AGREED UPON VALUE. Price/node/month. This will auto-populate to give an estimate based off our pricing sheet.</inlineHelpText>
+    <label>Node Price</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

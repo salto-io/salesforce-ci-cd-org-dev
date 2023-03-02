@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auto_Connect_Enabled_for_Stage_Updates</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED(StageName)
+),
+OR(
+ISPICKVAL(StageName,&apos;Internal Review&apos;),
+ISPICKVAL(StageName,&apos;Signed&apos;),
+ISPICKVAL(StageName,&apos;Executed&apos;),
+ISPICKVAL(StageName,&apos;Closed Won&apos;)
+),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Dapp Discovery Browsers&apos;),
+NOT( ISPICKVAL( Auto_Connect_Enabled__c , &apos;Yes&apos;) ),
+NOT( ISPICKVAL( Auto_Connect_Enabled__c , &apos;Not Applicable&apos;) )
+)</errorConditionFormula>
+    <errorDisplayField>Auto_Connect_Enabled__c</errorDisplayField>
+    <errorMessage>In order to move to Internal Review stage or beyond, Yes or Not Applicable values required for Wallet Opportunity type = Dapp Discovery Browsers</errorMessage>
+</ValidationRule>

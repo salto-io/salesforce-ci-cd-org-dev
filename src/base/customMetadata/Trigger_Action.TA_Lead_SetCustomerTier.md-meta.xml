@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>TA_Lead_SetCustomerTier</label>
+    <protected>false</protected>
+    <values>
+        <field>After_Delete__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>After_Insert__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>After_Undelete__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>After_Update__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Allow_Flow_Recursion__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Apex_Class_Name__c</field>
+        <value xsi:type="xsd:string">TriggerActionFlowSR</value>
+    </values>
+    <values>
+        <field>Before_Delete__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Before_Insert__c</field>
+        <value xsi:type="xsd:string">Lead</value>
+    </values>
+    <values>
+        <field>Before_Update__c</field>
+        <value xsi:type="xsd:string">Lead</value>
+    </values>
+    <values>
+        <field>Bypass_Execution__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Bypass_Permission__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:type="xsd:string">Lead Business Development &amp; Partnership RT, set Customer Tier based on Type of Business and Company size fields value</value>
+    </values>
+    <values>
+        <field>Fields__c</field>
+        <value xsi:type="xsd:string">Type_of_Business__c,
+Company_Size__c,
+Customer_Tier__c</value>
+    </values>
+    <values>
+        <field>Flow_Name__c</field>
+        <value xsi:type="xsd:string">TA_Lead_SetCustomerTier</value>
+    </values>
+    <values>
+        <field>Order__c</field>
+        <value xsi:type="xsd:double">1.8</value>
+    </values>
+    <values>
+        <field>Required_Permission__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

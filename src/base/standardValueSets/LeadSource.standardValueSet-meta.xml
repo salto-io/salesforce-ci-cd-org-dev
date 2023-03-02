@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Advertisement</fullName>
+        <default>false</default>
+        <label>Advertisement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Client Event</fullName>
+        <default>false</default>
+        <label>Client Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Coinbase Institutional</fullName>
+        <default>false</default>
+        <label>Coinbase Institutional</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Conference</fullName>
+        <default>false</default>
+        <label>Conference</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CS Upsell</fullName>
+        <default>false</default>
+        <label>CS Upsell</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer Event</fullName>
+        <default>false</default>
+        <label>Customer Event</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Discord</fullName>
+        <default>false</default>
+        <label>Discord</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Employee Referral</fullName>
+        <default>false</default>
+        <label>Employee Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Google AdWords</fullName>
+        <default>false</default>
+        <label>Google AdWords</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Inbound Partner</fullName>
+        <default>false</default>
+        <label>Inbound Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Institutional</fullName>
+        <default>true</default>
+        <label>Institutional</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Integration Tracker</fullName>
+        <default>false</default>
+        <label>Integration Tracker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing Website</fullName>
+        <default>false</default>
+        <label>Marketing Website</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Outbound Partner</fullName>
+        <default>false</default>
+        <label>Outbound Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Purchased List</fullName>
+        <default>false</default>
+        <label>Purchased List</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Generated</fullName>
+        <default>false</default>
+        <label>Sales Generated</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales Outbounding</fullName>
+        <default>false</default>
+        <label>Sales Outbounding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>UBO</fullName>
+        <default>false</default>
+        <label>UBO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Venture Referral</fullName>
+        <default>false</default>
+        <label>Venture Referral</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - Data Marketplace Sales Contact</fullName>
+        <default>false</default>
+        <label>Web Form - Data Marketplace Sales Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - Exchange Resources</fullName>
+        <default>false</default>
+        <label>Web Form - Exchange Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - In-Kind Distribution</fullName>
+        <default>false</default>
+        <label>Web Form - In-Kind Distribution</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - Insights Hub</fullName>
+        <default>false</default>
+        <label>Web Form - Insights Hub</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - Interest Form</fullName>
+        <default>false</default>
+        <label>Web Form - Interest Form</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - LinkedIn Lead Gen</fullName>
+        <default>false</default>
+        <label>Web Form - LinkedIn Lead Gen</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Web Form - Prime Resources</fullName>
+        <default>false</default>
+        <label>Web Form - Prime Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Webinar</fullName>
+        <default>false</default>
+        <label>Webinar</label>
+    </standardValue>
+</StandardValueSet>

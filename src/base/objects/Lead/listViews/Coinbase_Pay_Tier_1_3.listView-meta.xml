@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Coinbase_Pay_Tier_1_3</fullName>
+    <booleanFilter>1 AND NOT(2 AND 3)</booleanFilter>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>Type_of_Business__c</columns>
+    <columns>WTL_Company_Size__c</columns>
+    <columns>Customer_Segment__c</columns>
+    <columns>Lead_Description__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Product_Interest__c</field>
+        <operation>includes</operation>
+        <value>Coinbase Pay SDK</value>
+    </filters>
+    <filters>
+        <field>Type_of_Business__c</field>
+        <operation>equals</operation>
+        <value>Developer,Individual</value>
+    </filters>
+    <filters>
+        <field>WTL_Company_Size__c</field>
+        <operation>equals</operation>
+        <value>1 - 10,11 - 50</value>
+    </filters>
+    <label>Coinbase Pay - Tier 1-3</label>
+</ListView>

@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accounting Firm</fullName>
+        <default>false</default>
+        <label>Accounting Firm</label>
+    </customValue>
+    <customValue>
+        <fullName>Actuary</fullName>
+        <default>false</default>
+        <label>Actuary</label>
+    </customValue>
+    <customValue>
+        <fullName>Adult Education Programs and Services</fullName>
+        <default>false</default>
+        <label>Adult Education Programs and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Adult Entertainment</fullName>
+        <default>false</default>
+        <label>Adult Entertainment</label>
+    </customValue>
+    <customValue>
+        <fullName>Adult products &amp; services / Pornography</fullName>
+        <default>false</default>
+        <label>Adult products &amp; services / Pornography</label>
+    </customValue>
+    <customValue>
+        <fullName>Advocacy and Education</fullName>
+        <default>false</default>
+        <label>Advocacy and Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Aerospace</fullName>
+        <default>false</default>
+        <label>Aerospace</label>
+    </customValue>
+    <customValue>
+        <fullName>Affiliate Marketing</fullName>
+        <default>false</default>
+        <label>Affiliate Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Agricultural Supplies/Equipment</fullName>
+        <default>false</default>
+        <label>Agricultural Supplies/Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Airline</fullName>
+        <default>false</default>
+        <label>Airline</label>
+    </customValue>
+    <customValue>
+        <fullName>Alcohol</fullName>
+        <default>false</default>
+        <label>Alcohol</label>
+    </customValue>
+    <customValue>
+        <fullName>Animal Rights, Welfare, and Services</fullName>
+        <default>false</default>
+        <label>Animal Rights, Welfare, and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Animation</fullName>
+        <default>false</default>
+        <label>Animation</label>
+    </customValue>
+    <customValue>
+        <fullName>Apparel &amp; Fashion</fullName>
+        <default>false</default>
+        <label>Apparel &amp; Fashion</label>
+    </customValue>
+    <customValue>
+        <fullName>Architecture</fullName>
+        <default>false</default>
+        <label>Architecture</label>
+    </customValue>
+    <customValue>
+        <fullName>Arms/Weapon Manufacturing</fullName>
+        <default>false</default>
+        <label>Arms/Weapon Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Automotive</fullName>
+        <default>false</default>
+        <label>Automotive</label>
+    </customValue>
+    <customValue>
+        <fullName>Bail Bonds</fullName>
+        <default>false</default>
+        <label>Bail Bonds</label>
+    </customValue>
+    <customValue>
+        <fullName>Banking Institution</fullName>
+        <default>false</default>
+        <label>Banking Institution</label>
+    </customValue>
+    <customValue>
+        <fullName>Bar</fullName>
+        <default>false</default>
+        <label>Bar</label>
+    </customValue>
+    <customValue>
+        <fullName>Biotechnology / Greentech</fullName>
+        <default>false</default>
+        <label>Biotechnology / Greentech</label>
+    </customValue>
+    <customValue>
+        <fullName>Building Materials</fullName>
+        <default>false</default>
+        <label>Building Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Business Supplies/Equipment</fullName>
+        <default>false</default>
+        <label>Business Supplies/Equipment</label>
+    </customValue>
+    <customValue>
+        <fullName>Bus Services</fullName>
+        <default>false</default>
+        <label>Bus Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Cannabis</fullName>
+        <default>false</default>
+        <label>Cannabis</label>
+    </customValue>
+    <customValue>
+        <fullName>Car Dealership</fullName>
+        <default>false</default>
+        <label>Car Dealership</label>
+    </customValue>
+    <customValue>
+        <fullName>Car repair</fullName>
+        <default>false</default>
+        <label>Car repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Cash Intensive Businesses (i.e., Restaurants, Bars, Construction)</fullName>
+        <default>false</default>
+        <label>Cash Intensive Businesses (i.e., Restaurants, Bars, Construction)</label>
+    </customValue>
+    <customValue>
+        <fullName>Catering</fullName>
+        <default>false</default>
+        <label>Catering</label>
+    </customValue>
+    <customValue>
+        <fullName>Charitable Trust</fullName>
+        <default>false</default>
+        <label>Charitable Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Check Cashing</fullName>
+        <default>false</default>
+        <label>Check Cashing</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemical Manufacturing</fullName>
+        <default>false</default>
+        <label>Chemical Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Chemicals</fullName>
+        <default>false</default>
+        <label>Chemicals</label>
+    </customValue>
+    <customValue>
+        <fullName>Child Care Services</fullName>
+        <default>false</default>
+        <label>Child Care Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Chiropractor</fullName>
+        <default>false</default>
+        <label>Chiropractor</label>
+    </customValue>
+    <customValue>
+        <fullName>Classifieds</fullName>
+        <default>false</default>
+        <label>Classifieds</label>
+    </customValue>
+    <customValue>
+        <fullName>College/University</fullName>
+        <default>false</default>
+        <label>College/University</label>
+    </customValue>
+    <customValue>
+        <fullName>Co-location services</fullName>
+        <default>false</default>
+        <label>Co-location services</label>
+    </customValue>
+    <customValue>
+        <fullName>Commercial Real Estate</fullName>
+        <default>false</default>
+        <label>Commercial Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>Commodities Exchange</fullName>
+        <default>false</default>
+        <label>Commodities Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Foundations</fullName>
+        <default>false</default>
+        <label>Community Foundations</label>
+    </customValue>
+    <customValue>
+        <fullName>Computer Hardware/Accessories</fullName>
+        <default>false</default>
+        <label>Computer Hardware/Accessories</label>
+    </customValue>
+    <customValue>
+        <fullName>Construction</fullName>
+        <default>false</default>
+        <label>Construction</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting Services</fullName>
+        <default>false</default>
+        <label>Consulting Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Consumer Electronics</fullName>
+        <default>false</default>
+        <label>Consumer Electronics</label>
+    </customValue>
+    <customValue>
+        <fullName>Container Services</fullName>
+        <default>false</default>
+        <label>Container Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate Trust</fullName>
+        <default>false</default>
+        <label>Corporate Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Cosmetics</fullName>
+        <default>false</default>
+        <label>Cosmetics</label>
+    </customValue>
+    <customValue>
+        <fullName>Counterfeit or Unauthorized Goods</fullName>
+        <default>false</default>
+        <label>Counterfeit or Unauthorized Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Courier Services</fullName>
+        <default>false</default>
+        <label>Courier Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Crowdfunding</fullName>
+        <default>false</default>
+        <label>Crowdfunding</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto/Blockchain Software Engineering</fullName>
+        <default>false</default>
+        <label>Crypto/Blockchain Software Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Advisory</fullName>
+        <default>false</default>
+        <label>Crypto Advisory</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Advisory / Consultancy</fullName>
+        <default>false</default>
+        <label>Crypto Advisory / Consultancy</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto ATM</fullName>
+        <default>false</default>
+        <label>Crypto ATM</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Custody</fullName>
+        <default>false</default>
+        <label>Crypto Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Exchange</fullName>
+        <default>false</default>
+        <label>Crypto Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Gambling</fullName>
+        <default>false</default>
+        <label>Crypto Gambling</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Hedge Fund</fullName>
+        <default>false</default>
+        <label>Crypto Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Lending/Borrowing</fullName>
+        <default>false</default>
+        <label>Crypto Lending/Borrowing</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Miner / Mining Pool</fullName>
+        <default>false</default>
+        <label>Crypto Miner / Mining Pool</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto OTC (Agency Desk)</fullName>
+        <default>false</default>
+        <label>Crypto OTC (Agency Desk)</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto OTC (Principal Desk)</fullName>
+        <default>false</default>
+        <label>Crypto OTC (Principal Desk)</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Payments</fullName>
+        <default>false</default>
+        <label>Crypto Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Payroll</fullName>
+        <default>false</default>
+        <label>Crypto Payroll</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Software Engineering</fullName>
+        <default>false</default>
+        <label>Crypto Software Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto VASP</fullName>
+        <default>false</default>
+        <label>Crypto VASP</label>
+    </customValue>
+    <customValue>
+        <fullName>Debt Collections</fullName>
+        <default>false</default>
+        <label>Debt Collections</label>
+    </customValue>
+    <customValue>
+        <fullName>Debt Reductions</fullName>
+        <default>false</default>
+        <label>Debt Reductions</label>
+    </customValue>
+    <customValue>
+        <fullName>Dental/Orthodontic Services</fullName>
+        <default>false</default>
+        <label>Dental/Orthodontic Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Dietary Supplements</fullName>
+        <default>false</default>
+        <label>Dietary Supplements</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Advertising</fullName>
+        <default>false</default>
+        <label>Digital Advertising</label>
+    </customValue>
+    <customValue>
+        <fullName>Diseases, Disorders, and Disciplines</fullName>
+        <default>false</default>
+        <label>Diseases, Disorders, and Disciplines</label>
+    </customValue>
+    <customValue>
+        <fullName>Drugs &amp; Drug Paraphernalia</fullName>
+        <default>false</default>
+        <label>Drugs &amp; Drug Paraphernalia</label>
+    </customValue>
+    <customValue>
+        <fullName>Early Childhood Programs and Services</fullName>
+        <default>false</default>
+        <label>Early Childhood Programs and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational institutions (receiving donations of crypto)</fullName>
+        <default>false</default>
+        <label>Educational institutions (receiving donations of crypto)</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational Services/Tutoring</fullName>
+        <default>false</default>
+        <label>Educational Services/Tutoring</label>
+    </customValue>
+    <customValue>
+        <fullName>Education Policy and Reform</fullName>
+        <default>false</default>
+        <label>Education Policy and Reform</label>
+    </customValue>
+    <customValue>
+        <fullName>E-learning</fullName>
+        <default>false</default>
+        <label>E-learning</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>ETF / ETP</fullName>
+        <default>false</default>
+        <label>ETF / ETP</label>
+    </customValue>
+    <customValue>
+        <fullName>Event Planning</fullName>
+        <default>false</default>
+        <label>Event Planning</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Office / Wealth Manager</fullName>
+        <default>false</default>
+        <label>Family Office / Wealth Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Family Services</fullName>
+        <default>false</default>
+        <label>Family Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Farming</fullName>
+        <default>false</default>
+        <label>Farming</label>
+    </customValue>
+    <customValue>
+        <fullName>File Sharing</fullName>
+        <default>false</default>
+        <label>File Sharing</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Institution Holding Company</fullName>
+        <default>false</default>
+        <label>Financial Institution Holding Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Planner</fullName>
+        <default>false</default>
+        <label>Financial Planner</label>
+    </customValue>
+    <customValue>
+        <fullName>Fine Art</fullName>
+        <default>false</default>
+        <label>Fine Art</label>
+    </customValue>
+    <customValue>
+        <fullName>Firearms / Gun accessories / Knives</fullName>
+        <default>false</default>
+        <label>Firearms / Gun accessories / Knives</label>
+    </customValue>
+    <customValue>
+        <fullName>Fireworks including Firecrackers, tube sparklers and pop up</fullName>
+        <default>false</default>
+        <label>Fireworks including Firecrackers, tube sparklers and pop up</label>
+    </customValue>
+    <customValue>
+        <fullName>Fishery</fullName>
+        <default>false</default>
+        <label>Fishery</label>
+    </customValue>
+    <customValue>
+        <fullName>Food/Beverage Services</fullName>
+        <default>false</default>
+        <label>Food/Beverage Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Food/Grocery</fullName>
+        <default>false</default>
+        <label>Food/Grocery</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Banks, Food Pantries, and Food Distribution</fullName>
+        <default>false</default>
+        <label>Food Banks, Food Pantries, and Food Distribution</label>
+    </customValue>
+    <customValue>
+        <fullName>Food Processing</fullName>
+        <default>false</default>
+        <label>Food Processing</label>
+    </customValue>
+    <customValue>
+        <fullName>Forex Exchange</fullName>
+        <default>false</default>
+        <label>Forex Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>For-Profit Religious Organization</fullName>
+        <default>false</default>
+        <label>For-Profit Religious Organization</label>
+    </customValue>
+    <customValue>
+        <fullName>Freight Forwarding</fullName>
+        <default>false</default>
+        <label>Freight Forwarding</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund Administrator</fullName>
+        <default>false</default>
+        <label>Fund Administrator</label>
+    </customValue>
+    <customValue>
+        <fullName>Fund Manager</fullName>
+        <default>false</default>
+        <label>Fund Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Furniture</fullName>
+        <default>false</default>
+        <label>Furniture</label>
+    </customValue>
+    <customValue>
+        <fullName>FX/CFD Provider</fullName>
+        <default>false</default>
+        <label>FX/CFD Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Gambling (Lottery, Sportsbetting, Casinos)</fullName>
+        <default>false</default>
+        <label>Gambling (Lottery, Sportsbetting, Casinos)</label>
+    </customValue>
+    <customValue>
+        <fullName>Game of Skill</fullName>
+        <default>false</default>
+        <label>Game of Skill</label>
+    </customValue>
+    <customValue>
+        <fullName>Government Administration</fullName>
+        <default>false</default>
+        <label>Government Administration</label>
+    </customValue>
+    <customValue>
+        <fullName>Graphic/Web Design</fullName>
+        <default>false</default>
+        <label>Graphic/Web Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Gunpowder, Explosives, Munitions</fullName>
+        <default>false</default>
+        <label>Gunpowder, Explosives, Munitions</label>
+    </customValue>
+    <customValue>
+        <fullName>Gym</fullName>
+        <default>false</default>
+        <label>Gym</label>
+    </customValue>
+    <customValue>
+        <fullName>Handcuffs</fullName>
+        <default>false</default>
+        <label>Handcuffs</label>
+    </customValue>
+    <customValue>
+        <fullName>Hate Groups</fullName>
+        <default>false</default>
+        <label>Hate Groups</label>
+    </customValue>
+    <customValue>
+        <fullName>Health &amp; Fitness</fullName>
+        <default>false</default>
+        <label>Health &amp; Fitness</label>
+    </customValue>
+    <customValue>
+        <fullName>Health Professionals</fullName>
+        <default>false</default>
+        <label>Health Professionals</label>
+    </customValue>
+    <customValue>
+        <fullName>Health Services</fullName>
+        <default>false</default>
+        <label>Health Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Hedge Fund</fullName>
+        <default>false</default>
+        <label>Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Holding Companies</fullName>
+        <default>false</default>
+        <label>Holding Companies</label>
+    </customValue>
+    <customValue>
+        <fullName>Homeless/Social Services</fullName>
+        <default>false</default>
+        <label>Homeless/Social Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital/Hospice Services</fullName>
+        <default>false</default>
+        <label>Hospital/Hospice Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Hotels/Motels</fullName>
+        <default>false</default>
+        <label>Hotels/Motels</label>
+    </customValue>
+    <customValue>
+        <fullName>Housing and Neighborhood Development</fullName>
+        <default>false</default>
+        <label>Housing and Neighborhood Development</label>
+    </customValue>
+    <customValue>
+        <fullName>HR</fullName>
+        <default>false</default>
+        <label>HR</label>
+    </customValue>
+    <customValue>
+        <fullName>Humanitarian Relief Supplies</fullName>
+        <default>false</default>
+        <label>Humanitarian Relief Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>ICO Issuers / Tokensale</fullName>
+        <default>false</default>
+        <label>ICO Issuers / Tokensale</label>
+    </customValue>
+    <customValue>
+        <fullName>Import/Export</fullName>
+        <default>false</default>
+        <label>Import/Export</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial Automation</fullName>
+        <default>false</default>
+        <label>Industrial Automation</label>
+    </customValue>
+    <customValue>
+        <fullName>Initial Coin Offering / Security Token Offering</fullName>
+        <default>false</default>
+        <label>Initial Coin Offering / Security Token Offering</label>
+    </customValue>
+    <customValue>
+        <fullName>Institutional Brokerage (Non-Crypto)</fullName>
+        <default>false</default>
+        <label>Institutional Brokerage (Non-Crypto)</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>International Business Corporations</fullName>
+        <default>false</default>
+        <label>International Business Corporations</label>
+    </customValue>
+    <customValue>
+        <fullName>International Peace, Security, and Affairs</fullName>
+        <default>false</default>
+        <label>International Peace, Security, and Affairs</label>
+    </customValue>
+    <customValue>
+        <fullName>Internet/Telecom Provider</fullName>
+        <default>false</default>
+        <label>Internet/Telecom Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Investment Advisor/ Robo-advisor</fullName>
+        <default>false</default>
+        <label>Investment Advisor/ Robo-advisor</label>
+    </customValue>
+    <customValue>
+        <fullName>IRA Holding Company</fullName>
+        <default>false</default>
+        <label>IRA Holding Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Irrevocable Trust</fullName>
+        <default>false</default>
+        <label>Irrevocable Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Law Enforcement</fullName>
+        <default>false</default>
+        <label>Law Enforcement</label>
+    </customValue>
+    <customValue>
+        <fullName>Law Practice / Law Firm</fullName>
+        <default>false</default>
+        <label>Law Practice / Law Firm</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal (Appointed Receivership)</fullName>
+        <default>false</default>
+        <label>Legal (Appointed Receivership)</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal (Bankruptcy Trustee)</fullName>
+        <default>false</default>
+        <label>Legal (Bankruptcy Trustee)</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal Services</fullName>
+        <default>false</default>
+        <label>Legal Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Legislative Office</fullName>
+        <default>false</default>
+        <label>Legislative Office</label>
+    </customValue>
+    <customValue>
+        <fullName>Lending/Borrowing</fullName>
+        <default>false</default>
+        <label>Lending/Borrowing</label>
+    </customValue>
+    <customValue>
+        <fullName>Libraries, Historical Societies and Landmark Preservation</fullName>
+        <default>false</default>
+        <label>Libraries, Historical Societies and Landmark Preservation</label>
+    </customValue>
+    <customValue>
+        <fullName>Luxury Goods / Jewelry</fullName>
+        <default>false</default>
+        <label>Luxury Goods / Jewelry</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Marine Transport</fullName>
+        <default>false</default>
+        <label>Marine Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Maker</fullName>
+        <default>false</default>
+        <label>Market Maker</label>
+    </customValue>
+    <customValue>
+        <fullName>Massage Therapy</fullName>
+        <default>false</default>
+        <label>Massage Therapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Media Production</fullName>
+        <default>false</default>
+        <label>Media Production</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Devices</fullName>
+        <default>false</default>
+        <label>Medical Devices</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Research</fullName>
+        <default>false</default>
+        <label>Medical Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Military/Defense</fullName>
+        <default>false</default>
+        <label>Military/Defense</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining</fullName>
+        <default>false</default>
+        <label>Mining</label>
+    </customValue>
+    <customValue>
+        <fullName>Mining Hardware</fullName>
+        <default>false</default>
+        <label>Mining Hardware</label>
+    </customValue>
+    <customValue>
+        <fullName>Money Service Business (MSB)</fullName>
+        <default>false</default>
+        <label>Money Service Business (MSB)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mortgage Servicers</fullName>
+        <default>false</default>
+        <label>Mortgage Servicers</label>
+    </customValue>
+    <customValue>
+        <fullName>Motion Pictures / Film</fullName>
+        <default>false</default>
+        <label>Motion Pictures / Film</label>
+    </customValue>
+    <customValue>
+        <fullName>Multi-Level Marketing</fullName>
+        <default>false</default>
+        <label>Multi-Level Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Museums</fullName>
+        <default>false</default>
+        <label>Museums</label>
+    </customValue>
+    <customValue>
+        <fullName>Music Production</fullName>
+        <default>false</default>
+        <label>Music Production</label>
+    </customValue>
+    <customValue>
+        <fullName>Mutual Fund</fullName>
+        <default>false</default>
+        <label>Mutual Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Network Security</fullName>
+        <default>false</default>
+        <label>Network Security</label>
+    </customValue>
+    <customValue>
+        <fullName>Newspaper, Magazine, &amp; Book Publishing</fullName>
+        <default>false</default>
+        <label>Newspaper, Magazine, &amp; Book Publishing</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-custodial crypto wallet</fullName>
+        <default>false</default>
+        <label>Non-custodial crypto wallet</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Medical Science &amp; Technology Research</fullName>
+        <default>false</default>
+        <label>Non-Medical Science &amp; Technology Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Profit/Charity</fullName>
+        <default>false</default>
+        <label>Non-Profit/Charity</label>
+    </customValue>
+    <customValue>
+        <fullName>Oil &amp; Gas</fullName>
+        <default>false</default>
+        <label>Oil &amp; Gas</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Prescription Services</fullName>
+        <default>false</default>
+        <label>Online Prescription Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Publishing</fullName>
+        <default>false</default>
+        <label>Online Publishing</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Retailer</fullName>
+        <default>false</default>
+        <label>Online Retailer</label>
+    </customValue>
+    <customValue>
+        <fullName>Online Unregulated Supplemental sales</fullName>
+        <default>false</default>
+        <label>Online Unregulated Supplemental sales</label>
+    </customValue>
+    <customValue>
+        <fullName>OTC desk</fullName>
+        <default>false</default>
+        <label>OTC desk</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Pay-day loans</fullName>
+        <default>false</default>
+        <label>Pay-day loans</label>
+    </customValue>
+    <customValue>
+        <fullName>Pension Fund</fullName>
+        <default>false</default>
+        <label>Pension Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Pension Fund / SSAS</fullName>
+        <default>false</default>
+        <label>Pension Fund / SSAS</label>
+    </customValue>
+    <customValue>
+        <fullName>Performing Arts</fullName>
+        <default>false</default>
+        <label>Performing Arts</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Investment Company (PIC)</fullName>
+        <default>false</default>
+        <label>Personal Investment Company (PIC)</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Training</fullName>
+        <default>false</default>
+        <label>Personal Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmaceuticals</fullName>
+        <default>false</default>
+        <label>Pharmaceuticals</label>
+    </customValue>
+    <customValue>
+        <fullName>Pharmacy</fullName>
+        <default>false</default>
+        <label>Pharmacy</label>
+    </customValue>
+    <customValue>
+        <fullName>Photography</fullName>
+        <default>false</default>
+        <label>Photography</label>
+    </customValue>
+    <customValue>
+        <fullName>Physical Training</fullName>
+        <default>false</default>
+        <label>Physical Training</label>
+    </customValue>
+    <customValue>
+        <fullName>Political Campaign</fullName>
+        <default>false</default>
+        <label>Political Campaign</label>
+    </customValue>
+    <customValue>
+        <fullName>Political Organization</fullName>
+        <default>false</default>
+        <label>Political Organization</label>
+    </customValue>
+    <customValue>
+        <fullName>Precious Metals Dealer</fullName>
+        <default>false</default>
+        <label>Precious Metals Dealer</label>
+    </customValue>
+    <customValue>
+        <fullName>Pre-K</fullName>
+        <default>false</default>
+        <label>Pre-K</label>
+    </customValue>
+    <customValue>
+        <fullName>Pre-paid Cards / Giftcards</fullName>
+        <default>false</default>
+        <label>Pre-paid Cards / Giftcards</label>
+    </customValue>
+    <customValue>
+        <fullName>Primary Education (up to High school)</fullName>
+        <default>false</default>
+        <label>Primary Education (up to High school)</label>
+    </customValue>
+    <customValue>
+        <fullName>Printing</fullName>
+        <default>false</default>
+        <label>Printing</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Equity</fullName>
+        <default>false</default>
+        <label>Private Equity</label>
+    </customValue>
+    <customValue>
+        <fullName>Professional Sports</fullName>
+        <default>false</default>
+        <label>Professional Sports</label>
+    </customValue>
+    <customValue>
+        <fullName>Property Management / Leasing</fullName>
+        <default>false</default>
+        <label>Property Management / Leasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Proprietary Trading Firm</fullName>
+        <default>false</default>
+        <label>Proprietary Trading Firm</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Broadcasting and Media</fullName>
+        <default>false</default>
+        <label>Public Broadcasting and Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Public Relations / PR</fullName>
+        <default>false</default>
+        <label>Public Relations / PR</label>
+    </customValue>
+    <customValue>
+        <fullName>Rail</fullName>
+        <default>false</default>
+        <label>Rail</label>
+    </customValue>
+    <customValue>
+        <fullName>Ranching</fullName>
+        <default>false</default>
+        <label>Ranching</label>
+    </customValue>
+    <customValue>
+        <fullName>Ransomware Recovery Services</fullName>
+        <default>false</default>
+        <label>Ransomware Recovery Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Ransomware-Related Services</fullName>
+        <default>false</default>
+        <label>Ransomware-Related Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate Holding Company</fullName>
+        <default>false</default>
+        <label>Real Estate Holding Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Realtor</fullName>
+        <default>false</default>
+        <label>Realtor</label>
+    </customValue>
+    <customValue>
+        <fullName>Relayer</fullName>
+        <default>false</default>
+        <label>Relayer</label>
+    </customValue>
+    <customValue>
+        <fullName>Religious Activities/Services</fullName>
+        <default>false</default>
+        <label>Religious Activities/Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Restaurant</fullName>
+        <default>false</default>
+        <label>Restaurant</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail brokerage (non-crypto)</fullName>
+        <default>false</default>
+        <label>Retail brokerage (non-crypto)</label>
+    </customValue>
+    <customValue>
+        <fullName>Revocable Trust</fullName>
+        <default>false</default>
+        <label>Revocable Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholarship and Financial Support</fullName>
+        <default>false</default>
+        <label>Scholarship and Financial Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Securities Exchange</fullName>
+        <default>false</default>
+        <label>Securities Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Self Directed IRA, 401k</fullName>
+        <default>false</default>
+        <label>Self Directed IRA, 401k</label>
+    </customValue>
+    <customValue>
+        <fullName>Shell Bank</fullName>
+        <default>false</default>
+        <label>Shell Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Shipping</fullName>
+        <default>false</default>
+        <label>Shipping</label>
+    </customValue>
+    <customValue>
+        <fullName>Smoke-shop</fullName>
+        <default>false</default>
+        <label>Smoke-shop</label>
+    </customValue>
+    <customValue>
+        <fullName>Social and Public Policy Research</fullName>
+        <default>false</default>
+        <label>Social and Public Policy Research</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Media Platform</fullName>
+        <default>false</default>
+        <label>Social Media Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Software Engineering</fullName>
+        <default>false</default>
+        <label>Software Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Spa/Massage Services</fullName>
+        <default>false</default>
+        <label>Spa/Massage Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Education</fullName>
+        <default>false</default>
+        <label>Special Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Special Purpose Vehicles/Special Purpose Entity</fullName>
+        <default>false</default>
+        <label>Special Purpose Vehicles/Special Purpose Entity</label>
+    </customValue>
+    <customValue>
+        <fullName>Spinner/Mixer</fullName>
+        <default>false</default>
+        <label>Spinner/Mixer</label>
+    </customValue>
+    <customValue>
+        <fullName>Sporting Goods</fullName>
+        <default>false</default>
+        <label>Sporting Goods</label>
+    </customValue>
+    <customValue>
+        <fullName>Staffing/Recruiting</fullName>
+        <default>false</default>
+        <label>Staffing/Recruiting</label>
+    </customValue>
+    <customValue>
+        <fullName>Textbooks</fullName>
+        <default>false</default>
+        <label>Textbooks</label>
+    </customValue>
+    <customValue>
+        <fullName>Textiles</fullName>
+        <default>false</default>
+        <label>Textiles</label>
+    </customValue>
+    <customValue>
+        <fullName>Tobacco / Vape Supplies</fullName>
+        <default>false</default>
+        <label>Tobacco / Vape Supplies</label>
+    </customValue>
+    <customValue>
+        <fullName>Tokensale Platform</fullName>
+        <default>false</default>
+        <label>Tokensale Platform</label>
+    </customValue>
+    <customValue>
+        <fullName>Toxic, Flammable, Radioactive materials</fullName>
+        <default>false</default>
+        <label>Toxic, Flammable, Radioactive materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Trade Union</fullName>
+        <default>false</default>
+        <label>Trade Union</label>
+    </customValue>
+    <customValue>
+        <fullName>Training &amp; Development</fullName>
+        <default>false</default>
+        <label>Training &amp; Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Translation / Localization</fullName>
+        <default>false</default>
+        <label>Translation / Localization</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation Services</fullName>
+        <default>false</default>
+        <label>Transportation Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Treatment and Prevention Services</fullName>
+        <default>false</default>
+        <label>Treatment and Prevention Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Trucking</fullName>
+        <default>false</default>
+        <label>Trucking</label>
+    </customValue>
+    <customValue>
+        <fullName>United Ways</fullName>
+        <default>false</default>
+        <label>United Ways</label>
+    </customValue>
+    <customValue>
+        <fullName>Unregulated Pharmaceutical Sales</fullName>
+        <default>false</default>
+        <label>Unregulated Pharmaceutical Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities</fullName>
+        <default>false</default>
+        <label>Utilities</label>
+    </customValue>
+    <customValue>
+        <fullName>Venture Capital</fullName>
+        <default>false</default>
+        <label>Venture Capital</label>
+    </customValue>
+    <customValue>
+        <fullName>Veterinary Medicine</fullName>
+        <default>false</default>
+        <label>Veterinary Medicine</label>
+    </customValue>
+    <customValue>
+        <fullName>Video/Music Streaming</fullName>
+        <default>false</default>
+        <label>Video/Music Streaming</label>
+    </customValue>
+    <customValue>
+        <fullName>Video Games</fullName>
+        <default>false</default>
+        <label>Video Games</label>
+    </customValue>
+    <customValue>
+        <fullName>VPN/Hosting</fullName>
+        <default>false</default>
+        <label>VPN/Hosting</label>
+    </customValue>
+    <customValue>
+        <fullName>Warehouse</fullName>
+        <default>false</default>
+        <label>Warehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Waste Management</fullName>
+        <default>false</default>
+        <label>Waste Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Welding</fullName>
+        <default>false</default>
+        <label>Welding</label>
+    </customValue>
+    <customValue>
+        <fullName>Wildlife/Environmental Conservation</fullName>
+        <default>false</default>
+        <label>Wildlife/Environmental Conservation</label>
+    </customValue>
+    <customValue>
+        <fullName>Youth Development, Shelter, and Crisis Services</fullName>
+        <default>false</default>
+        <label>Youth Development, Shelter, and Crisis Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Youth Education Programs and Services</fullName>
+        <default>false</default>
+        <label>Youth Education Programs and Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Zoos / Aquariums / Parks</fullName>
+        <default>false</default>
+        <label>Zoos / Aquariums / Parks</label>
+    </customValue>
+    <masterLabel>Risk Framework Business Type</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

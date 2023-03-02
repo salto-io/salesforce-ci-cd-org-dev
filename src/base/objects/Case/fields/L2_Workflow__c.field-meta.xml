@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L2_Workflow__c</fullName>
+    <externalId>false</externalId>
+    <label>L2 Workflow</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>L1_Workflow__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cloud Support</fullName>
+                <default>false</default>
+                <label>Cloud Support</label>
+            </value>
+            <value>
+                <fullName>Commerce</fullName>
+                <default>false</default>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <fullName>NFT - Content Moderation</fullName>
+                <default>false</default>
+                <label>NFT - Content Moderation</label>
+            </value>
+            <value>
+                <fullName>NFT Legal</fullName>
+                <default>false</default>
+                <label>NFT Legal</label>
+            </value>
+            <value>
+                <fullName>NFT Privacy</fullName>
+                <default>false</default>
+                <label>NFT Privacy</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem Ops</controllingFieldValue>
+            <valueName>Cloud Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem Ops</controllingFieldValue>
+            <valueName>Commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem Ops</controllingFieldValue>
+            <valueName>NFT - Content Moderation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem Ops</controllingFieldValue>
+            <valueName>NFT Legal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ecosystem Ops</controllingFieldValue>
+            <valueName>NFT Privacy</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

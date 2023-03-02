@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Total__c</fullName>
+    <defaultValue>0</defaultValue>
+    <description>This is the sub total that is matched with sub total formula so it can be used in the opportunity rollup.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This is will automatically populate based on the number of tokens staked and/or quantity of nodes.</inlineHelpText>
+    <label>Sub Total</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

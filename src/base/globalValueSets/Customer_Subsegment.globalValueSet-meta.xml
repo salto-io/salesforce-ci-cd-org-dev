@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Developers</fullName>
+        <default>false</default>
+        <label>Developers</label>
+    </customValue>
+    <customValue>
+        <fullName>Protocol Foundation</fullName>
+        <default>false</default>
+        <label>Protocol Foundation</label>
+    </customValue>
+    <customValue>
+        <fullName>Wallets</fullName>
+        <default>false</default>
+        <label>Wallets</label>
+    </customValue>
+    <customValue>
+        <fullName>DeFi</fullName>
+        <default>false</default>
+        <label>DeFi</label>
+    </customValue>
+    <customValue>
+        <fullName>NFTs / Collectibles</fullName>
+        <default>false</default>
+        <label>NFTs / Collectibles</label>
+    </customValue>
+    <customValue>
+        <fullName>GameFi</fullName>
+        <default>false</default>
+        <label>GameFi</label>
+    </customValue>
+    <customValue>
+        <fullName>On-Chain Data</fullName>
+        <default>false</default>
+        <label>On-Chain Data</label>
+    </customValue>
+    <customValue>
+        <fullName>Other Crypto / Blockchain</fullName>
+        <default>false</default>
+        <label>Other Crypto / Blockchain</label>
+    </customValue>
+    <customValue>
+        <fullName>Web 3.0</fullName>
+        <default>false</default>
+        <label>Web 3.0</label>
+    </customValue>
+    <customValue>
+        <fullName>Bank</fullName>
+        <default>false</default>
+        <label>Bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Fintech</fullName>
+        <default>false</default>
+        <label>Fintech</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Brokers</fullName>
+        <default>false</default>
+        <label>Traditional Brokers</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Exchange</fullName>
+        <default>false</default>
+        <label>Traditional Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Media</fullName>
+        <default>false</default>
+        <label>Social Media</label>
+    </customValue>
+    <customValue>
+        <fullName>Ecommerce/Retail</fullName>
+        <default>false</default>
+        <label>Ecommerce/Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Payments</fullName>
+        <default>false</default>
+        <label>Payments</label>
+    </customValue>
+    <customValue>
+        <fullName>Consulting</fullName>
+        <default>false</default>
+        <label>Consulting</label>
+    </customValue>
+    <customValue>
+        <fullName>Auditor</fullName>
+        <default>false</default>
+        <label>Auditor</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology Providers</fullName>
+        <default>false</default>
+        <label>Technology Providers</label>
+    </customValue>
+    <customValue>
+        <fullName>NPO / NGO</fullName>
+        <default>false</default>
+        <label>NPO / NGO</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Asset Manager</fullName>
+        <default>false</default>
+        <label>Crypto Asset Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Hedge Funds</fullName>
+        <default>false</default>
+        <label>Crypto Hedge Funds</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Venture Fund</fullName>
+        <default>false</default>
+        <label>Crypto Venture Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto HNWI</fullName>
+        <default>false</default>
+        <label>Crypto HNWI</label>
+    </customValue>
+    <customValue>
+        <fullName>ETF/ETP</fullName>
+        <default>false</default>
+        <label>ETF/ETP</label>
+    </customValue>
+    <customValue>
+        <fullName>Allocators</fullName>
+        <default>false</default>
+        <label>Allocators</label>
+    </customValue>
+    <customValue>
+        <fullName>Institutional Private Wealth</fullName>
+        <default>false</default>
+        <label>Institutional Private Wealth</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Asset Manager</fullName>
+        <default>false</default>
+        <label>Traditional Asset Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Hedge Fund</fullName>
+        <default>false</default>
+        <label>Traditional Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional VC / PE</fullName>
+        <default>false</default>
+        <label>Traditional VC / PE</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Brokers</fullName>
+        <default>false</default>
+        <label>Crypto Brokers</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Custody</fullName>
+        <default>false</default>
+        <label>Crypto Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Exchange</fullName>
+        <default>false</default>
+        <label>Crypto Exchange</label>
+    </customValue>
+    <customValue>
+        <fullName>Digital Artist</fullName>
+        <default>false</default>
+        <label>Digital Artist</label>
+    </customValue>
+    <customValue>
+        <fullName>Celebrity/Influencers</fullName>
+        <default>false</default>
+        <label>Celebrity/Influencers</label>
+    </customValue>
+    <customValue>
+        <fullName>Musicians</fullName>
+        <default>false</default>
+        <label>Musicians</label>
+    </customValue>
+    <customValue>
+        <fullName>Sports</fullName>
+        <default>false</default>
+        <label>Sports</label>
+    </customValue>
+    <masterLabel>Customer Subsegment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

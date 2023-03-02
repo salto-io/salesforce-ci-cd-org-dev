@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to CS and Biz Ops that there has been a Trial or Onboarding that hasn&apos;t been contacted 2 days after ticket creation.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead</letterhead>
+    <name>No Contact Template</name>
+    <style>freeForm</style>
+    <subject>First Contact Needed</subject>
+    <textOnly>Hi {!Case.OwnerFirstName},
+
+The Case below has been in the &quot;New&quot; stage of the {!Case.RecordType} for 3 days and has been escalated. This is a friendly reminder that first contact is needed. If the Case is no longer active or should be put on hold, please reclassify it.
+
+
+Account: {!Case.Account}
+Opportunity: {!Case.Opportunity__c}
+Case: {!Case.Link}
+{!Case.OwnerFullName}
+
+Thank you!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

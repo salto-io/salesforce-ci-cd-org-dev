@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Set_Product_Interest</name>
+        <label>Set Product Interest</label>
+        <locationX>50</locationX>
+        <locationY>518</locationY>
+        <assignmentItems>
+            <assignToReference>record.Product_Interest__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_ProductInterestValue</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>Set_Web_to_Lead_Fields</name>
+        <label>Set Web to Lead Fields</label>
+        <locationX>182</locationX>
+        <locationY>278</locationY>
+        <assignmentItems>
+            <assignToReference>record.Asset_Under_Management__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_AssetUnderManagment</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>record.Company_Size__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_CompanySizeValue</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>record.Customer_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_CustomerSegmentValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Product_Interest</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Product_Interest</name>
+        <label>Is Product Interest?</label>
+        <locationX>182</locationX>
+        <locationY>398</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Empty_Product_Interest</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>record.Product_Interest__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Product_Interest</targetReference>
+            </connector>
+            <label>Empty Product Interest</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Record_Type</name>
+        <label>Record Type?</label>
+        <locationX>380</locationX>
+        <locationY>158</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Standard_Lead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standard_Lead</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Web_to_Lead_Fields</targetReference>
+            </connector>
+            <label>Standard Lead</label>
+        </rules>
+    </decisions>
+    <description>On Standard_Lead insert, set CompanySize, CustomerSegment, AssetUnderManagment &amp; Product Interest fields to their respective values.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Asset Under Management field is Blank, set WTL Asset Under Management field value</description>
+        <name>for_AssetUnderManagment</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  !ISBLANK(TEXT({!record.Asset_Under_Management__c})),
+  TEXT({!record.Asset_Under_Management__c}),
+  TEXT({!record.WTL_Asset_Under_Management__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <description>Company Size is blank, Set WTL Company Size value</description>
+        <name>for_CompanySizeValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  !ISBLANK(TEXT({!record.Company_Size__c})),
+  TEXT({!record.Company_Size__c}),
+  TEXT({!record.WTL_Company_Size__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>for_CustomerSegmentValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  !ISBLANK(TEXT({!record.Customer_Segment__c})),
+  TEXT({!record.Customer_Segment__c}),
+  IF(
+    ISPICKVAL({!record.Type_of_Business__c}, &apos;Developer&apos;), 
+    &apos;Individual&apos;, 
+    TEXT({!record.Type_of_Business__c})
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>for_ProductInterestValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+   ISPICKVAL({!record.WTL_Product_Interest__c}, &apos;&apos;), 
+   &apos;Other (Unspecified)&apos;,
+   IF(
+      ISPICKVAL({!record.WTL_Product_Interest__c}, &apos;Participate or Delegate&apos;), 
+      &apos;Participate;Delegate&apos;,
+      TEXT({!record.WTL_Product_Interest__c})
+   )
+)</expression>
+    </formulas>
+    <interviewLabel>TA_Lead_WebToLead {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TA_Lead_WebToLeadFields</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Record_Type</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+</Flow>

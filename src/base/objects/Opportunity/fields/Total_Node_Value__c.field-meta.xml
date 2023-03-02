@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Node_Value__c</fullName>
+    <description>The total value of the nodes in this opportunity.</description>
+    <externalId>false</externalId>
+    <label>Total Node Value</label>
+    <summarizedField>BT_Product__c.Sub_Total__c</summarizedField>
+    <summaryForeignKey>BT_Product__c.Opportunity__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

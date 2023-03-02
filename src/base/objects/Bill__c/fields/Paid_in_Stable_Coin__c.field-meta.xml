@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Paid_in_Stable_Coin__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Check if this bill will be paid in stable coin.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check if this bill will be paid in stable coin.</inlineHelpText>
+    <label>Paid in Stable Coin</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

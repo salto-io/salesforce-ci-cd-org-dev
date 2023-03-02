@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><br></div><div>Hi,</div><div><br></div><div>An onboarding has been completed. Please refer to the case below and ensure the following have occurred:</div><div><br></div><div><ol><li>An Asset has been created</li><li>The Asset's data aligns with that of the original Opportunity</li><li>The BT Product(s) associated with the Case have been attached to an Asset</li><li>A Bill has been created and both the BT Product(s) and the Asset(s) have been attached</li></ol><div>Case:&nbsp;{!Case.Link}</div></div>]]></td>
+</tr>
+</table>

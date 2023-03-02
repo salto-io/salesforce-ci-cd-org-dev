@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Active_Trade_Surveillance__c</fullName>
+    <businessOwnerGroup>Data_Owner_Trust_Risk</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <defaultValue>false</defaultValue>
+    <description>When a Trade Surveillance case is created the Contact needs to be flagged as actively engaged with Trade Surveillance so support or sales agents are aware</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Actively engaged with Trade Surveillance</inlineHelpText>
+    <label>Active Trade Surveillance</label>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

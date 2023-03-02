@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Type</value>
+    </caseValues>
+    <name>type_account</name>
+    <startsWith>Consonant</startsWith>
+</CustomFieldTranslation>

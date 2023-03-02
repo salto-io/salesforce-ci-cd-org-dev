@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partner_Category__c</fullName>
+    <description>SFCC-859</description>
+    <externalId>false</externalId>
+    <label>Partner Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DeFi</fullName>
+                <default>false</default>
+                <label>DeFi</label>
+            </value>
+            <value>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+                <label>Gaming</label>
+            </value>
+            <value>
+                <fullName>Protocol</fullName>
+                <default>false</default>
+                <label>Protocol</label>
+            </value>
+            <value>
+                <fullName>DEX</fullName>
+                <default>false</default>
+                <label>DEX</label>
+            </value>
+            <value>
+                <fullName>NFT Marketplace</fullName>
+                <default>false</default>
+                <label>NFT Marketplace</label>
+            </value>
+            <value>
+                <fullName>Social</fullName>
+                <default>false</default>
+                <label>Social</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wallet_Campaign_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Wallet Campaign Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Incentive</fullName>
+                <default>false</default>
+                <label>Incentive</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+            <value>
+                <fullName>Wallet Quest</fullName>
+                <default>false</default>
+                <label>Wallet Quest</label>
+            </value>
+            <value>
+                <fullName>Co-Marketing</fullName>
+                <default>false</default>
+                <label>Co-Marketing</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

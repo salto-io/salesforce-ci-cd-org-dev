@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>New</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Attempted</fullName>
+        <default>false</default>
+        <label>Attempted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Contacted</fullName>
+        <default>false</default>
+        <label>Contacted</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Abandoned</fullName>
+        <default>false</default>
+        <label>Abandoned</label>
+    </standardValue>
+</StandardValueSet>

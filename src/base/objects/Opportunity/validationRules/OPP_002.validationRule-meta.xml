@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_002</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(RecordType.DeveloperName = &quot;Market_Data&quot;,
+RecordType.DeveloperName = &quot;Market_Data_Renewal&quot;),
+ISPICKVAL(StageName,&quot;Closed Won&quot;),
+OR(ISBLANK(License_Type__c),
+ISBLANK(TEXT(Contract_Start_Date__c)),
+ISBLANK(TEXT(Contract_End_Date__c)),
+ISBLANK(Products__c)
+)
+)</errorConditionFormula>
+    <errorMessage>Enter License Type, Contract Start Date, Contract End Date, and Products if opportunity stage is selected as Closed Won. [OPP_002]</errorMessage>
+</ValidationRule>

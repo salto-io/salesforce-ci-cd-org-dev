@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>MDA_Opportunity_30_Days_Email_Alert</fullName>
+        <description>MDA Opportunity 30 Days Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Software_Sales_Sales_Development_Representative_Lead</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>System_Generated_Emails/Opportunity_Market_Data_Renewal_30_Day_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>MDA_Opportunity_60_Days_Email_Alert</fullName>
+        <description>MDA Opportunity 60 Days Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Software_Sales_Sales_Development_Representative_Lead</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>System_Generated_Emails/Opportunity_Market_Data_Renewal_60_Day_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>MDA_Opportunity_90_Days_Email_Alert</fullName>
+        <description>MDA Opportunity 90 Days Email Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <recipients>
+            <recipient>Software_Sales_Sales_Development_Representative_Lead</recipient>
+            <type>role</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>System_Generated_Emails/Opportunity_Market_Data_Renewal_90_Day_Reminder</template>
+    </alerts>
+    <alerts>
+        <fullName>New_Trial_Email</fullName>
+        <ccEmails>matt@bisontrails.co</ccEmails>
+        <description>New Trial Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CS_Team_Templates/New_Trial_Alert</template>
+    </alerts>
+    <alerts>
+        <fullName>Opportunity_Transferred_Ownership_Notification</fullName>
+        <description>Opportunity: Transferred Ownership Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Opportunity_Transferred_Ownership_Notification_1677667541813</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>OpportunityAmountUpdate</fullName>
+        <description>Updating the opportunity</description>
+        <field>Amount</field>
+        <formula>IF(
+    OR(
+        Total_Node_Value__c &gt; 0,
+        ISPICKVAL(Estimated_Value__c,&quot;&quot;)
+    ),
+    Total_Node_Value__c,
+    IF(
+        ISPICKVAL(Estimated_Value__c, &quot;Low (&lt;70k)&quot;),
+        35000,
+        IF(
+            ISPICKVAL(Estimated_Value__c, &quot;Mid (&gt;70k, &lt;300k)&quot;),
+            185000,
+            IF(
+                ISPICKVAL(Estimated_Value__c, &quot;High (&gt;300k)&quot;),
+                300000,
+                0
+            )
+        )
+    )
+)</formula>
+        <name>OpportunityAmountUpdate</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>OpportunityAmountOverride</fullName>
+        <actions>
+            <name>OpportunityAmountUpdate</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <booleanFilter>(1 AND 2) OR 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Total_Node_Value__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Amount_Override__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.Estimated_Value__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>This overrides the default opportunity value using our custom subtotals.</description>
+        <triggerType>onAllChanges</triggerType>
+    </rules>
+</Workflow>

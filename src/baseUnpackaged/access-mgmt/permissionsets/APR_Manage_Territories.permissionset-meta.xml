@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows user to view and manage Territory Models, Settings, and Types.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>APR Manage Territories</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>ManageTerritories</name>
+    </userPermissions>
+</PermissionSet>

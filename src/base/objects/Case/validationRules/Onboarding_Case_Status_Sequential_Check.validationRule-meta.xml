@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_Case_Status_Sequential_Check</fullName>
+    <active>true</active>
+    <description>SFCC-1139: Onboarding Pipeline Case Status should move forward sequentially</description>
+    <errorConditionFormula>OR(
+  AND(
+    ISNEW(),
+    NOT(ISPICKVAL(Status, &apos;New&apos;))
+  ),
+  AND(
+    OR(
+    RecordType.DeveloperName = &apos;Onboarding_Pipeline&apos;,
+    RecordType.DeveloperName = &apos;New_Asset&apos;
+    ),
+    ISCHANGED(Status),
+    NOT(ISPICKVAL(Status, &apos;Closed Lost&apos;)),
+    Case(Status,
+      &quot;New&quot;, 1,
+      &quot;Working&quot;, 2,
+      &quot;Funding&quot;, 3,
+      &quot;Registering&quot;, 4,
+      &quot;Delegating&quot;, 5,
+      &quot;Closed&quot;, 6, 0) != (Case(PRIORVALUE(Status),
+      &quot;New&quot;, 1,
+      &quot;Working&quot;, 2,
+      &quot;Funding&quot;, 3,
+      &quot;Registering&quot;, 4,
+      &quot;Delegating&quot;, 5,
+      &quot;Closed&quot;, 6, 0)) + 1
+  )
+)</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>Case Status can be moved forward sequentially.</errorMessage>
+</ValidationRule>

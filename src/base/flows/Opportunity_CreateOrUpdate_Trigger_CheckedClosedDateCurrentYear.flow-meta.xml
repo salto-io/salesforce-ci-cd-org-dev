@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Opportunity_Closed_Won_AND_ClosedDate_Current_Year</name>
+        <label>Opportunity Closed Won AND ClosedDate Current Year?</label>
+        <locationX>314</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Closed_Won_Current_Year</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RecordClosedDateYear</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>THIS_YEAR</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.IsClosedDate_Current_Year__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Checked_IsClosedDate_Current_Year_value</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Closed Won Current Year</label>
+        </rules>
+        <rules>
+            <name>Neither_ClosedWon_Nor_ClosedDate_Current_Year</name>
+            <conditionLogic>(1 AND 2 AND 3) OR (2 AND 4 AND 5)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.IsClosedDate_Current_Year__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RecordClosedDateYear</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>THIS_YEAR</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.StageName</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed Won</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>RecordClosedDateYear</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>THIS_YEAR</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Uncheck_ClosedDate_Current_Year_value</targetReference>
+            </connector>
+            <label>Neither ClosedWon Nor ClosedDate Current Year</label>
+        </rules>
+    </decisions>
+    <description>SFCC-1355: When Opportunity is ClosedWon AND ClosedDate lies in the current year, auto-checked IsClosedDate_CurrentYear checkbox.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>RecordClosedDateYear</name>
+        <dataType>Number</dataType>
+        <expression>YEAR({!$Record.CloseDate})</expression>
+        <scale>0</scale>
+    </formulas>
+    <formulas>
+        <description>Calculate Current Year</description>
+        <name>THIS_YEAR</name>
+        <dataType>Number</dataType>
+        <expression>YEAR(TODAY())</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>Opportunity: CreateOrUpdate Trigger {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: CreateOrUpdate-Trigger-CheckedClosedDateCurrentYear</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Checked_IsClosedDate_Current_Year_value</name>
+        <label>Checked IsClosedDate Current Year value</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>IsClosedDate_Current_Year__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Uncheck_ClosedDate_Current_Year_value</name>
+        <label>Uncheck ClosedDate Current Year value</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <inputAssignments>
+            <field>IsClosedDate_Current_Year__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Opportunity_Closed_Won_AND_ClosedDate_Current_Year</targetReference>
+        </connector>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

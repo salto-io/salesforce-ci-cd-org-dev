@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BizDev_Lead_Conversion_Required_Fields</fullName>
+    <active>true</active>
+    <description>SFCC-901: Make Countries of Incorporation, Country Codes and Region all required in order to convert the lead.</description>
+    <errorConditionFormula>AND( 
+   IsConverted, 
+   RecordType.DeveloperName = &apos;Business_Development_Partnerships&apos;,
+   OR(ISBLANK(Countries_of_Incorporation__c),
+      ISBLANK(Country_Codes__c),
+      ISBLANK(TEXT(Region__c)))
+    )</errorConditionFormula>
+    <errorMessage>In order to convert the lead, please enter Countries of Incorporation, Country Codes and Region values.</errorMessage>
+</ValidationRule>

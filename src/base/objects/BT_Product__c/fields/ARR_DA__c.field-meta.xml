@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARR_DA__c</fullName>
+    <description>Calculates Digital Asset ARR based on either base participatory % or custom % (if set).</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISPICKVAL(Product_Type__c,&apos;Wallet-as-a-Service&apos;)),
+
+IF(Transaction_Fee_Rewards__c = TRUE, (Avg_Transaction_Volume__c * Avg_Transaction_Fee__c) * (Tokens_Staked__c /  Avg_Total_Staked__c) * Participatory_Fee__c * 12, IF(TEXT(Node__r.Node_Family__c) = &quot;Delegation&quot;,  (Node__r.Delegation_Fee__c  * Tokens_Staked__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), IF(ISBLANK(Participatory_Fee__c), (Node__r.Participatory_Fee__c * Tokens_Staked__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), (Participatory_Fee__c * Tokens_Staked__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c)))), 
+
+
+
+IF(Transaction_Fee_Rewards__c = TRUE, (Avg_Transaction_Volume__c * Avg_Transaction_Fee__c) * (Unique_Active_Wallet__c / Avg_Total_Staked__c) * Participatory_Fee__c * 12, IF(TEXT(Node__r.Node_Family__c) = &quot;Delegation&quot;, (Node__r.Delegation_Fee__c * Unique_Active_Wallet__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), IF(ISBLANK(Participatory_Fee__c), (Node__r.Participatory_Fee__c * Unique_Active_Wallet__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), (Participatory_Fee__c * Unique_Active_Wallet__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c)))))</formula>
+    <inlineHelpText>This will automatically populate based on the node&apos;s base participatory % or custom % (if set).</inlineHelpText>
+    <label>ARR DA</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

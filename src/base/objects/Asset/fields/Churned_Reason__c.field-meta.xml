@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Churned_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>If the asset has churned please specify why.</inlineHelpText>
+    <label>Churned Reason</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BT Decision</fullName>
+                <default>false</default>
+                <label>BT Decision</label>
+            </value>
+            <value>
+                <fullName>BT service</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>BT service</label>
+            </value>
+            <value>
+                <fullName>BT Service Related - Missing Functionality / Product</fullName>
+                <default>false</default>
+                <label>BT Service Related - Missing Functionality / Product</label>
+            </value>
+            <value>
+                <fullName>BT Service Related - Other</fullName>
+                <default>false</default>
+                <label>BT Service Related - Other</label>
+            </value>
+            <value>
+                <fullName>BT Service Related - Price Sensitivity / Competition</fullName>
+                <default>false</default>
+                <label>BT Service Related - Price Sensitivity / Competition</label>
+            </value>
+            <value>
+                <fullName>Issues with Protocol</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Issues with Protocol</label>
+            </value>
+            <value>
+                <fullName>Liquidating/Selling tokens</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liquidating/Selling tokens</label>
+            </value>
+            <value>
+                <fullName>Non-BT Service Related - Asset Liquidation</fullName>
+                <default>false</default>
+                <label>Non-BT Service Related - Asset Liquidation</label>
+            </value>
+            <value>
+                <fullName>Non-BT Service Related - Other</fullName>
+                <default>false</default>
+                <label>Non-BT Service Related - Other</label>
+            </value>
+            <value>
+                <fullName>Non-BT Service Related - Protocol Issues</fullName>
+                <default>false</default>
+                <label>Non-BT Service Related - Protocol Issues</label>
+            </value>
+            <value>
+                <fullName>Personal (non-BT service)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Personal (non-BT service)</label>
+            </value>
+            <value>
+                <fullName>Platform/Service Issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Platform/Service Issues</label>
+            </value>
+            <value>
+                <fullName>Protocol issues</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Protocol issues</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

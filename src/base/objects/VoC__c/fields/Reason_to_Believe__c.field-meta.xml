@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_to_Believe__c</fullName>
+    <description>What additional context is there around the feedback? Have we heard this before?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>What additional context is there around the feedback? Have we heard this before?</inlineHelpText>
+    <label>Reason to Believe</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Html</type>
+    <visibleLines>50</visibleLines>
+</CustomField>

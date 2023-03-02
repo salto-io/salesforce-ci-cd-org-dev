@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Asset_Churned_Email</fullName>
+        <description>Asset Churned Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <field>BD_Owner__c</field>
+            <type>userLookup</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>unfiled$public/Churned_Asset_Email</template>
+    </alerts>
+</Workflow>

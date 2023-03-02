@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Close_Reason_Comments__c</fullName>
+    <description>[SFCC-576]: Ecosystem Wallet Lead Record Type Field</description>
+    <externalId>false</externalId>
+    <label>Lead Close Reason Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>TextArea</type>
+</CustomField>

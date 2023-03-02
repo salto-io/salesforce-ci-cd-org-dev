@@ -1,0 +1,16 @@
+Dear {!Receiving_User.FirstName},
+
+Multi-factor authentication (MFA) is coming soon.  To avoid delays logging in when MFA is enabled, please register at least one of the following verification methods.  Go to your personal settings, enter Advanced User Details in the Quick Find box, then select Advanced User Details.
+
+To connect a Salesforce Authenticator app:
+https://help.salesforce.com/articleView?id=connect_salesforce_authenticator_v2_or_later.htm
+
+To connect a One-Time Password generator app:
+https://help.salesforce.com/articleView?id=add_time-based_token.htm
+
+To register a U2F-compatible security key:
+https://help.salesforce.com/articleView?id=security_u2f_register_security_key.htm
+
+Thanks,
+
+{!Organization.Name} Customer Support

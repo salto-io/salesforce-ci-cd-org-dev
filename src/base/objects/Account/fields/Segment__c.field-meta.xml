@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Segment__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <description>Institutional Customer Segmentation https://jira.coinbase-corp.com/browse/SFDC1-5436</description>
+    <externalId>false</externalId>
+    <label>Segment</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Macro_Segment__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Segment</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Financial Institution (brokerage / exchange)</controllingFieldValue>
+            <valueName>Crypto Financial Institution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Institution (brokerage / exchange)</controllingFieldValue>
+            <valueName>Traditional Financial Institution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Business</controllingFieldValue>
+            <valueName>Miner / Mining Pool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Business</controllingFieldValue>
+            <valueName>Crypto / Blockchain Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Business</controllingFieldValue>
+            <valueName>Protocol</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Business</controllingFieldValue>
+            <valueName>Web3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Business</controllingFieldValue>
+            <valueName>Crypto Custody</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Allocator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto Asset Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto Venture Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Institutional Private Wealth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Traditional Asset Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Traditional Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Traditional VC / PE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>High Net Worth Individual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Liquidity Provider</controllingFieldValue>
+            <valueName>Principal / HF Trader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise / Other</controllingFieldValue>
+            <valueName>Corporate / Enterprise</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise / Other</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

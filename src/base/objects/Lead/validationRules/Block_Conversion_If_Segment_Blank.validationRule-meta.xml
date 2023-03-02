@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Conversion_If_Segment_Blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+   IsConverted,
+   RecordType.DeveloperName = &apos;Standard_Lead&apos;,
+ OR(ISBLANK(TEXT(Customer_Segment__c)),
+    ISBLANK(TEXT(Customer_Subsegment__c))
+ )
+)</errorConditionFormula>
+    <errorDisplayField>Customer_Segment__c</errorDisplayField>
+    <errorMessage>Customer Segment and Subsegment should be entered before lead conversion!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Crypto Financial Institution</fullName>
+        <default>false</default>
+        <label>Crypto Financial Institution</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Financial Institution</fullName>
+        <default>false</default>
+        <label>Traditional Financial Institution</label>
+    </customValue>
+    <customValue>
+        <fullName>Miner / Mining Pool</fullName>
+        <default>false</default>
+        <label>Miner / Mining Pool</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto / Blockchain Company</fullName>
+        <default>false</default>
+        <label>Crypto / Blockchain Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Protocol</fullName>
+        <default>false</default>
+        <label>Protocol</label>
+    </customValue>
+    <customValue>
+        <fullName>Web3</fullName>
+        <default>false</default>
+        <label>Web3</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Custody</fullName>
+        <default>false</default>
+        <label>Crypto Custody</label>
+    </customValue>
+    <customValue>
+        <fullName>Allocator</fullName>
+        <default>false</default>
+        <label>Allocator</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Asset Manager</fullName>
+        <default>false</default>
+        <label>Crypto Asset Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Hedge Fund</fullName>
+        <default>false</default>
+        <label>Crypto Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Venture Fund</fullName>
+        <default>false</default>
+        <label>Crypto Venture Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Institutional Private Wealth</fullName>
+        <default>false</default>
+        <label>Institutional Private Wealth</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Asset Manager</fullName>
+        <default>false</default>
+        <label>Traditional Asset Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional Hedge Fund</fullName>
+        <default>false</default>
+        <label>Traditional Hedge Fund</label>
+    </customValue>
+    <customValue>
+        <fullName>Traditional VC / PE</fullName>
+        <default>false</default>
+        <label>Traditional VC / PE</label>
+    </customValue>
+    <customValue>
+        <fullName>High Net Worth Individual</fullName>
+        <default>false</default>
+        <label>High Net Worth Individual</label>
+    </customValue>
+    <customValue>
+        <fullName>Principal / HF Trader</fullName>
+        <default>false</default>
+        <label>Principal / HF Trader</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate / Enterprise</fullName>
+        <default>false</default>
+        <label>Corporate / Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

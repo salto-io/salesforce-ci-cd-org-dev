@@ -1,0 +1,9 @@
+Hi Team,
+
+Leads generated through WTL has fallen below the threshold.
+
+Call Count: {!Integration_Logs__c.API_Call_Count__c}
+Log Date: {!Integration_Logs__c.Log_Date__c}
+Integration type: {!Integration_Logs__c.Integration_Type__c}
+
+You can find the attached Log file on this {!Integration_Logs__c.Link}

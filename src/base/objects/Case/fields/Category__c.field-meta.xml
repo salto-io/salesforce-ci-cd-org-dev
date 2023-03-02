@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Product__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Account Access</fullName>
+                <default>false</default>
+                <label>Account Access</label>
+            </value>
+            <value>
+                <fullName>Account Issues</fullName>
+                <default>false</default>
+                <label>Account Issues</label>
+            </value>
+            <value>
+                <fullName>Account Risk</fullName>
+                <default>false</default>
+                <label>Account Risk</label>
+            </value>
+            <value>
+                <fullName>Account Safety</fullName>
+                <default>false</default>
+                <label>Account Safety</label>
+            </value>
+            <value>
+                <fullName>Account Security</fullName>
+                <default>false</default>
+                <label>Account Security</label>
+            </value>
+            <value>
+                <fullName>Advanced Trading API</fullName>
+                <default>false</default>
+                <label>Advanced Trading API</label>
+            </value>
+            <value>
+                <fullName>Backing up recovery phrase</fullName>
+                <default>false</default>
+                <label>Backing up recovery phrase</label>
+            </value>
+            <value>
+                <fullName>Bidding on My NFTs</fullName>
+                <default>false</default>
+                <label>Bidding on My NFTs</label>
+            </value>
+            <value>
+                <fullName>Buying and Bidding</fullName>
+                <default>false</default>
+                <label>Buying and Bidding</label>
+            </value>
+            <value>
+                <fullName>Buying NFTs</fullName>
+                <default>false</default>
+                <label>Buying NFTs</label>
+            </value>
+            <value>
+                <fullName>Coinbase Wallet SDK</fullName>
+                <default>false</default>
+                <label>Coinbase Wallet SDK</label>
+            </value>
+            <value>
+                <fullName>Commerce API</fullName>
+                <default>false</default>
+                <label>Commerce API</label>
+            </value>
+            <value>
+                <fullName>Connecting a Wallet</fullName>
+                <default>false</default>
+                <label>Connecting a Wallet</label>
+            </value>
+            <value>
+                <fullName>Connecting my Coinbase.com Account</fullName>
+                <default>false</default>
+                <label>Connecting my Coinbase.com Account</label>
+            </value>
+            <value>
+                <fullName>Converting Cryptocurrency</fullName>
+                <default>false</default>
+                <label>Converting Cryptocurrency</label>
+            </value>
+            <value>
+                <fullName>Creating a Wallet</fullName>
+                <default>false</default>
+                <label>Creating a Wallet</label>
+            </value>
+            <value>
+                <fullName>Customer Payments</fullName>
+                <default>false</default>
+                <label>Customer Payments</label>
+            </value>
+            <value>
+                <fullName>Data Privacy</fullName>
+                <default>false</default>
+                <label>Data Privacy</label>
+            </value>
+            <value>
+                <fullName>Delegate</fullName>
+                <default>false</default>
+                <label>Delegate</label>
+            </value>
+            <value>
+                <fullName>Depositing and Withdrawing Funds</fullName>
+                <default>false</default>
+                <label>Depositing and Withdrawing Funds</label>
+            </value>
+            <value>
+                <fullName>Email or Username</fullName>
+                <default>false</default>
+                <label>Email or Username</label>
+            </value>
+            <value>
+                <fullName>Exchange/Pro API</fullName>
+                <default>false</default>
+                <label>Exchange/Pro API</label>
+            </value>
+            <value>
+                <fullName>Feature Requests</fullName>
+                <default>false</default>
+                <label>Feature Requests</label>
+            </value>
+            <value>
+                <fullName>Gas Fee Question</fullName>
+                <default>false</default>
+                <label>Gas Fee Question</label>
+            </value>
+            <value>
+                <fullName>General API Information</fullName>
+                <default>false</default>
+                <label>General API Information</label>
+            </value>
+            <value>
+                <fullName>General Cloud Information</fullName>
+                <default>false</default>
+                <label>General Cloud Information</label>
+            </value>
+            <value>
+                <fullName>I&apos;m unable to access the Wallet Extension</fullName>
+                <default>false</default>
+                <label>I&apos;m unable to access the Wallet Extension</label>
+            </value>
+            <value>
+                <fullName>I need help closing my account</fullName>
+                <default>false</default>
+                <label>I need help closing my account</label>
+            </value>
+            <value>
+                <fullName>Integration</fullName>
+                <default>false</default>
+                <label>Integration</label>
+            </value>
+            <value>
+                <fullName>I want to claim a specific username</fullName>
+                <default>false</default>
+                <label>I want to claim a specific username</label>
+            </value>
+            <value>
+                <fullName>I want to dispute an action taken against my account or content</fullName>
+                <default>false</default>
+                <label>I want to dispute an action taken against my account or content</label>
+            </value>
+            <value>
+                <fullName>I want to report a violation of privacy</fullName>
+                <default>false</default>
+                <label>I want to report a violation of privacy</label>
+            </value>
+            <value>
+                <fullName>I want to report suspicious activity</fullName>
+                <default>false</default>
+                <label>I want to report suspicious activity</label>
+            </value>
+            <value>
+                <fullName>I want to submit a copyright takedown request</fullName>
+                <default>false</default>
+                <label>I want to submit a copyright takedown request</label>
+            </value>
+            <value>
+                <fullName>I want to submit a trademark, right of publicity, or other IP takedown request</fullName>
+                <default>false</default>
+                <label>I want to submit a trademark, right of publicity, or other IP takedown request</label>
+            </value>
+            <value>
+                <fullName>Listing NFTs</fullName>
+                <default>false</default>
+                <label>Listing NFTs</label>
+            </value>
+            <value>
+                <fullName>Merchant Trust</fullName>
+                <default>false</default>
+                <label>Merchant Trust</label>
+            </value>
+            <value>
+                <fullName>Minting and Listing</fullName>
+                <default>false</default>
+                <label>Minting and Listing</label>
+            </value>
+            <value>
+                <fullName>Minting NFTs</fullName>
+                <default>false</default>
+                <label>Minting NFTs</label>
+            </value>
+            <value>
+                <fullName>My account or content has been taken down</fullName>
+                <default>false</default>
+                <label>My account or content has been taken down</label>
+            </value>
+            <value>
+                <fullName>My listing failed</fullName>
+                <default>false</default>
+                <label>My listing failed</label>
+            </value>
+            <value>
+                <fullName>My NFT is not displaying</fullName>
+                <default>false</default>
+                <label>My NFT is not displaying</label>
+            </value>
+            <value>
+                <fullName>My purchase failed</fullName>
+                <default>false</default>
+                <label>My purchase failed</label>
+            </value>
+            <value>
+                <fullName>Navigating my Wallets</fullName>
+                <default>false</default>
+                <label>Navigating my Wallets</label>
+            </value>
+            <value>
+                <fullName>NFT Collaboration</fullName>
+                <default>false</default>
+                <label>NFT Collaboration</label>
+            </value>
+            <value>
+                <fullName>NFTs</fullName>
+                <default>false</default>
+                <label>NFTs</label>
+            </value>
+            <value>
+                <fullName>Node</fullName>
+                <default>false</default>
+                <label>Node</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other account issues</fullName>
+                <default>false</default>
+                <label>Other account issues</label>
+            </value>
+            <value>
+                <fullName>Other legal takedown requests</fullName>
+                <default>false</default>
+                <label>Other legal takedown requests</label>
+            </value>
+            <value>
+                <fullName>Participate</fullName>
+                <default>false</default>
+                <label>Participate</label>
+            </value>
+            <value>
+                <fullName>Payment Issues</fullName>
+                <default>false</default>
+                <label>Payment Issues</label>
+            </value>
+            <value>
+                <fullName>Payments</fullName>
+                <default>false</default>
+                <label>Payments</label>
+            </value>
+            <value>
+                <fullName>Policy Operations</fullName>
+                <default>false</default>
+                <label>Policy Operations</label>
+            </value>
+            <value>
+                <fullName>Prime API</fullName>
+                <default>false</default>
+                <label>Prime API</label>
+            </value>
+            <value>
+                <fullName>Privacy</fullName>
+                <default>false</default>
+                <label>Privacy</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>false</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Product Feedback or Bug</fullName>
+                <default>false</default>
+                <label>Product Feedback or Bug</label>
+            </value>
+            <value>
+                <fullName>Rosetta API</fullName>
+                <default>false</default>
+                <label>Rosetta API</label>
+            </value>
+            <value>
+                <fullName>Securing my Wallets</fullName>
+                <default>false</default>
+                <label>Securing my Wallets</label>
+            </value>
+            <value>
+                <fullName>Send/Receive Crypto</fullName>
+                <default>false</default>
+                <label>Send/Receive Crypto</label>
+            </value>
+            <value>
+                <fullName>Signing into my account</fullName>
+                <default>false</default>
+                <label>Signing into my account</label>
+            </value>
+            <value>
+                <fullName>Signing up for a new account</fullName>
+                <default>false</default>
+                <label>Signing up for a new account</label>
+            </value>
+            <value>
+                <fullName>Sign in to existing account</fullName>
+                <default>false</default>
+                <label>Sign in to existing account</label>
+            </value>
+            <value>
+                <fullName>Sign in with Coinbase API</fullName>
+                <default>false</default>
+                <label>Sign in with Coinbase API</label>
+            </value>
+            <value>
+                <fullName>Unable to access the app</fullName>
+                <default>false</default>
+                <label>Unable to access the app</label>
+            </value>
+            <value>
+                <fullName>Unable to use account</fullName>
+                <default>false</default>
+                <label>Unable to use account</label>
+            </value>
+            <value>
+                <fullName>Using Dapp Browser</fullName>
+                <default>false</default>
+                <label>Using Dapp Browser</label>
+            </value>
+            <value>
+                <fullName>Wallet</fullName>
+                <default>false</default>
+                <label>Wallet</label>
+            </value>
+            <value>
+                <fullName>Wallet Profile</fullName>
+                <default>false</default>
+                <label>Wallet Profile</label>
+            </value>
+            <value>
+                <fullName>Withdrawals</fullName>
+                <default>false</default>
+                <label>Withdrawals</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Advanced Trading API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Coinbase Wallet SDK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Commerce API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Delegate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Exchange/Pro API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>General API Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>General Cloud Information</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Node</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Participate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Prime API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Rosetta API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Cloud</controllingFieldValue>
+            <valueName>Sign in with Coinbase API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Account Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Account Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Account Risk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Account Safety</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Account Security</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Customer Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Depositing and Withdrawing Funds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Feature Requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Integration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Merchant Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Payment Issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Policy Operations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Product</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Product Feedback or Bug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Commerce</controllingFieldValue>
+            <valueName>Withdrawals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Backing up recovery phrase</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Connecting my Coinbase.com Account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Converting Cryptocurrency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>I&apos;m unable to access the Wallet Extension</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>I need help closing my account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>I want to submit a copyright takedown request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>I want to submit a trademark, right of publicity, or other IP takedown request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Navigating my Wallets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Securing my Wallets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Send/Receive Crypto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Signing up for a new account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Sign in to existing account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Unable to access the app</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Unable to use account</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Using Dapp Browser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Wallet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase Wallet</controllingFieldValue>
+            <valueName>Wallet Profile</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Bidding on My NFTs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Buying and Bidding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Buying NFTs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Connecting a Wallet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Creating a Wallet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Data Privacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Email or Username</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Gas Fee Question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>I want to claim a specific username</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>I want to dispute an action taken against my account or content</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>I want to report a violation of privacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>I want to report suspicious activity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Listing NFTs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Minting and Listing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Minting NFTs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>My account or content has been taken down</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>My listing failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>My NFT is not displaying</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>My purchase failed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>NFT Collaboration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>NFTs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Other account issues</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Other legal takedown requests</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Privacy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coinbase NFT</controllingFieldValue>
+            <valueName>Signing into my account</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

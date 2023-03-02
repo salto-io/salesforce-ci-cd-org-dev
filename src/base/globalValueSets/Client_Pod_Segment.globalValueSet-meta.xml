@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Advanced Prime</fullName>
+        <default>false</default>
+        <label>Advanced Prime</label>
+    </customValue>
+    <customValue>
+        <fullName>Allocator</fullName>
+        <default>false</default>
+        <label>Allocator</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate &amp; Miner</fullName>
+        <default>false</default>
+        <label>Corporate &amp; Miner</label>
+    </customValue>
+    <customValue>
+        <fullName>Introducing Broker, Bank, &amp; FinTech</fullName>
+        <default>false</default>
+        <label>Introducing Broker, Bank, &amp; FinTech</label>
+    </customValue>
+    <customValue>
+        <fullName>Market Maker</fullName>
+        <default>false</default>
+        <label>Market Maker</label>
+    </customValue>
+    <customValue>
+        <fullName>Prime</fullName>
+        <default>false</default>
+        <label>Prime</label>
+    </customValue>
+    <customValue>
+        <fullName>Private Wealth</fullName>
+        <default>false</default>
+        <label>Private Wealth</label>
+    </customValue>
+    <customValue>
+        <fullName>Protocol</fullName>
+        <default>false</default>
+        <label>Protocol</label>
+    </customValue>
+    <masterLabel>Client Pod Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

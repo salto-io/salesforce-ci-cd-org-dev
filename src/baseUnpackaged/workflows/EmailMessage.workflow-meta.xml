@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Email_Reopened_Non_SB</fullName>
+        <field>Status</field>
+        <literalValue>Working</literalValue>
+        <name>Email Reopened Non SB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Email_Reopener_SB</fullName>
+        <description>Move case back to ready to work if it is closed and receives and email for Support and Billing Cases</description>
+        <field>Status</field>
+        <literalValue>Ready to Work</literalValue>
+        <name>Email Reopener SB</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Move_to_ready</fullName>
+        <description>Move the case to ready once it receives a new email.</description>
+        <field>Status</field>
+        <literalValue>Ready to Work</literalValue>
+        <name>Move to ready</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Move_to_waiting</fullName>
+        <description>Move the case to waiting on customer once an email is sent.</description>
+        <field>Status</field>
+        <literalValue>Waiting on Customer</literalValue>
+        <name>Move to waiting</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+        <targetObject>ParentId</targetObject>
+    </fieldUpdates>
+    <rules>
+        <fullName>Email to Repopen - SB</fullName>
+        <actions>
+            <name>Email_Reopener_SB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>contains</operation>
+            <value>Support Pipeline,Billing Pipeline</value>
+        </criteriaItems>
+        <description>Move case back to ready to work if it is closed and receives and email (for Billing and Support)</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Email to Repopen - nonSB</fullName>
+        <actions>
+            <name>Email_Reopened_Non_SB</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notContain</operation>
+            <value>Support Pipeline,Billing Pipeline</value>
+        </criteriaItems>
+        <description>Deactivated 5-5-2020: This has become an annoyance as opposed to a benefit. This is still needed in the Billing and Support Pipelines 
+
+Move case back to ready to work if it is closed and receives and email (for non-Billing and Support cases)</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Move to Ready Rule</fullName>
+        <actions>
+            <name>Move_to_ready</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notContain</operation>
+            <value>Onboarding Pipeline,Trial Pipeline,Acct Management,Sales Emails</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>notContain</operation>
+            <value>New,Escalated,Working,Contacted,Scheduled,In trial,Trial Ended</value>
+        </criteriaItems>
+        <description>Workflow to move support case to ready to work when it receives an email.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Move to Waiting Rule</fullName>
+        <actions>
+            <name>Move_to_waiting</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notContain</operation>
+            <value>Onboarding Pipeline,Trial Pipeline,Acct Management,Sales Emails</value>
+        </criteriaItems>
+        <description>Workflow to move support case to waiting on customer from ready to work.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wallet Process</fullName>
+    <description>[SFCC-578]: Sales process for Wallet user.</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Executed</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Internal Review</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Signed</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

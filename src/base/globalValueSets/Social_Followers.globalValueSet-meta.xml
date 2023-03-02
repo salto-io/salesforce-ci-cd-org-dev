@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>&lt;200k</fullName>
+        <default>false</default>
+        <label>&lt;200k</label>
+    </customValue>
+    <customValue>
+        <fullName>201-500k</fullName>
+        <default>false</default>
+        <label>201-500k</label>
+    </customValue>
+    <customValue>
+        <fullName>501k-1M</fullName>
+        <default>false</default>
+        <label>501k-1M</label>
+    </customValue>
+    <customValue>
+        <fullName>1M-5M</fullName>
+        <default>false</default>
+        <label>1M-5M</label>
+    </customValue>
+    <customValue>
+        <fullName>5M+</fullName>
+        <default>false</default>
+        <label>5M+</label>
+    </customValue>
+    <masterLabel>Social Followers</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

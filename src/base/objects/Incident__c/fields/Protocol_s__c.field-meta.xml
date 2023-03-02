@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protocol_s__c</fullName>
+    <externalId>false</externalId>
+    <label>Protocol(s)</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Protocol_List</valueSetName>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

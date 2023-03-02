@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Cloud_Temp_Role_Access</fullName>
+        <accessLevel>Read</accessLevel>
+        <description>[SFCC-1578] Opening sharing for Temp role user</description>
+        <label>Cloud Temp Role Access</label>
+        <sharedTo>
+            <role>Cloud_Temp_Role</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Cosmos Pipeline,Eth2 Pipeline,Karura/Acala Pipeline,Eth2 Retail,Kusama Pipeline,Mina Pipeline,Keep Pipeline,Helium Pipeline,Coinbase Pay,Celo Pipeline,BSC Pipeline,Flow Pipeline,Cardano Pipeline,NEAR Pipeline,Algorand Pipeline</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>NuCypher Pipeline,Provenance Pipeline,Threshold Pipeline,Wallet Opportunity,Solana Pipeline,Terra Pipeline,Polygon Pipeline,Oasis Pipeline,Osmosis Pipeline,QT Pipeline</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

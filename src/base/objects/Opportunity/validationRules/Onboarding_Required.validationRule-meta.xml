@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_Required</fullName>
+    <active>true</active>
+    <description>OPS 5156, SFCC-[578] Bypass validation for Wallet_Opportunity Record type</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName &lt;&gt; &quot;Wallet_Opportunity&quot;,
+ RecordType.DeveloperName &lt;&gt; &quot;Market_Data_Renewal&quot;,
+ RecordType.DeveloperName &lt;&gt; &quot;Market_Data&quot;,
+OR(
+ISNEW(),
+ISCHANGED(StageName)
+),
+
+ISPICKVAL(StageName, &quot;Closed Won&quot;),
+ISBLANK(TEXT(Onboarding_Required__c))
+)</errorConditionFormula>
+    <errorDisplayField>Onboarding_Required__c</errorDisplayField>
+    <errorMessage>You must select a value within &quot;Onboarding Required&quot; for this Closed Won opportunity.</errorMessage>
+</ValidationRule>

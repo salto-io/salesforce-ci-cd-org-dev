@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Active</fullName>
+        <default>false</default>
+        <label>Active</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Churned</fullName>
+        <default>false</default>
+        <label>Churned</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Temporarily Inactive</fullName>
+        <default>false</default>
+        <label>Temporarily Inactive</label>
+    </standardValue>
+</StandardValueSet>

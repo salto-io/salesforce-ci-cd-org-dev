@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead</letterhead>
+    <name>Case Closed Lost</name>
+    <style>freeForm</style>
+    <subject>An Onboarding Was Marked as Closed Lost</subject>
+    <textOnly>Hello,
+
+The following Onboarding was marked as closed lost:
+
+Account: {!Case.Account}
+
+Onboarding: {!Case.Link}
+
+Opportunity: {!Case.Opportunity__c}
+
+Loss Reason: {!Case.Loss_Reason__c}
+
+Please reach out to the Account Manager responsible for the Onboarding for any further details.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

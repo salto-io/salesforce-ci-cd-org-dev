@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inactive__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>An inactive contact is one who is not longer with a company; however, their records are important to keep attached to an account.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this if the contact is no longer with the associated account.</inlineHelpText>
+    <label>Inactive</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subcategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Subcategory</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>API integration problems</fullName>
+                <default>false</default>
+                <label>API integration problems</label>
+            </value>
+            <value>
+                <fullName>General Feedback</fullName>
+                <default>false</default>
+                <label>General Feedback</label>
+            </value>
+            <value>
+                <fullName>General Inquiry</fullName>
+                <default>false</default>
+                <label>General Inquiry</label>
+            </value>
+            <value>
+                <fullName>I&apos;m experiencing an error code</fullName>
+                <default>false</default>
+                <label>I&apos;m experiencing an error code</label>
+            </value>
+            <value>
+                <fullName>I am having issues with my Participate node</fullName>
+                <default>false</default>
+                <label>I am having issues with my Participate node</label>
+            </value>
+            <value>
+                <fullName>I have an Advanced API issue or question</fullName>
+                <default>false</default>
+                <label>I have an Advanced API issue or question</label>
+            </value>
+            <value>
+                <fullName>I have an NFT API issue or question</fullName>
+                <default>false</default>
+                <label>I have an NFT API issue or question</label>
+            </value>
+            <value>
+                <fullName>I have a Node API issue or question</fullName>
+                <default>false</default>
+                <label>I have a Node API issue or question</label>
+            </value>
+            <value>
+                <fullName>I have a question about API key creation</fullName>
+                <default>false</default>
+                <label>I have a question about API key creation</label>
+            </value>
+            <value>
+                <fullName>I have a question about authorization and authentication</fullName>
+                <default>false</default>
+                <label>I have a question about authorization and authentication</label>
+            </value>
+            <value>
+                <fullName>I have a question about Exchange sandbox</fullName>
+                <default>false</default>
+                <label>I have a question about Exchange sandbox</label>
+            </value>
+            <value>
+                <fullName>I have a question about FIX API</fullName>
+                <default>false</default>
+                <label>I have a question about FIX API</label>
+            </value>
+            <value>
+                <fullName>I have a question about migrating from Coinbase Pro API</fullName>
+                <default>false</default>
+                <label>I have a question about migrating from Coinbase Pro API</label>
+            </value>
+            <value>
+                <fullName>I have a question about OAuth2</fullName>
+                <default>false</default>
+                <label>I have a question about OAuth2</label>
+            </value>
+            <value>
+                <fullName>I have a question about rate limits</fullName>
+                <default>false</default>
+                <label>I have a question about rate limits</label>
+            </value>
+            <value>
+                <fullName>I have a question about Websocket feed</fullName>
+                <default>false</default>
+                <label>I have a question about Websocket feed</label>
+            </value>
+            <value>
+                <fullName>I have a Scale plan payment/billing question</fullName>
+                <default>false</default>
+                <label>I have a Scale plan payment/billing question</label>
+            </value>
+            <value>
+                <fullName>I want to launch a Participate node</fullName>
+                <default>false</default>
+                <label>I want to launch a Participate node</label>
+            </value>
+            <value>
+                <fullName>I want to report a bug</fullName>
+                <default>false</default>
+                <label>I want to report a bug</label>
+            </value>
+            <value>
+                <fullName>I want to report a bug or feature request</fullName>
+                <default>false</default>
+                <label>I want to report a bug or feature request</label>
+            </value>
+            <value>
+                <fullName>I want to stake with Coinbase Cloud</fullName>
+                <default>false</default>
+                <label>I want to stake with Coinbase Cloud</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Prime API</controllingFieldValue>
+            <controllingFieldValue>Rosetta API</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet SDK</controllingFieldValue>
+            <controllingFieldValue>Commerce API</controllingFieldValue>
+            <controllingFieldValue>General API Information</controllingFieldValue>
+            <controllingFieldValue>General Cloud Information</controllingFieldValue>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>General Inquiry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rosetta API</controllingFieldValue>
+            <controllingFieldValue>Sign in with Coinbase API</controllingFieldValue>
+            <controllingFieldValue>Coinbase Wallet SDK</controllingFieldValue>
+            <controllingFieldValue>Commerce API</controllingFieldValue>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <valueName>I want to report a bug</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sign in with Coinbase API</controllingFieldValue>
+            <controllingFieldValue>Advanced Trading API</controllingFieldValue>
+            <controllingFieldValue>Commerce API</controllingFieldValue>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <valueName>API integration problems</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sign in with Coinbase API</controllingFieldValue>
+            <controllingFieldValue>Commerce API</controllingFieldValue>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <valueName>I have a question about authorization and authentication</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sign in with Coinbase API</controllingFieldValue>
+            <valueName>I have a question about OAuth2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sign in with Coinbase API</controllingFieldValue>
+            <controllingFieldValue>Commerce API</controllingFieldValue>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>I have a question about rate limits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Trading API</controllingFieldValue>
+            <valueName>I have a question about API key creation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Trading API</controllingFieldValue>
+            <valueName>I have a question about migrating from Coinbase Pro API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Trading API</controllingFieldValue>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <valueName>I have a question about Websocket feed</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Advanced Trading API</controllingFieldValue>
+            <valueName>I want to report a bug or feature request</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delegate</controllingFieldValue>
+            <valueName>I want to stake with Coinbase Cloud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <valueName>I have a question about Exchange sandbox</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Exchange/Pro API</controllingFieldValue>
+            <valueName>I have a question about FIX API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>General Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>I&apos;m experiencing an error code</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>I have an Advanced API issue or question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>I have an NFT API issue or question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>I have a Node API issue or question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Node</controllingFieldValue>
+            <valueName>I have a Scale plan payment/billing question</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participate</controllingFieldValue>
+            <valueName>I am having issues with my Participate node</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Participate</controllingFieldValue>
+            <valueName>I want to launch a Participate node</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

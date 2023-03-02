@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trial_End_Date__c</fullName>
+    <description>The date an opportunity&apos;s trial will end.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The date an opportunity&apos;s trial will end. Required to move an opportunity to the Trial stage.</inlineHelpText>
+    <label>Trial End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Sales</fullName>
+        <default>true</default>
+        <label>Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Field Enablement</fullName>
+        <default>false</default>
+        <label>Field Enablement</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Support</fullName>
+        <default>false</default>
+        <label>Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Adoption</fullName>
+        <default>false</default>
+        <label>Adoption</label>
+    </standardValue>
+</StandardValueSet>

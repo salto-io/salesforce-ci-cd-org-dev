@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Contact_Compact</fullName>
+    <fields>Name</fields>
+    <fields>Email</fields>
+    <fields>Phone</fields>
+    <fields>OwnerId</fields>
+    <fields>Twitter__c</fields>
+    <fields>Discord_Server__c</fields>
+    <fields>Discord_User__c</fields>
+    <fields>Title</fields>
+    <fields>AccountId</fields>
+    <fields>Inactive__c</fields>
+    <label>Custom Contact Compact</label>
+</CompactLayout>

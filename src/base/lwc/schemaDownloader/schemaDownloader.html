@@ -1,0 +1,20 @@
+<template>
+    <template if:true={displayComponent}>
+	 <lightning-card  title="Schema Downloader">
+        <div class="slds-m-around_small">
+            <lightning-combobox
+                name="Object_Selection"
+                label="Object Selection"
+                value={value}
+                placeholder="Select an Object"
+                options={objectInfo}
+                onchange={handleObjectSelection}
+            ></lightning-combobox>
+        </div>
+
+        <lightning-card class="slds-text-align_center">
+            <a onclick={handleClick} href={text} download={fileName}>Click to download schema</a>
+        </lightning-card>
+	</lightning-card>
+    </template>
+</template>

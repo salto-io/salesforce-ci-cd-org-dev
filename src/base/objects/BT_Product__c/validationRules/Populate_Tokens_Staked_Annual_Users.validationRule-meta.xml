@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Populate_Tokens_Staked_Annual_Users</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+NOT(ISPICKVAL(Product_Type__c,&apos;Wallet-as-a-Service&apos;)),
+Tokens_Staked__c &lt;= 0
+
+
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Tokens_Staked__c</errorDisplayField>
+    <errorMessage>Due to the Product Type you entered in, the Tokens Staked/Annual Users field must be populated</errorMessage>
+</ValidationRule>

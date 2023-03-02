@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ideal_Timezone__c</fullName>
+    <description>The ideal timezone of this opportunity for onboardings, communication, etc.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The ideal timezone of this opportunity for onboardings, communication, etc. Required to move a deal to Trial or Closed Won.</inlineHelpText>
+    <label>Ideal Timezone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Timezones</valueSetName>
+    </valueSet>
+</CustomField>

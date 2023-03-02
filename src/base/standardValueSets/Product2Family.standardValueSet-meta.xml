@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>true</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>QT</fullName>
+        <default>false</default>
+        <label>QT</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Participation</fullName>
+        <default>false</default>
+        <label>Participation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Delegation</fullName>
+        <default>false</default>
+        <label>Delegation</label>
+    </standardValue>
+</StandardValueSet>

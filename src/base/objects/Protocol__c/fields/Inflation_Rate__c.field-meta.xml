@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inflation_Rate__c</fullName>
+    <defaultValue>0.00</defaultValue>
+    <description>The current inflation rate of the protocol.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>This rate should be updated regularly to ensure accurate forecasting.</inlineHelpText>
+    <label>Inflation Rate</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

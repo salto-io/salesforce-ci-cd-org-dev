@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Case_Closed_Lost</fullName>
+        <description>Case Closed Lost</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CS_Team_Templates/Case_Closed_Lost</template>
+    </alerts>
+    <alerts>
+        <fullName>Hi_Email_Received_Notfication</fullName>
+        <description>Hi@ Email Received Notfication</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>CS_Team_Templates/Hi_at_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>No_Contact_Alert</fullName>
+        <description>No Contact Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>CS_Team_Templates/No_Contact_Template</template>
+    </alerts>
+    <alerts>
+        <fullName>Onboarding_Complete_Email</fullName>
+        <description>Onboarding Complete Email</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>BD_Cloud_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Onboarding_Complete</template>
+    </alerts>
+    <alerts>
+        <fullName>Temp_Alert_Billing_Email_to_AM_Queue</fullName>
+        <description>Temp Alert - Billing Email to AM Queue</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>CS_Team</recipient>
+            <type>group</type>
+        </recipients>
+        <senderType>DefaultWorkflowUser</senderType>
+        <template>CS_Team_Templates/Temp_Billing_Email_to_AM_Queue</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Move_to_Escalated</fullName>
+        <field>Status</field>
+        <literalValue>Escalated</literalValue>
+        <name>Move to Escalated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Move_to_escalated_new</fullName>
+        <field>Status</field>
+        <literalValue>Escalated</literalValue>
+        <name>Move to escalated</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Move_to_working</fullName>
+        <description>Move Onboarding to Working stage after AM has emailed the customer.</description>
+        <field>Status</field>
+        <literalValue>Working</literalValue>
+        <name>Move to working</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Case Closed Lost Rule</fullName>
+        <actions>
+            <name>Case_Closed_Lost</name>
+            <type>Alert</type>
+        </actions>
+        <active>false</active>
+        <criteriaItems>
+            <field>Case.IsClosed</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>No Contact Rule</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>Billing Pipeline</value>
+        </criteriaItems>
+        <description>This rule is used when there is no contact on a Case (it remains in the new stage) for 3+ days.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Move_to_escalated_new</name>
+                <type>FieldUpdate</type>
+            </actions>
+            <offsetFromField>Case.CreatedDate</offsetFromField>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Onboarding Working</fullName>
+        <actions>
+            <name>Move_to_working</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Case.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Onboarding Pipeline</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Case.Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>EmailMessage.Incoming</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <description>If an Onboarding is in the New stage and an AM sends an email, this rule will move the case to the Working stage.</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
+        <fullName>Trial Notifier</fullName>
+        <active>false</active>
+        <formula>NOT( ISBLANK( Trial_Start_Date__c ))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Trial_4_Week_Follow_Up</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+            <timeLength>30</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Trial_1_Week_Follow_Up</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Trial_3_Week_Follow_Up</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+            <timeLength>21</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Trial_2_Weeks_Follow_Up</name>
+                <type>Task</type>
+            </actions>
+            <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+            <timeLength>14</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <tasks>
+        <fullName>Trial_1_Week_Follow_Up</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This is an automated task to remind you that a customer has been in their trial for 1 week and should receive a check-in.</description>
+        <dueDateOffset>7</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Trial 1 Week Follow Up</subject>
+    </tasks>
+    <tasks>
+        <fullName>Trial_2_Weeks_Follow_Up</fullName>
+        <assignedToType>creator</assignedToType>
+        <description>This is an automated task to remind you that a customer has been in their trial for 2 weeks and should receive a check-in.</description>
+        <dueDateOffset>14</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Trial 2 Weeks Follow Up</subject>
+    </tasks>
+    <tasks>
+        <fullName>Trial_3_Week_Follow_Up</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This is an automated task to remind you that a customer has been in their trial for 3 weeks and should receive a check-in.</description>
+        <dueDateOffset>21</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Trial 3 Week Follow Up</subject>
+    </tasks>
+    <tasks>
+        <fullName>Trial_4_Week_Follow_Up</fullName>
+        <assignedToType>creator</assignedToType>
+        <description>This is an automated task to remind you that a customer has been in their trial for 30 days and should receive a check-in.</description>
+        <dueDateOffset>30</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Case.Trial_Start_Date__c</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Trial 4 Week Follow Up</subject>
+    </tasks>
+    <tasks>
+        <fullName>Trial_Check_In</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>This is a friendly reminder that this customer has been in a trial for five days and if you haven&apos;t already checked in with them, please do so in the next 3 days.</description>
+        <dueDateOffset>3</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Open</status>
+        <subject>Trial Check-In</subject>
+    </tasks>
+</Workflow>

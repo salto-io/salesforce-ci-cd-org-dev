@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Segment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Upon creation, Customer Segment is defaulted from Account</inlineHelpText>
+    <label>Customer Segment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Customer_Segment</valueSetName>
+    </valueSet>
+</CustomField>

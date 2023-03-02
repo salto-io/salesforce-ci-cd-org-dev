@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blocker_Revisit_Date__c</fullName>
+    <description>[SFCC-671]: Opportunity Wallet field, if Opportunity is temporary Blocked, (optional) Enter re-visit date.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>New information should be available by this date or the opportunity is expected to be unblocked by this date.</inlineHelpText>
+    <label>Blocker Revisit Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

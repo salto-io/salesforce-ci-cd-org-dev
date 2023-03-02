@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>No dApp in Development</fullName>
+        <default>false</default>
+        <label>No dApp in Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Considering Competitor Options</fullName>
+        <default>false</default>
+        <label>Considering Competitor Options</label>
+    </customValue>
+    <customValue>
+        <fullName>Doesn&apos;t want to work with Coinbase</fullName>
+        <default>false</default>
+        <label>Doesn&apos;t want to work with Coinbase</label>
+    </customValue>
+    <customValue>
+        <fullName>Prioritization</fullName>
+        <default>false</default>
+        <label>Prioritization</label>
+    </customValue>
+    <customValue>
+        <fullName>Project Paused/Discontinued</fullName>
+        <default>false</default>
+        <label>Project Paused/Discontinued</label>
+    </customValue>
+    <customValue>
+        <fullName>Quid Pro-Quo</fullName>
+        <default>false</default>
+        <label>Quid Pro-Quo</label>
+    </customValue>
+    <customValue>
+        <fullName>Technical Blocker</fullName>
+        <default>false</default>
+        <label>Technical Blocker</label>
+    </customValue>
+    <customValue>
+        <fullName>Unresponsive (45 days+)</fullName>
+        <default>false</default>
+        <label>Unresponsive (45 days+)</label>
+    </customValue>
+    <customValue>
+        <fullName>Exclusive contract with competitor</fullName>
+        <default>false</default>
+        <label>Exclusive contract with competitor</label>
+    </customValue>
+    <customValue>
+        <fullName>L2 support</fullName>
+        <default>false</default>
+        <label>L2 support</label>
+    </customValue>
+    <customValue>
+        <fullName>Want token listed</fullName>
+        <default>false</default>
+        <label>Want token listed</label>
+    </customValue>
+    <customValue>
+        <fullName>Guest Checkout</fullName>
+        <default>false</default>
+        <label>Guest Checkout</label>
+    </customValue>
+    <customValue>
+        <fullName>Other feature request</fullName>
+        <default>false</default>
+        <label>Other feature request</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-legal entity</fullName>
+        <default>false</default>
+        <label>Non-legal entity</label>
+    </customValue>
+    <customValue>
+        <fullName>Legal concerns</fullName>
+        <default>false</default>
+        <label>Legal concerns</label>
+    </customValue>
+    <customValue>
+        <fullName>Sensitive relationship</fullName>
+        <default>false</default>
+        <label>Sensitive relationship</label>
+    </customValue>
+    <customValue>
+        <fullName>No development capacity this quarter</fullName>
+        <default>false</default>
+        <label>No development capacity this quarter</label>
+    </customValue>
+    <customValue>
+        <fullName>Not interested in onramps</fullName>
+        <default>false</default>
+        <label>Not interested in onramps</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <masterLabel>Blocked Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

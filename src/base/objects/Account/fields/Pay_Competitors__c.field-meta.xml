@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pay_Competitors__c</fullName>
+    <externalId>false</externalId>
+    <label>Pay Competitors</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Transak</fullName>
+                <default>false</default>
+                <label>Transak</label>
+            </value>
+            <value>
+                <fullName>Ramp</fullName>
+                <default>false</default>
+                <label>Ramp</label>
+            </value>
+            <value>
+                <fullName>Moonpay</fullName>
+                <default>false</default>
+                <label>Moonpay</label>
+            </value>
+            <value>
+                <fullName>Binance Pay</fullName>
+                <default>false</default>
+                <label>Binance Pay</label>
+            </value>
+            <value>
+                <fullName>Wyre</fullName>
+                <default>false</default>
+                <label>Wyre</label>
+            </value>
+            <value>
+                <fullName>FTX Pay</fullName>
+                <default>false</default>
+                <label>FTX Pay</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

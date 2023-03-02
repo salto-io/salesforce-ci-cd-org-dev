@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BD_Pay_Competitor_Other</fullName>
+    <active>true</active>
+    <description>SFCC-1256 - Pay Competitor Other is required when Pay Competitor is selected as &quot;Other&quot;</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;Business_Development_Partnerships&apos;,
+ INCLUDES(Pay_Competitors__c,&apos;Other&apos;),
+ ISBLANK(Pay_Competitors_Other__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Pay_Competitors_Other__c</errorDisplayField>
+    <errorMessage>This field should be filled in when Pay Competitors has &quot;Other&quot; value</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Insto_Cross_Sell_Consent__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>[SCC-1529]: Cross-Sell Consent</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select this box only if you have gathered consent from the customer that they are willing to receive targeted insto marketing/sales opportunities from a insto sales rep. Please log the consent email to the account</inlineHelpText>
+    <label>Insto Cross-Sell Consent</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

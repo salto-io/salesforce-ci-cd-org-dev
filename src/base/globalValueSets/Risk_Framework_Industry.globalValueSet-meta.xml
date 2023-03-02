@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Agriculture</fullName>
+        <default>false</default>
+        <label>Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>All Industries</fullName>
+        <default>false</default>
+        <label>All Industries</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Services (non-financial)</fullName>
+        <default>false</default>
+        <label>Crypto Services (non-financial)</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Food &amp; Hospitality</fullName>
+        <default>false</default>
+        <label>Food &amp; Hospitality</label>
+    </customValue>
+    <customValue>
+        <fullName>Government/Politics</fullName>
+        <default>false</default>
+        <label>Government/Politics</label>
+    </customValue>
+    <customValue>
+        <fullName>Health &amp; Fitness</fullName>
+        <default>false</default>
+        <label>Health &amp; Fitness</label>
+    </customValue>
+    <customValue>
+        <fullName>Industrial</fullName>
+        <default>false</default>
+        <label>Industrial</label>
+    </customValue>
+    <customValue>
+        <fullName>Investment (Proprietary Funds Only)</fullName>
+        <default>false</default>
+        <label>Investment (Proprietary Funds Only)</label>
+    </customValue>
+    <customValue>
+        <fullName>Media / Arts</fullName>
+        <default>false</default>
+        <label>Media / Arts</label>
+    </customValue>
+    <customValue>
+        <fullName>Non-Profit/Charity</fullName>
+        <default>false</default>
+        <label>Non-Profit/Charity</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Assigned to Anything but Active</fullName>
+        <default>false</default>
+        <label>Not Assigned to Anything but Active</label>
+    </customValue>
+    <customValue>
+        <fullName>Professional Services</fullName>
+        <default>false</default>
+        <label>Professional Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Real Estate</fullName>
+        <default>false</default>
+        <label>Real Estate</label>
+    </customValue>
+    <customValue>
+        <fullName>Retail</fullName>
+        <default>false</default>
+        <label>Retail</label>
+    </customValue>
+    <customValue>
+        <fullName>Technology/IT (non-crypto)</fullName>
+        <default>false</default>
+        <label>Technology/IT (non-crypto)</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation &amp; Shipping</fullName>
+        <default>false</default>
+        <label>Transportation &amp; Shipping</label>
+    </customValue>
+    <masterLabel>Risk Framework Industry</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

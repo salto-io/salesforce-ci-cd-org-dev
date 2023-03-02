@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsClosedDate_Current_Year__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFCC-1355: if ClosedDate lies under current year, flow auto update this field to checked. If ClosedDate does not lies in current year by next year 1 Jan, auto schedule flow update this field to unchecked.</description>
+    <externalId>false</externalId>
+    <label>ClosedDate Current Year?</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

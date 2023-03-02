@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>{{{Opportunity.Name}}}&nbsp;has been assigned to you. Please click on the link below to view the record.</p>
+
+<p>Record Link: {{{Opportunity.Link}}}</p>
+</body>
+</html>

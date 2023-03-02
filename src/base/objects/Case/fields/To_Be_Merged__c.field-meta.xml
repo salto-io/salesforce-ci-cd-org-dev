@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>To_Be_Merged__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This checkbox is validated when a case is closed to override any case close restrictions.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this on a case if you are going to merge it into a master case.</inlineHelpText>
+    <label>To Be Merged</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

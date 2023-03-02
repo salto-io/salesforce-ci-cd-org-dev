@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Cases_Open_Closed</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.CREATED_DATE_DATE_ONLY</columns>
+    <columns>CASES.CLOSED_DATE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.CLOSED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>2/21/2022 12:00 AM</value>
+    </filters>
+    <label>All Cases (Open &amp; Closed)</label>
+    <queue>Billing_Queue</queue>
+    <sharedTo>
+        <group>Bison_Team</group>
+    </sharedTo>
+</ListView>

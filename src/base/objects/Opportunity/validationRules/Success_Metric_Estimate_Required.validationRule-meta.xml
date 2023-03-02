@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Success_Metric_Estimate_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+NOT(ISBLANK( TEXT(Success_Metric__c) ) ),
+ISBLANK( Success_Metric_Estimate__c )
+)</errorConditionFormula>
+    <errorMessage>Please enter Success Metric Estimate</errorMessage>
+</ValidationRule>

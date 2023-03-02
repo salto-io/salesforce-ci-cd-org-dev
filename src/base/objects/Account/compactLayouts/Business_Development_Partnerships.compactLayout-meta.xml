@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Development_Partnerships</fullName>
+    <fields>Name</fields>
+    <fields>Customer_Type__c</fields>
+    <fields>OwnerId</fields>
+    <fields>BD_Owner__c</fields>
+    <fields>CS_Owner__c</fields>
+    <fields>Ideal_Timezone__c</fields>
+    <label>Business Development &amp; Partnerships</label>
+</CompactLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ARR_Cash__c</fullName>
+    <description>Calculates Cash ARR based on either base price or custom price (if set).</description>
+    <externalId>false</externalId>
+    <formula>IF( OR(ISBLANK(Node_Price__c), Node_Price__c = 0.00) , (Quantity__c * Node__r.Base_Node_Price__c * 12), (Quantity__c * Node_Price__c * 12))</formula>
+    <inlineHelpText>This will automatically populate based on the node&apos;s base price or your custom price (if set).</inlineHelpText>
+    <label>ARR Cash</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

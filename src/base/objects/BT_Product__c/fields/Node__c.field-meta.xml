@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Node__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <description>The node associated with this opportunity</description>
+    <externalId>false</externalId>
+    <label>Node</label>
+    <referenceTo>Node__c</referenceTo>
+    <relationshipName>Opportunity_Nodes</relationshipName>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

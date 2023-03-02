@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_Validation</fullName>
+    <active>true</active>
+    <description>This validates an Opportunity&apos;s fields prior to creating an Onboarding Case.
+[SFCC-578]: Bypass first if validation condition for Wallet_Opportunity RecordType</description>
+    <errorConditionFormula>IF(
+    AND(
+        ISPICKVAL(StageName, &quot;Closed Won&quot;),
+        RecordType.DeveloperName &lt;&gt; &quot;Wallet_Opportunity&quot;, 
+        RecordType.DeveloperName &lt;&gt; &quot;Market_Data_Renewal&quot;,
+        RecordType.DeveloperName &lt;&gt; &quot;Market_Data&quot;,
+        RecordType.DeveloperName &lt;&gt; &quot;Cloud_Pipeline&quot;,
+        NOT(INCLUDES(Product_Interest__c, &quot;Other (Unspecified)&quot;)),
+        OR(
+        Num_Opportunity_Nodes__c &lt; 1, 
+        ISBLANK(TEXT(Product_Type__c)),
+        ISBLANK(TEXT(Ideal_Timezone__c)),
+        ISBLANK(Primary_Contact__c),
+        ISBLANK(TEXT(Type))
+        )
+    ),
+    true, 
+    IF(
+        AND(
+            ISPICKVAL(StageName, &quot;Closed Won&quot;), 
+            INCLUDES(Product_Interest__c, &quot;Other (Unspecified)&quot;),
+            NOT(INCLUDES(Product_Interest__c, &apos;Delegate&apos;)),
+            NOT(INCLUDES(Product_Interest__c, &apos;Participate&apos;)),
+            NOT(INCLUDES(Product_Interest__c, &apos;Query &amp; Transact&apos;)),
+            OR(
+                ISBLANK(TEXT(Ideal_Timezone__c)),
+                ISBLANK(Primary_Contact__c),
+                ISBLANK(TEXT(Type))
+            )
+            ), 
+        true,
+        IF(
+            AND(
+                ISPICKVAL(StageName, &quot;Closed Won&quot;), 
+                INCLUDES(Product_Interest__c, &quot;Other (Unspecified)&quot;),
+                OR(
+                    INCLUDES(Product_Interest__c, &apos;Delegate&apos;),
+                    INCLUDES(Product_Interest__c, &apos;Participate&apos;),
+                    INCLUDES(Product_Interest__c, &apos;Query &amp; Transact&apos;)
+                ),
+                OR(
+                    ISBLANK(TEXT(Product_Type__c)),
+                    ISBLANK(TEXT(Ideal_Timezone__c)),
+                    ISBLANK(Primary_Contact__c),
+                    ISBLANK(TEXT(Type))
+                )
+            ), 
+            true,
+            false
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>Please make sure this Opportunity has an ideal timezone, product type, primary contact, and specify if it is New Business or an Upsell. Set at least one BT Product if Product Interest is not Other only.</errorMessage>
+</ValidationRule>

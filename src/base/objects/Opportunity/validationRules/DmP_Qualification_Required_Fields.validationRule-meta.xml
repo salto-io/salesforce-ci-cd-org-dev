@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DmP_Qualification_Required_Fields</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Dapp Discovery Browsers&apos;),
+OR(
+ISNEW(),
+ISCHANGED(Wallet_Opportunity_Type__c)
+),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+ISBLANK( DmP_OKR_Cohort__c)
+)</errorConditionFormula>
+    <errorMessage>Required to fill DmP OKR Cohort When Wallet Opportunity Type = &apos;Dapp Discovery Browsers&apos;</errorMessage>
+</ValidationRule>

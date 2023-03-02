@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Set_Schedule_Debrief_Call_Task_Fields</name>
+        <label>Set Schedule Debrief Call Task Fields</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>rec_Task.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Schedule a debrief call</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Schedule a debrief call in order to be able to mark opportunity as Closed Won</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.Priority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Task_in_List</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Send_Survey_Task_Fields</name>
+        <label>Set Send Survey Task Fields</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>rec_Task.Subject</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Send Survey</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.Description</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formula_sendsurvey_task_comments</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.Priority</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Normal</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.Status</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Open</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.OwnerId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>rec_Task.WhatId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Set_Task_in_List</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Set_Task_in_List</name>
+        <label>Set Task in List</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>rec_Tasks</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>rec_Task</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Insert_Tasks</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Which_Task_to_Create</name>
+        <label>Which Task to Create?</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Schedule_Debrief_Call_Task</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Wallet_Opportunity_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wallet Campaign/Quest</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Wallet_Opportunity_Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Wallet Campaign/Quest</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Schedule_Debrief_Call_Task_Fields</targetReference>
+            </connector>
+            <label>Schedule Debrief Call Task</label>
+        </rules>
+        <rules>
+            <name>Send_Survey_Task</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Wallet_Opportunity_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Coinbase Wallet Integration</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Wallet_Opportunity_Type__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Coinbase Wallet Integration</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Wallet_Opportunity</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Send_Survey_Task_Fields</targetReference>
+            </connector>
+            <label>Send Survey Task?</label>
+        </rules>
+    </decisions>
+    <description>SFCC-1000: Auto create task when Wallet Opportunity Type flips to &quot;Wallet Campaign/Quest&quot; or &quot;Coinbase Wallet Integration&quot;.
+SFCC-1260: Auto create task for Coinbase Pay Opportunity</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_sendsurvey_task_comments</name>
+        <dataType>String</dataType>
+        <expression>&apos;Send out a post wallet integration survey in order to be able to mark opportunity as Closed Won&apos;</expression>
+    </formulas>
+    <interviewLabel>Opportunity: Wallet Opportunity-Insert or Update-Auto Create Task {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Opportunity: Insert or Update-Auto Create Task</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Insert_Tasks</name>
+        <label>Insert Tasks</label>
+        <locationX>314</locationX>
+        <locationY>791</locationY>
+        <inputReference>rec_Tasks</inputReference>
+    </recordCreates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Which_Task_to_Create</targetReference>
+        </connector>
+        <filterFormula>OR(
+    AND(
+        {!$Record.RecordType.DeveloperName} = &apos;Wallet_Opportunity&apos; ,
+        OR(
+            ISPICKVAL({!$Record.Wallet_Opportunity_Type__c}, &apos;Wallet Campaign/Quest&apos;) ,
+            ISPICKVAL({!$Record.Wallet_Opportunity_Type__c}, &apos;Coinbase Wallet Integration&apos;)
+        )
+    )
+)</filterFormula>
+        <object>Opportunity</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Task Record</description>
+        <name>rec_Task</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+    <variables>
+        <description>Task record List</description>
+        <name>rec_Tasks</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Task</objectType>
+    </variables>
+</Flow>

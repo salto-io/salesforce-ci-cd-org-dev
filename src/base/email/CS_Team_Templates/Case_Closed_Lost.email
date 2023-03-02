@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><br></div><div>Hello,</div><div><br></div><div>The following Onboarding was marked as closed lost:</div><div><br></div><div>Account:&nbsp;{!Case.Account}</div><div><br></div><div>Onboarding:&nbsp;{!Case.Link}</div><div><br></div><div>Opportunity:&nbsp;{!Case.Opportunity__c}</div><div><br></div><div>Loss Reason:&nbsp;{!Case.Loss_Reason__c}</div><div><br></div><div>Please reach out to the Account Manager responsible for the Onboarding for any further details.</div>]]></td>
+</tr>
+</table>

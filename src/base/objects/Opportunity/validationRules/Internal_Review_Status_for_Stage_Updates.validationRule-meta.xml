@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Internal_Review_Status_for_Stage_Updates</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED(StageName)
+),
+OR(
+ISPICKVAL(StageName,&apos;Signed&apos;),
+ISPICKVAL(StageName,&apos;Executed&apos;),
+ISPICKVAL(StageName,&apos;Closed Won&apos;)
+),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Wallet Campaign/Quest&apos;),
+NOT( ISPICKVAL( Internal_Review_Status__c , &apos;Approved&apos;) )
+
+)</errorConditionFormula>
+    <errorDisplayField>Internal_Review_Status__c</errorDisplayField>
+    <errorMessage>In Order to move to Signed stage or beyond, Internal Review Status needs to be Approved for Wallet Opportunity type is Wallet Campaign/Quest.</errorMessage>
+</ValidationRule>

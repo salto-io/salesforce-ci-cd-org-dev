@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Price__c</fullName>
+    <defaultValue>0.00</defaultValue>
+    <description>The price of the token in USD. Updated every week.</description>
+    <externalId>false</externalId>
+    <label>Price</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

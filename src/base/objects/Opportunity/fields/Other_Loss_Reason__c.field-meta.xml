@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Other_Loss_Reason__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter a different loss reason if any of the above choices do not apply.</inlineHelpText>
+    <label>Other Loss Reason</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

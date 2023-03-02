@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Close_Reason_must_be_selected</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+     ISPICKVAL(Status, &quot;Closed&quot;),
+     ISPICKVAL(Lead_Close_Reason__c, &quot;&quot;)
+)</errorConditionFormula>
+    <errorDisplayField>Lead_Close_Reason__c</errorDisplayField>
+    <errorMessage>Lead Close Reason must be selected if lead is Closed or Closed Lost</errorMessage>
+</ValidationRule>

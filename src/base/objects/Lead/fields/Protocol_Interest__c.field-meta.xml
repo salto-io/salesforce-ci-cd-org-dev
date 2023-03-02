@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Protocol_Interest__c</fullName>
+    <description>This is the Lead&apos;s main protocol of interest.</description>
+    <externalId>false</externalId>
+    <label>Protocol Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Protocol_List</valueSetName>
+    </valueSet>
+</CustomField>

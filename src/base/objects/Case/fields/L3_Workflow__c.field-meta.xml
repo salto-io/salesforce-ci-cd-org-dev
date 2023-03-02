@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>L3_Workflow__c</fullName>
+    <externalId>false</externalId>
+    <label>L3 Workflow</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>L2_Workflow__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Account Access</fullName>
+                <default>false</default>
+                <label>Account Access</label>
+            </value>
+            <value>
+                <fullName>Account Deletion</fullName>
+                <default>false</default>
+                <label>Account Deletion</label>
+            </value>
+            <value>
+                <fullName>Account Management</fullName>
+                <default>false</default>
+                <label>Account Management</label>
+            </value>
+            <value>
+                <fullName>Account Recovery - IDV Friction</fullName>
+                <default>false</default>
+                <label>Account Recovery - IDV Friction</label>
+            </value>
+            <value>
+                <fullName>Account Security Guarantee</fullName>
+                <default>false</default>
+                <label>Account Security Guarantee</label>
+            </value>
+            <value>
+                <fullName>Account Statements</fullName>
+                <default>false</default>
+                <label>Account Statements</label>
+            </value>
+            <value>
+                <fullName>ACH - Buy / Add Cash</fullName>
+                <default>false</default>
+                <label>ACH - Buy / Add Cash</label>
+            </value>
+            <value>
+                <fullName>ACH - Disable Buy Flag</fullName>
+                <default>false</default>
+                <label>ACH - Disable Buy Flag</label>
+            </value>
+            <value>
+                <fullName>ACH Quick-Wins</fullName>
+                <default>false</default>
+                <label>ACH Quick-Wins</label>
+            </value>
+            <value>
+                <fullName>ACH - Sell / Cash Out</fullName>
+                <default>false</default>
+                <label>ACH - Sell / Cash Out</label>
+            </value>
+            <value>
+                <fullName>ACH - Verification</fullName>
+                <default>false</default>
+                <label>ACH - Verification</label>
+            </value>
+            <value>
+                <fullName>Address Book &amp; Whitelisting</fullName>
+                <default>false</default>
+                <label>Address Book &amp; Whitelisting</label>
+            </value>
+            <value>
+                <fullName>Address Change</fullName>
+                <default>false</default>
+                <label>Address Change</label>
+            </value>
+            <value>
+                <fullName>Admin Override</fullName>
+                <default>false</default>
+                <label>Admin Override</label>
+            </value>
+            <value>
+                <fullName>Advanced Query APIs</fullName>
+                <default>false</default>
+                <label>Advanced Query APIs</label>
+            </value>
+            <value>
+                <fullName>Aggregator Requests</fullName>
+                <default>false</default>
+                <label>Aggregator Requests</label>
+            </value>
+            <value>
+                <fullName>All Issues</fullName>
+                <default>false</default>
+                <label>All Issues</label>
+            </value>
+            <value>
+                <fullName>API Basic Questions</fullName>
+                <default>false</default>
+                <label>API Basic Questions</label>
+            </value>
+            <value>
+                <fullName>App Bugs</fullName>
+                <default>false</default>
+                <label>App Bugs</label>
+            </value>
+            <value>
+                <fullName>Appeals</fullName>
+                <default>false</default>
+                <label>Appeals</label>
+            </value>
+            <value>
+                <fullName>Apple Pay Buys</fullName>
+                <default>false</default>
+                <label>Apple Pay Buys</label>
+            </value>
+            <value>
+                <fullName>App Navigation</fullName>
+                <default>false</default>
+                <label>App Navigation</label>
+            </value>
+            <value>
+                <fullName>Approving Joint Deposits</fullName>
+                <default>false</default>
+                <label>Approving Joint Deposits</label>
+            </value>
+            <value>
+                <fullName>Asset Ratings and Reviews</fullName>
+                <default>false</default>
+                <label>Asset Ratings and Reviews</label>
+            </value>
+            <value>
+                <fullName>ATO Investigations</fullName>
+                <default>false</default>
+                <label>ATO Investigations</label>
+            </value>
+            <value>
+                <fullName>Attacker in Control</fullName>
+                <default>false</default>
+                <label>Attacker in Control</label>
+            </value>
+            <value>
+                <fullName>Bank Cash Out (ITB)</fullName>
+                <default>false</default>
+                <label>Bank Cash Out (ITB)</label>
+            </value>
+            <value>
+                <fullName>Bidding (Offers + Auctions)</fullName>
+                <default>false</default>
+                <label>Bidding (Offers + Auctions)</label>
+            </value>
+            <value>
+                <fullName>Borrow</fullName>
+                <default>false</default>
+                <label>Borrow</label>
+            </value>
+            <value>
+                <fullName>Business Onboarding</fullName>
+                <default>false</default>
+                <label>Business Onboarding</label>
+            </value>
+            <value>
+                <fullName>Buying (Fixed Price)</fullName>
+                <default>false</default>
+                <label>Buying (Fixed Price)</label>
+            </value>
+            <value>
+                <fullName>Bypass FCA High Risk</fullName>
+                <default>false</default>
+                <label>Bypass FCA High Risk</label>
+            </value>
+            <value>
+                <fullName>Can&apos;t Send Crypto - Security Delay</fullName>
+                <default>false</default>
+                <label>Can&apos;t Send Crypto - Security Delay</label>
+            </value>
+            <value>
+                <fullName>Cancelled Buy / Deposit</fullName>
+                <default>false</default>
+                <label>Cancelled Buy / Deposit</label>
+            </value>
+            <value>
+                <fullName>Cancelled Deposit From CX Account</fullName>
+                <default>false</default>
+                <label>Cancelled Deposit From CX Account</label>
+            </value>
+            <value>
+                <fullName>Cancelled Order</fullName>
+                <default>false</default>
+                <label>Cancelled Order</label>
+            </value>
+            <value>
+                <fullName>Card Basics</fullName>
+                <default>false</default>
+                <label>Card Basics</label>
+            </value>
+            <value>
+                <fullName>Card - Canceled Buy</fullName>
+                <default>false</default>
+                <label>Card - Canceled Buy</label>
+            </value>
+            <value>
+                <fullName>Card Dispute</fullName>
+                <default>false</default>
+                <label>Card Dispute</label>
+            </value>
+            <value>
+                <fullName>Card - Fees / Unknown Charges</fullName>
+                <default>false</default>
+                <label>Card - Fees / Unknown Charges</label>
+            </value>
+            <value>
+                <fullName>Card - Instant Cash Out</fullName>
+                <default>false</default>
+                <label>Card - Instant Cash Out</label>
+            </value>
+            <value>
+                <fullName>Card - Verification</fullName>
+                <default>false</default>
+                <label>Card - Verification</label>
+            </value>
+            <value>
+                <fullName>Clawback Process</fullName>
+                <default>false</default>
+                <label>Clawback Process</label>
+            </value>
+            <value>
+                <fullName>Cloud Product Feedback</fullName>
+                <default>false</default>
+                <label>Cloud Product Feedback</label>
+            </value>
+            <value>
+                <fullName>Coinbase Asset Hub</fullName>
+                <default>false</default>
+                <label>Coinbase Asset Hub</label>
+            </value>
+            <value>
+                <fullName>Coinbase Card</fullName>
+                <default>false</default>
+                <label>Coinbase Card</label>
+            </value>
+            <value>
+                <fullName>Coinbase Card - Blocked Card</fullName>
+                <default>false</default>
+                <label>Coinbase Card - Blocked Card</label>
+            </value>
+            <value>
+                <fullName>Coinbase Card - EU &amp; UK</fullName>
+                <default>false</default>
+                <label>Coinbase Card - EU &amp; UK</label>
+            </value>
+            <value>
+                <fullName>Coinbase Card - US</fullName>
+                <default>false</default>
+                <label>Coinbase Card - US</label>
+            </value>
+            <value>
+                <fullName>Coinbase One Basics</fullName>
+                <default>false</default>
+                <label>Coinbase One Basics</label>
+            </value>
+            <value>
+                <fullName>Commerce</fullName>
+                <default>false</default>
+                <label>Commerce</label>
+            </value>
+            <value>
+                <fullName>Commerce Account Management</fullName>
+                <default>false</default>
+                <label>Commerce Account Management</label>
+            </value>
+            <value>
+                <fullName>Commerce Account Onboarding</fullName>
+                <default>false</default>
+                <label>Commerce Account Onboarding</label>
+            </value>
+            <value>
+                <fullName>Commerce Conversions</fullName>
+                <default>false</default>
+                <label>Commerce Conversions</label>
+            </value>
+            <value>
+                <fullName>Commerce Integrations and API</fullName>
+                <default>false</default>
+                <label>Commerce Integrations and API</label>
+            </value>
+            <value>
+                <fullName>Commerce Invoicing</fullName>
+                <default>false</default>
+                <label>Commerce Invoicing</label>
+            </value>
+            <value>
+                <fullName>Commerce Merchant Account Access</fullName>
+                <default>false</default>
+                <label>Commerce Merchant Account Access</label>
+            </value>
+            <value>
+                <fullName>Commerce Merchant Trust</fullName>
+                <default>false</default>
+                <label>Commerce Merchant Trust</label>
+            </value>
+            <value>
+                <fullName>Commerce Product Feedback</fullName>
+                <default>false</default>
+                <label>Commerce Product Feedback</label>
+            </value>
+            <value>
+                <fullName>Compliance Bans</fullName>
+                <default>false</default>
+                <label>Compliance Bans</label>
+            </value>
+            <value>
+                <fullName>Consumer Workflow</fullName>
+                <default>false</default>
+                <label>Consumer Workflow</label>
+            </value>
+            <value>
+                <fullName>COPPA</fullName>
+                <default>false</default>
+                <label>COPPA</label>
+            </value>
+            <value>
+                <fullName>Country Change to Japan</fullName>
+                <default>false</default>
+                <label>Country Change to Japan</label>
+            </value>
+            <value>
+                <fullName>Creator Drops</fullName>
+                <default>false</default>
+                <label>Creator Drops</label>
+            </value>
+            <value>
+                <fullName>Credit Request</fullName>
+                <default>false</default>
+                <label>Credit Request</label>
+            </value>
+            <value>
+                <fullName>Crypto Gifts</fullName>
+                <default>false</default>
+                <label>Crypto Gifts</label>
+            </value>
+            <value>
+                <fullName>Crypto Labels</fullName>
+                <default>false</default>
+                <label>Crypto Labels</label>
+            </value>
+            <value>
+                <fullName>Crypto Question Flow</fullName>
+                <default>false</default>
+                <label>Crypto Question Flow</label>
+            </value>
+            <value>
+                <fullName>Crypto Quick Wins</fullName>
+                <default>false</default>
+                <label>Crypto Quick Wins</label>
+            </value>
+            <value>
+                <fullName>Crypto to Crypto Conversions</fullName>
+                <default>false</default>
+                <label>Crypto to Crypto Conversions</label>
+            </value>
+            <value>
+                <fullName>Crypto TX Issues</fullName>
+                <default>false</default>
+                <label>Crypto TX Issues</label>
+            </value>
+            <value>
+                <fullName>Customer is Traveling</fullName>
+                <default>false</default>
+                <label>Customer is Traveling</label>
+            </value>
+            <value>
+                <fullName>CX Email Compromised</fullName>
+                <default>false</default>
+                <label>CX Email Compromised</label>
+            </value>
+            <value>
+                <fullName>Dapp Browser Troubleshooting</fullName>
+                <default>false</default>
+                <label>Dapp Browser Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Dapp Marketplace</fullName>
+                <default>false</default>
+                <label>Dapp Marketplace</label>
+            </value>
+            <value>
+                <fullName>Data Deletion</fullName>
+                <default>false</default>
+                <label>Data Deletion</label>
+            </value>
+            <value>
+                <fullName>Data Privacy</fullName>
+                <default>false</default>
+                <label>Data Privacy</label>
+            </value>
+            <value>
+                <fullName>Death Of Account Holder (DOAH)</fullName>
+                <default>false</default>
+                <label>Death Of Account Holder (DOAH)</label>
+            </value>
+            <value>
+                <fullName>DeFi Yield</fullName>
+                <default>false</default>
+                <label>DeFi Yield</label>
+            </value>
+            <value>
+                <fullName>Deposit / Withdrawal - Canada</fullName>
+                <default>false</default>
+                <label>Deposit / Withdrawal - Canada</label>
+            </value>
+            <value>
+                <fullName>Deposit Policy Restriction</fullName>
+                <default>false</default>
+                <label>Deposit Policy Restriction</label>
+            </value>
+            <value>
+                <fullName>Deposits/Withdrawals - GBP Faster Payments</fullName>
+                <default>false</default>
+                <label>Deposits/Withdrawals - GBP Faster Payments</label>
+            </value>
+            <value>
+                <fullName>Deposits and Withdrawals (Crypto)</fullName>
+                <default>false</default>
+                <label>Deposits and Withdrawals (Crypto)</label>
+            </value>
+            <value>
+                <fullName>Destination Tag Recon</fullName>
+                <default>false</default>
+                <label>Destination Tag Recon</label>
+            </value>
+            <value>
+                <fullName>Developer Support</fullName>
+                <default>false</default>
+                <label>Developer Support</label>
+            </value>
+            <value>
+                <fullName>DEX Trading</fullName>
+                <default>false</default>
+                <label>DEX Trading</label>
+            </value>
+            <value>
+                <fullName>Direct Deposit</fullName>
+                <default>false</default>
+                <label>Direct Deposit</label>
+            </value>
+            <value>
+                <fullName>Disable Security Key (U2F)</fullName>
+                <default>false</default>
+                <label>Disable Security Key (U2F)</label>
+            </value>
+            <value>
+                <fullName>Disable TOTP or Authy</fullName>
+                <default>false</default>
+                <label>Disable TOTP or Authy</label>
+            </value>
+            <value>
+                <fullName>Disputes</fullName>
+                <default>false</default>
+                <label>Disputes</label>
+            </value>
+            <value>
+                <fullName>Duplicate Escalation</fullName>
+                <default>false</default>
+                <label>Duplicate Escalation</label>
+            </value>
+            <value>
+                <fullName>Easy Bank Transfer - Add Cash - UK</fullName>
+                <default>false</default>
+                <label>Easy Bank Transfer - Add Cash - UK</label>
+            </value>
+            <value>
+                <fullName>Eligibility Requirements</fullName>
+                <default>false</default>
+                <label>Eligibility Requirements</label>
+            </value>
+            <value>
+                <fullName>Error Codes</fullName>
+                <default>false</default>
+                <label>Error Codes</label>
+            </value>
+            <value>
+                <fullName>Escalation Support</fullName>
+                <default>false</default>
+                <label>Escalation Support</label>
+            </value>
+            <value>
+                <fullName>Facematch</fullName>
+                <default>false</default>
+                <label>Facematch</label>
+            </value>
+            <value>
+                <fullName>Faster Payments - Add Cash/Cash Out</fullName>
+                <default>false</default>
+                <label>Faster Payments - Add Cash/Cash Out</label>
+            </value>
+            <value>
+                <fullName>FCA</fullName>
+                <default>false</default>
+                <label>FCA</label>
+            </value>
+            <value>
+                <fullName>FCA - High Risk Customer ID &amp; Fiat Restrictions</fullName>
+                <default>false</default>
+                <label>FCA - High Risk Customer ID &amp; Fiat Restrictions</label>
+            </value>
+            <value>
+                <fullName>Features and Bugs</fullName>
+                <default>false</default>
+                <label>Features and Bugs</label>
+            </value>
+            <value>
+                <fullName>Fees and Limits</fullName>
+                <default>false</default>
+                <label>Fees and Limits</label>
+            </value>
+            <value>
+                <fullName>Funds Sent to Input Address</fullName>
+                <default>false</default>
+                <label>Funds Sent to Input Address</label>
+            </value>
+            <value>
+                <fullName>FURM</fullName>
+                <default>false</default>
+                <label>FURM</label>
+            </value>
+            <value>
+                <fullName>GDAX Balance</fullName>
+                <default>false</default>
+                <label>GDAX Balance</label>
+            </value>
+            <value>
+                <fullName>General Privacy Inquiries</fullName>
+                <default>false</default>
+                <label>General Privacy Inquiries</label>
+            </value>
+            <value>
+                <fullName>Generating Reports</fullName>
+                <default>false</default>
+                <label>Generating Reports</label>
+            </value>
+            <value>
+                <fullName>Geofence / Unsupported Asset</fullName>
+                <default>false</default>
+                <label>Geofence / Unsupported Asset</label>
+            </value>
+            <value>
+                <fullName>ICCO Receipts</fullName>
+                <default>false</default>
+                <label>ICCO Receipts</label>
+            </value>
+            <value>
+                <fullName>iDeal / Sofort - Add Cash</fullName>
+                <default>false</default>
+                <label>iDeal / Sofort - Add Cash</label>
+            </value>
+            <value>
+                <fullName>Identity Document Verification (IDV)</fullName>
+                <default>false</default>
+                <label>Identity Document Verification (IDV)</label>
+            </value>
+            <value>
+                <fullName>IDV/EDP Bypass</fullName>
+                <default>false</default>
+                <label>IDV/EDP Bypass</label>
+            </value>
+            <value>
+                <fullName>IDV (Jumio)</fullName>
+                <default>false</default>
+                <label>IDV (Jumio)</label>
+            </value>
+            <value>
+                <fullName>IDV + eKYC Failure Troubleshooting</fullName>
+                <default>false</default>
+                <label>IDV + eKYC Failure Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>IDV - Jumio Failed</fullName>
+                <default>false</default>
+                <label>IDV - Jumio Failed</label>
+            </value>
+            <value>
+                <fullName>IDV Quick Win</fullName>
+                <default>false</default>
+                <label>IDV Quick Win</label>
+            </value>
+            <value>
+                <fullName>IMPS - Cash Out</fullName>
+                <default>false</default>
+                <label>IMPS - Cash Out</label>
+            </value>
+            <value>
+                <fullName>IMPS - Verification</fullName>
+                <default>false</default>
+                <label>IMPS - Verification</label>
+            </value>
+            <value>
+                <fullName>Incident Process</fullName>
+                <default>false</default>
+                <label>Incident Process</label>
+            </value>
+            <value>
+                <fullName>Information Request</fullName>
+                <default>false</default>
+                <label>Information Request</label>
+            </value>
+            <value>
+                <fullName>Instant Card Withdrawal (RTP)</fullName>
+                <default>false</default>
+                <label>Instant Card Withdrawal (RTP)</label>
+            </value>
+            <value>
+                <fullName>International Country Verification: Phone</fullName>
+                <default>false</default>
+                <label>International Country Verification: Phone</label>
+            </value>
+            <value>
+                <fullName>International USD</fullName>
+                <default>false</default>
+                <label>International USD</label>
+            </value>
+            <value>
+                <fullName>IP/DMCA</fullName>
+                <default>false</default>
+                <label>IP/DMCA</label>
+            </value>
+            <value>
+                <fullName>Japan T1 Zengin Deposit Issues</fullName>
+                <default>false</default>
+                <label>Japan T1 Zengin Deposit Issues</label>
+            </value>
+            <value>
+                <fullName>Japan T1 Zengin Withdrawal Issues</fullName>
+                <default>false</default>
+                <label>Japan T1 Zengin Withdrawal Issues</label>
+            </value>
+            <value>
+                <fullName>Japan T2 Quick Deposit Issues</fullName>
+                <default>false</default>
+                <label>Japan T2 Quick Deposit Issues</label>
+            </value>
+            <value>
+                <fullName>Japan T2 Zengin Withdrawal Issues</fullName>
+                <default>false</default>
+                <label>Japan T2 Zengin Withdrawal Issues</label>
+            </value>
+            <value>
+                <fullName>JPM SEPA - Add Cash / Cash Out</fullName>
+                <default>false</default>
+                <label>JPM SEPA - Add Cash / Cash Out</label>
+            </value>
+            <value>
+                <fullName>KYC / IDV Onboarding Workflow</fullName>
+                <default>false</default>
+                <label>KYC / IDV Onboarding Workflow</label>
+            </value>
+            <value>
+                <fullName>KYC Failure (Idology)</fullName>
+                <default>false</default>
+                <label>KYC Failure (Idology)</label>
+            </value>
+            <value>
+                <fullName>KYC Migration and Remediation</fullName>
+                <default>false</default>
+                <label>KYC Migration and Remediation</label>
+            </value>
+            <value>
+                <fullName>KYC Refresh</fullName>
+                <default>false</default>
+                <label>KYC Refresh</label>
+            </value>
+            <value>
+                <fullName>KYC Verification Workflow</fullName>
+                <default>false</default>
+                <label>KYC Verification Workflow</label>
+            </value>
+            <value>
+                <fullName>Learning Rewards</fullName>
+                <default>false</default>
+                <label>Learning Rewards</label>
+            </value>
+            <value>
+                <fullName>Legal Name</fullName>
+                <default>false</default>
+                <label>Legal Name</label>
+            </value>
+            <value>
+                <fullName>Lend</fullName>
+                <default>false</default>
+                <label>Lend</label>
+            </value>
+            <value>
+                <fullName>LHV SEPA - Add Cash / Cash Out</fullName>
+                <default>false</default>
+                <label>LHV SEPA - Add Cash / Cash Out</label>
+            </value>
+            <value>
+                <fullName>Limit &amp; Level Increase Requests</fullName>
+                <default>false</default>
+                <label>Limit &amp; Level Increase Requests</label>
+            </value>
+            <value>
+                <fullName>Limit Adjustments</fullName>
+                <default>false</default>
+                <label>Limit Adjustments</label>
+            </value>
+            <value>
+                <fullName>Limit Increase Requests</fullName>
+                <default>false</default>
+                <label>Limit Increase Requests</label>
+            </value>
+            <value>
+                <fullName>Linking Bank Account</fullName>
+                <default>false</default>
+                <label>Linking Bank Account</label>
+            </value>
+            <value>
+                <fullName>Listing</fullName>
+                <default>false</default>
+                <label>Listing</label>
+            </value>
+            <value>
+                <fullName>Locating a Payment</fullName>
+                <default>false</default>
+                <label>Locating a Payment</label>
+            </value>
+            <value>
+                <fullName>Lost Access - Balance Transfer</fullName>
+                <default>false</default>
+                <label>Lost Access - Balance Transfer</label>
+            </value>
+            <value>
+                <fullName>Lost Access - Security Key (U2F)</fullName>
+                <default>false</default>
+                <label>Lost Access - Security Key (U2F)</label>
+            </value>
+            <value>
+                <fullName>Lost Device / 2FA</fullName>
+                <default>false</default>
+                <label>Lost Device / 2FA</label>
+            </value>
+            <value>
+                <fullName>MACd User - Privacy</fullName>
+                <default>false</default>
+                <label>MACd User - Privacy</label>
+            </value>
+            <value>
+                <fullName>Mandatory Account Closure (MAC)</fullName>
+                <default>false</default>
+                <label>Mandatory Account Closure (MAC)</label>
+            </value>
+            <value>
+                <fullName>Manual SEPA Transfer Matching</fullName>
+                <default>false</default>
+                <label>Manual SEPA Transfer Matching</label>
+            </value>
+            <value>
+                <fullName>Minting</fullName>
+                <default>false</default>
+                <label>Minting</label>
+            </value>
+            <value>
+                <fullName>Misrouted coinbase.com cases</fullName>
+                <default>false</default>
+                <label>Misrouted coinbase.com cases</label>
+            </value>
+            <value>
+                <fullName>Missing Incoming</fullName>
+                <default>false</default>
+                <label>Missing Incoming</label>
+            </value>
+            <value>
+                <fullName>Missing Outgoing</fullName>
+                <default>false</default>
+                <label>Missing Outgoing</label>
+            </value>
+            <value>
+                <fullName>Missing SEPA Deposit</fullName>
+                <default>false</default>
+                <label>Missing SEPA Deposit</label>
+            </value>
+            <value>
+                <fullName>Missing SEPA Withdrawal or Return</fullName>
+                <default>false</default>
+                <label>Missing SEPA Withdrawal or Return</label>
+            </value>
+            <value>
+                <fullName>Missing Wire Deposit</fullName>
+                <default>false</default>
+                <label>Missing Wire Deposit</label>
+            </value>
+            <value>
+                <fullName>Missing Wire Transfer</fullName>
+                <default>false</default>
+                <label>Missing Wire Transfer</label>
+            </value>
+            <value>
+                <fullName>Missing Wire Withdraw</fullName>
+                <default>false</default>
+                <label>Missing Wire Withdraw</label>
+            </value>
+            <value>
+                <fullName>MUFG - Withdrawal Issues</fullName>
+                <default>false</default>
+                <label>MUFG - Withdrawal Issues</label>
+            </value>
+            <value>
+                <fullName>Multiple Coinbase Accounts</fullName>
+                <default>false</default>
+                <label>Multiple Coinbase Accounts</label>
+            </value>
+            <value>
+                <fullName>Multiple Issues</fullName>
+                <default>false</default>
+                <label>Multiple Issues</label>
+            </value>
+            <value>
+                <fullName>NCC Workflow</fullName>
+                <default>false</default>
+                <label>NCC Workflow</label>
+            </value>
+            <value>
+                <fullName>NFT APIs</fullName>
+                <default>false</default>
+                <label>NFT APIs</label>
+            </value>
+            <value>
+                <fullName>NFT Internal Verifications</fullName>
+                <default>false</default>
+                <label>NFT Internal Verifications</label>
+            </value>
+            <value>
+                <fullName>NFT Product Feedback</fullName>
+                <default>false</default>
+                <label>NFT Product Feedback</label>
+            </value>
+            <value>
+                <fullName>Node 101</fullName>
+                <default>false</default>
+                <label>Node 101</label>
+            </value>
+            <value>
+                <fullName>Node APIs</fullName>
+                <default>false</default>
+                <label>Node APIs</label>
+            </value>
+            <value>
+                <fullName>Node Scaled Billing</fullName>
+                <default>false</default>
+                <label>Node Scaled Billing</label>
+            </value>
+            <value>
+                <fullName>Non-DMCA</fullName>
+                <default>false</default>
+                <label>Non-DMCA</label>
+            </value>
+            <value>
+                <fullName>Not Enough Information</fullName>
+                <default>false</default>
+                <label>Not Enough Information</label>
+            </value>
+            <value>
+                <fullName>Not Receiving SMS</fullName>
+                <default>false</default>
+                <label>Not Receiving SMS</label>
+            </value>
+            <value>
+                <fullName>Not Valid - 24 hours</fullName>
+                <default>false</default>
+                <label>Not Valid - 24 hours</label>
+            </value>
+            <value>
+                <fullName>Not Valid - No CS Contact</fullName>
+                <default>false</default>
+                <label>Not Valid - No CS Contact</label>
+            </value>
+            <value>
+                <fullName>Not Valid - Repeat Final Decision</fullName>
+                <default>false</default>
+                <label>Not Valid - Repeat Final Decision</label>
+            </value>
+            <value>
+                <fullName>Onboarding</fullName>
+                <default>false</default>
+                <label>Onboarding</label>
+            </value>
+            <value>
+                <fullName>Orders and Trades Troubleshooting</fullName>
+                <default>false</default>
+                <label>Orders and Trades Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other Issues</fullName>
+                <default>false</default>
+                <label>Other Issues</label>
+            </value>
+            <value>
+                <fullName>Partnership Workflow</fullName>
+                <default>false</default>
+                <label>Partnership Workflow</label>
+            </value>
+            <value>
+                <fullName>PayID - Add Cash</fullName>
+                <default>false</default>
+                <label>PayID - Add Cash</label>
+            </value>
+            <value>
+                <fullName>PayID - Cash Out</fullName>
+                <default>false</default>
+                <label>PayID - Cash Out</label>
+            </value>
+            <value>
+                <fullName>PayID - Verfication</fullName>
+                <default>false</default>
+                <label>PayID - Verfication</label>
+            </value>
+            <value>
+                <fullName>Payment Issues - Customer Reaching Out</fullName>
+                <default>false</default>
+                <label>Payment Issues - Customer Reaching Out</label>
+            </value>
+            <value>
+                <fullName>Payment Issues - Merchant Reaching Out</fullName>
+                <default>false</default>
+                <label>Payment Issues - Merchant Reaching Out</label>
+            </value>
+            <value>
+                <fullName>Payment Method Restrictions</fullName>
+                <default>false</default>
+                <label>Payment Method Restrictions</label>
+            </value>
+            <value>
+                <fullName>Payment Method Review</fullName>
+                <default>false</default>
+                <label>Payment Method Review</label>
+            </value>
+            <value>
+                <fullName>Payment Stuck in Created</fullName>
+                <default>false</default>
+                <label>Payment Stuck in Created</label>
+            </value>
+            <value>
+                <fullName>PayPal - Buy / Add Cash</fullName>
+                <default>false</default>
+                <label>PayPal - Buy / Add Cash</label>
+            </value>
+            <value>
+                <fullName>PayPal - Sell / Cash Out</fullName>
+                <default>false</default>
+                <label>PayPal - Sell / Cash Out</label>
+            </value>
+            <value>
+                <fullName>PayPal - Verification</fullName>
+                <default>false</default>
+                <label>PayPal - Verification</label>
+            </value>
+            <value>
+                <fullName>PayPal Verification / Name Mismatch Issue</fullName>
+                <default>false</default>
+                <label>PayPal Verification / Name Mismatch Issue</label>
+            </value>
+            <value>
+                <fullName>PayPal Withdraw / Sell Issue</fullName>
+                <default>false</default>
+                <label>PayPal Withdraw / Sell Issue</label>
+            </value>
+            <value>
+                <fullName>Pending Screening Flags</fullName>
+                <default>false</default>
+                <label>Pending Screening Flags</label>
+            </value>
+            <value>
+                <fullName>Phone Port Account Takeovers</fullName>
+                <default>false</default>
+                <label>Phone Port Account Takeovers</label>
+            </value>
+            <value>
+                <fullName>Phone Scam Victim</fullName>
+                <default>false</default>
+                <label>Phone Scam Victim</label>
+            </value>
+            <value>
+                <fullName>Physical Check Procedure</fullName>
+                <default>false</default>
+                <label>Physical Check Procedure</label>
+            </value>
+            <value>
+                <fullName>PIX - Add Cash/Cash Out</fullName>
+                <default>false</default>
+                <label>PIX - Add Cash/Cash Out</label>
+            </value>
+            <value>
+                <fullName>Plaid Verification Troubleshooting</fullName>
+                <default>false</default>
+                <label>Plaid Verification Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Platform Security</fullName>
+                <default>false</default>
+                <label>Platform Security</label>
+            </value>
+            <value>
+                <fullName>Portfolios</fullName>
+                <default>false</default>
+                <label>Portfolios</label>
+            </value>
+            <value>
+                <fullName>Premium Support</fullName>
+                <default>false</default>
+                <label>Premium Support</label>
+            </value>
+            <value>
+                <fullName>Press Workflow</fullName>
+                <default>false</default>
+                <label>Press Workflow</label>
+            </value>
+            <value>
+                <fullName>Pricing Changes (Oct 2019)</fullName>
+                <default>false</default>
+                <label>Pricing Changes (Oct 2019)</label>
+            </value>
+            <value>
+                <fullName>Privacy Regulatory Complaint</fullName>
+                <default>false</default>
+                <label>Privacy Regulatory Complaint</label>
+            </value>
+            <value>
+                <fullName>Pro Mobile App</fullName>
+                <default>false</default>
+                <label>Pro Mobile App</label>
+            </value>
+            <value>
+                <fullName>Pro Mobile Ordering Remediation</fullName>
+                <default>false</default>
+                <label>Pro Mobile Ordering Remediation</label>
+            </value>
+            <value>
+                <fullName>Pro Onboarding</fullName>
+                <default>false</default>
+                <label>Pro Onboarding</label>
+            </value>
+            <value>
+                <fullName>Pro Payments Workflow</fullName>
+                <default>false</default>
+                <label>Pro Payments Workflow</label>
+            </value>
+            <value>
+                <fullName>Providing POA</fullName>
+                <default>false</default>
+                <label>Providing POA</label>
+            </value>
+            <value>
+                <fullName>Push Payments Basics</fullName>
+                <default>false</default>
+                <label>Push Payments Basics</label>
+            </value>
+            <value>
+                <fullName>Push Payments - SIFT Score Workflow</fullName>
+                <default>false</default>
+                <label>Push Payments - SIFT Score Workflow</label>
+            </value>
+            <value>
+                <fullName>Push Payments - User Credential Review</fullName>
+                <default>false</default>
+                <label>Push Payments - User Credential Review</label>
+            </value>
+            <value>
+                <fullName>Rate Limits</fullName>
+                <default>false</default>
+                <label>Rate Limits</label>
+            </value>
+            <value>
+                <fullName>Recall Process - Kumimodoshi</fullName>
+                <default>false</default>
+                <label>Recall Process - Kumimodoshi</label>
+            </value>
+            <value>
+                <fullName>Recall Process - Multi Bank</fullName>
+                <default>false</default>
+                <label>Recall Process - Multi Bank</label>
+            </value>
+            <value>
+                <fullName>Receipt Request</fullName>
+                <default>false</default>
+                <label>Receipt Request</label>
+            </value>
+            <value>
+                <fullName>Recurring Transactions</fullName>
+                <default>false</default>
+                <label>Recurring Transactions</label>
+            </value>
+            <value>
+                <fullName>Referrals</fullName>
+                <default>false</default>
+                <label>Referrals</label>
+            </value>
+            <value>
+                <fullName>Referrals, Incentives, Sweepstakes</fullName>
+                <default>false</default>
+                <label>Referrals, Incentives, Sweepstakes</label>
+            </value>
+            <value>
+                <fullName>Repeat Submission</fullName>
+                <default>false</default>
+                <label>Repeat Submission</label>
+            </value>
+            <value>
+                <fullName>Reports</fullName>
+                <default>false</default>
+                <label>Reports</label>
+            </value>
+            <value>
+                <fullName>Retail Advanced Trade</fullName>
+                <default>false</default>
+                <label>Retail Advanced Trade</label>
+            </value>
+            <value>
+                <fullName>Retail Advanced Trading API</fullName>
+                <default>false</default>
+                <label>Retail Advanced Trading API</label>
+            </value>
+            <value>
+                <fullName>Retail App Receives</fullName>
+                <default>false</default>
+                <label>Retail App Receives</label>
+            </value>
+            <value>
+                <fullName>Retail App Sends</fullName>
+                <default>false</default>
+                <label>Retail App Sends</label>
+            </value>
+            <value>
+                <fullName>Retail Onboarding - Germany</fullName>
+                <default>false</default>
+                <label>Retail Onboarding - Germany</label>
+            </value>
+            <value>
+                <fullName>Retail Onboarding - Japan</fullName>
+                <default>false</default>
+                <label>Retail Onboarding - Japan</label>
+            </value>
+            <value>
+                <fullName>Retail Onboarding - Multi Country</fullName>
+                <default>false</default>
+                <label>Retail Onboarding - Multi Country</label>
+            </value>
+            <value>
+                <fullName>Retail Onboarding - U.S.</fullName>
+                <default>false</default>
+                <label>Retail Onboarding - U.S.</label>
+            </value>
+            <value>
+                <fullName>Rewards</fullName>
+                <default>false</default>
+                <label>Rewards</label>
+            </value>
+            <value>
+                <fullName>Risk IDV Reviews</fullName>
+                <default>false</default>
+                <label>Risk IDV Reviews</label>
+            </value>
+            <value>
+                <fullName>Safety Access Issues</fullName>
+                <default>false</default>
+                <label>Safety Access Issues</label>
+            </value>
+            <value>
+                <fullName>Sanctioned Country</fullName>
+                <default>false</default>
+                <label>Sanctioned Country</label>
+            </value>
+            <value>
+                <fullName>Sanctioned Transactions (OFAC)</fullName>
+                <default>false</default>
+                <label>Sanctioned Transactions (OFAC)</label>
+            </value>
+            <value>
+                <fullName>Scaling and Display Issue</fullName>
+                <default>false</default>
+                <label>Scaling and Display Issue</label>
+            </value>
+            <value>
+                <fullName>SEPA Fraud Flags</fullName>
+                <default>false</default>
+                <label>SEPA Fraud Flags</label>
+            </value>
+            <value>
+                <fullName>Session Compromise</fullName>
+                <default>false</default>
+                <label>Session Compromise</label>
+            </value>
+            <value>
+                <fullName>Shell Case Escalation</fullName>
+                <default>false</default>
+                <label>Shell Case Escalation</label>
+            </value>
+            <value>
+                <fullName>Sherlock IPPQ</fullName>
+                <default>false</default>
+                <label>Sherlock IPPQ</label>
+            </value>
+            <value>
+                <fullName>Sign In Disabled</fullName>
+                <default>false</default>
+                <label>Sign In Disabled</label>
+            </value>
+            <value>
+                <fullName>Sign in with Coinbase API</fullName>
+                <default>false</default>
+                <label>Sign in with Coinbase API</label>
+            </value>
+            <value>
+                <fullName>Silvergate SEN</fullName>
+                <default>false</default>
+                <label>Silvergate SEN</label>
+            </value>
+            <value>
+                <fullName>Spin the Wheel</fullName>
+                <default>false</default>
+                <label>Spin the Wheel</label>
+            </value>
+            <value>
+                <fullName>Staking</fullName>
+                <default>false</default>
+                <label>Staking</label>
+            </value>
+            <value>
+                <fullName>Subpoenas</fullName>
+                <default>false</default>
+                <label>Subpoenas</label>
+            </value>
+            <value>
+                <fullName>Sweepstakes</fullName>
+                <default>false</default>
+                <label>Sweepstakes</label>
+            </value>
+            <value>
+                <fullName>T1 Escalation to Client Services</fullName>
+                <default>false</default>
+                <label>T1 Escalation to Client Services</label>
+            </value>
+            <value>
+                <fullName>Tax Support</fullName>
+                <default>false</default>
+                <label>Tax Support</label>
+            </value>
+            <value>
+                <fullName>TestNet</fullName>
+                <default>false</default>
+                <label>TestNet</label>
+            </value>
+            <value>
+                <fullName>TextMatch</fullName>
+                <default>false</default>
+                <label>TextMatch</label>
+            </value>
+            <value>
+                <fullName>To be confirmed</fullName>
+                <default>false</default>
+                <label>To be confirmed</label>
+            </value>
+            <value>
+                <fullName>Trading Orders</fullName>
+                <default>false</default>
+                <label>Trading Orders</label>
+            </value>
+            <value>
+                <fullName>Trading Performance</fullName>
+                <default>false</default>
+                <label>Trading Performance</label>
+            </value>
+            <value>
+                <fullName>Transferring between Wallet and Retail</fullName>
+                <default>false</default>
+                <label>Transferring between Wallet and Retail</label>
+            </value>
+            <value>
+                <fullName>Transferring Funds (Internally)</fullName>
+                <default>false</default>
+                <label>Transferring Funds (Internally)</label>
+            </value>
+            <value>
+                <fullName>Transfer Risk</fullName>
+                <default>false</default>
+                <label>Transfer Risk</label>
+            </value>
+            <value>
+                <fullName>Troubleshooting</fullName>
+                <default>false</default>
+                <label>Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>UAC / UPM</fullName>
+                <default>false</default>
+                <label>UAC / UPM</label>
+            </value>
+            <value>
+                <fullName>UK / EU Complaints</fullName>
+                <default>false</default>
+                <label>UK / EU Complaints</label>
+            </value>
+            <value>
+                <fullName>Unable to Login - 2FA Issues</fullName>
+                <default>false</default>
+                <label>Unable to Login - 2FA Issues</label>
+            </value>
+            <value>
+                <fullName>Unable to Login - Non 2FA Issues</fullName>
+                <default>false</default>
+                <label>Unable to Login - Non 2FA Issues</label>
+            </value>
+            <value>
+                <fullName>Unable to Verify Phone Number</fullName>
+                <default>false</default>
+                <label>Unable to Verify Phone Number</label>
+            </value>
+            <value>
+                <fullName>Unauthorized Account Creation (UAC)</fullName>
+                <default>false</default>
+                <label>Unauthorized Account Creation (UAC)</label>
+            </value>
+            <value>
+                <fullName>Unauthorized Activity Reported</fullName>
+                <default>false</default>
+                <label>Unauthorized Activity Reported</label>
+            </value>
+            <value>
+                <fullName>Unban Workflow</fullName>
+                <default>false</default>
+                <label>Unban Workflow</label>
+            </value>
+            <value>
+                <fullName>Underage User</fullName>
+                <default>false</default>
+                <label>Underage User</label>
+            </value>
+            <value>
+                <fullName>Unexpected Operations</fullName>
+                <default>false</default>
+                <label>Unexpected Operations</label>
+            </value>
+            <value>
+                <fullName>Unsupported Country / Country Change</fullName>
+                <default>false</default>
+                <label>Unsupported Country / Country Change</label>
+            </value>
+            <value>
+                <fullName>USDC Interest</fullName>
+                <default>false</default>
+                <label>USDC Interest</label>
+            </value>
+            <value>
+                <fullName>USDC Recovery</fullName>
+                <default>false</default>
+                <label>USDC Recovery</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Eligibility</fullName>
+                <default>false</default>
+                <label>USD Margin - Eligibility</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Fees</fullName>
+                <default>false</default>
+                <label>USD Margin - Fees</label>
+            </value>
+            <value>
+                <fullName>USD Margin - General Features</fullName>
+                <default>false</default>
+                <label>USD Margin - General Features</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Limits</fullName>
+                <default>false</default>
+                <label>USD Margin - Limits</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Loans</fullName>
+                <default>false</default>
+                <label>USD Margin - Loans</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Margin Calls &amp; Liquidation</fullName>
+                <default>false</default>
+                <label>USD Margin - Margin Calls &amp; Liquidation</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Orders</fullName>
+                <default>false</default>
+                <label>USD Margin - Orders</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Waitlist</fullName>
+                <default>false</default>
+                <label>USD Margin - Waitlist</label>
+            </value>
+            <value>
+                <fullName>USD Margin - Waitlist, Eligibility &amp; Signup</fullName>
+                <default>false</default>
+                <label>USD Margin - Waitlist, Eligibility &amp; Signup</label>
+            </value>
+            <value>
+                <fullName>User Security</fullName>
+                <default>false</default>
+                <label>User Security</label>
+            </value>
+            <value>
+                <fullName>Valid Submission</fullName>
+                <default>false</default>
+                <label>Valid Submission</label>
+            </value>
+            <value>
+                <fullName>Vault Withdrawals</fullName>
+                <default>false</default>
+                <label>Vault Withdrawals</label>
+            </value>
+            <value>
+                <fullName>Verf / Missing Deposit - FP</fullName>
+                <default>false</default>
+                <label>Verf / Missing Deposit - FP</label>
+            </value>
+            <value>
+                <fullName>Verification &amp; Errors for UK Bank Accts</fullName>
+                <default>false</default>
+                <label>Verification &amp; Errors for UK Bank Accts</label>
+            </value>
+            <value>
+                <fullName>Verification - CDV Troubleshooting</fullName>
+                <default>false</default>
+                <label>Verification - CDV Troubleshooting</label>
+            </value>
+            <value>
+                <fullName>Verification Issues</fullName>
+                <default>false</default>
+                <label>Verification Issues</label>
+            </value>
+            <value>
+                <fullName>Verification - Manual SEPA Bank Acct</fullName>
+                <default>false</default>
+                <label>Verification - Manual SEPA Bank Acct</label>
+            </value>
+            <value>
+                <fullName>Wallet Account Access</fullName>
+                <default>false</default>
+                <label>Wallet Account Access</label>
+            </value>
+            <value>
+                <fullName>Wallet Account Management</fullName>
+                <default>false</default>
+                <label>Wallet Account Management</label>
+            </value>
+            <value>
+                <fullName>Wallet and Retail App Transfers</fullName>
+                <default>false</default>
+                <label>Wallet and Retail App Transfers</label>
+            </value>
+            <value>
+                <fullName>Wallet Basics</fullName>
+                <default>false</default>
+                <label>Wallet Basics</label>
+            </value>
+            <value>
+                <fullName>Wallet Conversions</fullName>
+                <default>false</default>
+                <label>Wallet Conversions</label>
+            </value>
+            <value>
+                <fullName>Wallet Management</fullName>
+                <default>false</default>
+                <label>Wallet Management</label>
+            </value>
+            <value>
+                <fullName>Wallet Quick Wins</fullName>
+                <default>false</default>
+                <label>Wallet Quick Wins</label>
+            </value>
+            <value>
+                <fullName>Wallet Receives</fullName>
+                <default>false</default>
+                <label>Wallet Receives</label>
+            </value>
+            <value>
+                <fullName>Wallet Security</fullName>
+                <default>false</default>
+                <label>Wallet Security</label>
+            </value>
+            <value>
+                <fullName>Wallet Sends</fullName>
+                <default>false</default>
+                <label>Wallet Sends</label>
+            </value>
+            <value>
+                <fullName>WBL Hold Time</fullName>
+                <default>false</default>
+                <label>WBL Hold Time</label>
+            </value>
+            <value>
+                <fullName>Wire - Add Cash</fullName>
+                <default>false</default>
+                <label>Wire - Add Cash</label>
+            </value>
+            <value>
+                <fullName>Wire - Cash Out</fullName>
+                <default>false</default>
+                <label>Wire - Cash Out</label>
+            </value>
+            <value>
+                <fullName>Wires Point of No Return</fullName>
+                <default>false</default>
+                <label>Wires Point of No Return</label>
+            </value>
+            <value>
+                <fullName>Wire Withdrawal Verification</fullName>
+                <default>false</default>
+                <label>Wire Withdrawal Verification</label>
+            </value>
+            <value>
+                <fullName>Withdrawal / Return - Missing FP</fullName>
+                <default>false</default>
+                <label>Withdrawal / Return - Missing FP</label>
+            </value>
+            <value>
+                <fullName>Withdrawing Crypto from Coinbase Commerce</fullName>
+                <default>false</default>
+                <label>Withdrawing Crypto from Coinbase Commerce</label>
+            </value>
+            <value>
+                <fullName>XTZ Staking Issues</fullName>
+                <default>false</default>
+                <label>XTZ Staking Issues</label>
+            </value>
+            <value>
+                <fullName>Zengin - Deposit Issues</fullName>
+                <default>false</default>
+                <label>Zengin - Deposit Issues</label>
+            </value>
+            <value>
+                <fullName>Zengin - Withdrawal Issues</fullName>
+                <default>false</default>
+                <label>Zengin - Withdrawal Issues</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Advanced Query APIs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Cloud Product Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Developer Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Error Codes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Incident Process</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>NFT APIs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Node 101</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Node APIs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Node Scaled Billing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Rate Limits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Retail Advanced Trading API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>Sign in with Coinbase API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cloud Support</controllingFieldValue>
+            <valueName>TestNet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Account Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Account Onboarding</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Conversions</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Integrations and API</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Invoicing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Merchant Account Access</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Merchant Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Commerce Product Feedback</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Locating a Payment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Payment Issues - Customer Reaching Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Payment Issues - Merchant Reaching Out</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Commerce</controllingFieldValue>
+            <valueName>Withdrawing Crypto from Coinbase Commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NFT - Content Moderation</controllingFieldValue>
+            <valueName>Appeals</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NFT - Content Moderation</controllingFieldValue>
+            <valueName>NCC Workflow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NFT Legal</controllingFieldValue>
+            <valueName>IP/DMCA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NFT Legal</controllingFieldValue>
+            <valueName>Non-DMCA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NFT Privacy</controllingFieldValue>
+            <valueName>Data Privacy</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

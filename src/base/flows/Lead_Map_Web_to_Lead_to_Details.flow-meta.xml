@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <description>bug EAASD-15252</description>
+        <name>Assign_Customer_Tier_Value</name>
+        <label>Assign Customer Tier Value</label>
+        <locationX>292</locationX>
+        <locationY>1343</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Customer_Tier__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CustomerTier</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <description>bug EAASD-15252</description>
+        <name>GetLeadDescription</name>
+        <label>GetLeadDescription</label>
+        <locationX>424</locationX>
+        <locationY>311</locationY>
+        <assignmentItems>
+            <assignToReference>LeadDescriptionLong</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.Description</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>TrimmedLeadDescriptionAssignment</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Map_Product_Interest</name>
+        <label>Map Product Interest</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Product_Interest__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>ProductInterestValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_if_both_type_of_business_and_company_size_are_populated</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Map_values_from_Web_to_Lead</name>
+        <label>Map values from Web-to-Lead</label>
+        <locationX>182</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Customer_Segment__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CustomerSegmentValue</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Company_Size__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CompanySizeValue</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.Asset_Under_Management__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>AssetUnderManagementValue</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Product_Interest_Blank</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>bug EAASD-15252</description>
+        <name>TrimmedLeadDescriptionAssignment</name>
+        <label>TrimmedLeadDescriptionAssignment</label>
+        <locationX>424</locationX>
+        <locationY>431</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Lead_Description__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FormulaToTrimLeadDescription</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Is_Standard_Lead</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>bug EAASD-15252</description>
+        <name>Check_if_both_type_of_business_and_company_size_are_populated</name>
+        <label>Check if both type of business and company size are populated</label>
+        <locationX>424</locationX>
+        <locationY>1223</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_both_are_populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type_of_Business__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Company_Size__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Customer_Tier_Value</targetReference>
+            </connector>
+            <label>Yes - both are populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Product_Interest_Blank</name>
+        <label>Is Product Interest Blank</label>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
+        <defaultConnector>
+            <targetReference>Check_if_both_type_of_business_and_company_size_are_populated</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Is_Product_Interest_Blank_true</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Product_Interest__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Map_Product_Interest</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Standard_Lead</name>
+        <label>Is Standard Lead</label>
+        <locationX>424</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Standard_Lead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standard_Lead</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Map_values_from_Web_to_Lead</targetReference>
+            </connector>
+            <label>Standard Lead</label>
+        </rules>
+        <rules>
+            <name>BD_Lead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business_Development_Partnerships</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_if_both_type_of_business_and_company_size_are_populated</targetReference>
+            </connector>
+            <label>BD Lead</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>AssetUnderManagementValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  !ISBLANK(TEXT({!$Record.Asset_Under_Management__c})),
+  TEXT({!$Record.Asset_Under_Management__c}),
+  TEXT({!$Record.WTL_Asset_Under_Management__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>CompanySizeValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  !ISBLANK(TEXT({!$Record.Company_Size__c})),
+  TEXT({!$Record.Company_Size__c}),
+  TEXT({!$Record.WTL_Company_Size__c})
+)</expression>
+    </formulas>
+    <formulas>
+        <name>CustomerSegmentValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  !ISBLANK(TEXT({!$Record.Customer_Segment__c})),
+  TEXT({!$Record.Customer_Segment__c}),
+  IF(
+    ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Developer&apos;), 
+    &apos;Individual&apos;, 
+    TEXT({!$Record.Type_of_Business__c})
+  )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>CustomerTier</name>
+        <dataType>String</dataType>
+        <expression>IF(
+AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Startup&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Developer&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c}, &apos;1 - 10&apos;)
+), &apos;5&apos; ,
+IF(
+AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Startup&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Developer&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c}, &apos;11 - 50&apos;)
+), &apos;4&apos; , 
+IF(
+OR(
+(AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Enterprise&apos;),
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c},&apos;1 - 10&apos;)
+)),
+(AND(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Enterprise&apos;),
+ISPICKVAL({!$Record.Company_Size__c},&apos;11 - 50&apos;)
+)),
+(AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Startup&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Enterprise&apos;),
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Developer&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c},&apos;51 - 200&apos;)
+))
+)
+, &apos;3&apos; , 
+IF(
+OR(
+(AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c},&apos;11 - 50&apos;)
+)),
+(AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c},&apos;51 - 200&apos;)
+)),
+(AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Startup&apos;),
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Developer&apos;),
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Enterprise&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c},&apos;201 - 1000&apos;)
+))
+)
+, &apos;2&apos; , 
+IF(
+OR(
+(AND(
+OR(
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!$Record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!$Record.Company_Size__c},&apos;201 - 1000&apos;)
+)),
+(ISPICKVAL({!$Record.Company_Size__c},&apos;1001+&apos;))
+)
+, &apos;1&apos; , NULL)))))</expression>
+    </formulas>
+    <formulas>
+        <name>FormulaToTrimLeadDescription</name>
+        <dataType>String</dataType>
+        <expression>LEFT({!LeadDescriptionLong}, 255)</expression>
+    </formulas>
+    <formulas>
+        <name>ProductInterestValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  ISPICKVAL({!$Record.WTL_Product_Interest__c}, &apos;&apos;), 
+  &apos;Other (Unspecified)&apos;,
+  IF(
+    ISPICKVAL({!$Record.WTL_Product_Interest__c}, &apos;Participate or Delegate&apos;), 
+    &apos;Participate;Delegate&apos;,
+    TEXT({!$Record.WTL_Product_Interest__c})
+  )
+)</expression>
+    </formulas>
+    <interviewLabel>Lead: Map Web-to-Lead to Details {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead: Map Web-to-Lead to Details</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>298</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetLeadDescription</targetReference>
+        </connector>
+        <object>Lead</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>LeadDescriptionLong</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>$Record.Description</elementReference>
+        </value>
+    </variables>
+</Flow>

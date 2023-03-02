@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Financial Institution (brokerage / exchange)</fullName>
+        <default>false</default>
+        <label>Financial Institution (brokerage / exchange)</label>
+    </customValue>
+    <customValue>
+        <fullName>Crypto Business</fullName>
+        <default>false</default>
+        <label>Crypto Business</label>
+    </customValue>
+    <customValue>
+        <fullName>Institutional Investor</fullName>
+        <default>false</default>
+        <label>Institutional Investor</label>
+    </customValue>
+    <customValue>
+        <fullName>Liquidity Provider</fullName>
+        <default>false</default>
+        <label>Liquidity Provider</label>
+    </customValue>
+    <customValue>
+        <fullName>Corporate / Enterprise / Other</fullName>
+        <default>false</default>
+        <label>Corporate / Enterprise / Other</label>
+    </customValue>
+    <masterLabel>Macro Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

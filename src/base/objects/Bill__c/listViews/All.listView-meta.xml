@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Billing_Start_Date__c</columns>
+    <columns>Billing_Frequency__c</columns>
+    <columns>Opportunity__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <group>Bison_Team</group>
+    </sharedTo>
+</ListView>

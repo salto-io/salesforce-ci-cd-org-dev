@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Dapp_Sub_type_On_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED(Wallet_Opportunity_Type__c)
+),
+OR(
+ISBLANK( Account.Dapp_Sub_Type__c ),
+AND(
+INCLUDES(Account.Dapp_Sub_Type__c, &apos;Other&apos;),
+ISBLANK( Account.Dapp_Sub_Type_Other__c )
+)
+),
+ISPICKVAL(Wallet_Opportunity_Type__c, &apos;Coinbase Wallet Integration&apos;)
+)</errorConditionFormula>
+    <errorMessage>For Opportunity Type &quot;Coinbase Wallet Integration&quot;, it is required to fill out Dapp Sub-Type and Dapp Sub-Type Other on the Account</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tax_ID_Number__c</fullName>
+    <businessOwnerGroup>Data_Owner_CX</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <complianceGroup>CCPA</complianceGroup>
+    <externalId>false</externalId>
+    <label>Tax ID Number</label>
+    <length>80</length>
+    <required>false</required>
+    <securityClassification>Confidential</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N/A</fullName>
+                <default>false</default>
+                <label>N/A</label>
+            </value>
+            <value>
+                <fullName>Delegations</fullName>
+                <default>false</default>
+                <label>Delegations</label>
+            </value>
+            <value>
+                <fullName>Participation</fullName>
+                <default>false</default>
+                <label>Participation</label>
+            </value>
+            <value>
+                <fullName>Wallet-as-a-Service</fullName>
+                <default>false</default>
+                <label>Wallet-as-a-Service</label>
+            </value>
+            <value>
+                <fullName>Node</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Node</label>
+            </value>
+            <value>
+                <fullName>Query &amp; Transact</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Query &amp; Transact</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

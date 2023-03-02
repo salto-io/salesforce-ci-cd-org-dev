@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Institutional_Sales</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Grants users the ability to use the Institutional Sales app within the App Launcher. Under Assigned Apps, the App Name is Institutional Sales (Institutional_Sales).</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Sales InstitutionalSalesApp</label>
+</PermissionSet>

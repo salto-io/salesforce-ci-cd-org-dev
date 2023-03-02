@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Updated_Opportunity_Node</fullName>
+    <fields>Name</fields>
+    <fields>Node__c</fields>
+    <fields>Opportunity__c</fields>
+    <fields>Quantity__c</fields>
+    <fields>Sub_Total__c</fields>
+    <fields>Is_Delegating__c</fields>
+    <label>Updated Opportunity Node</label>
+</CompactLayout>

@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legal_Entity_Type__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <complianceGroup>CCPA</complianceGroup>
+    <description>For onboarding2.0 application</description>
+    <externalId>false</externalId>
+    <label>Legal Entity Type</label>
+    <required>false</required>
+    <securityClassification>Confidential</securityClassification>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cooperative</fullName>
+                <default>false</default>
+                <label>Cooperative</label>
+            </value>
+            <value>
+                <fullName>Corporate Trust</fullName>
+                <default>false</default>
+                <label>Corporate Trust</label>
+            </value>
+            <value>
+                <fullName>Corporation</fullName>
+                <default>false</default>
+                <label>Corporation</label>
+            </value>
+            <value>
+                <fullName>General Partnership (GP)</fullName>
+                <default>false</default>
+                <label>General Partnership (GP)</label>
+            </value>
+            <value>
+                <fullName>Government Agency</fullName>
+                <default>false</default>
+                <label>Government Agency</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Company (LLC)</fullName>
+                <default>false</default>
+                <label>Limited Liability Company (LLC)</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Partnership (LLP)</fullName>
+                <default>false</default>
+                <label>Limited Liability Partnership (LLP)</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership (LP)</fullName>
+                <default>false</default>
+                <label>Limited Partnership (LP)</label>
+            </value>
+            <value>
+                <fullName>Nonprofit / Charity</fullName>
+                <default>false</default>
+                <label>Nonprofit / Charity</label>
+            </value>
+            <value>
+                <fullName>Partnership</fullName>
+                <default>false</default>
+                <label>Partnership</label>
+            </value>
+            <value>
+                <fullName>Private Foundation</fullName>
+                <default>false</default>
+                <label>Private Foundation</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company (LTD)</fullName>
+                <default>false</default>
+                <label>Private Limited Company (LTD)</label>
+            </value>
+            <value>
+                <fullName>Public Foundation</fullName>
+                <default>false</default>
+                <label>Public Foundation</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company (PLC)</fullName>
+                <default>false</default>
+                <label>Public Limited Company (PLC)</label>
+            </value>
+            <value>
+                <fullName>REIT (Real Estate Investment Trust)</fullName>
+                <default>false</default>
+                <label>REIT (Real Estate Investment Trust)</label>
+            </value>
+            <value>
+                <fullName>Trust</fullName>
+                <default>false</default>
+                <label>Trust</label>
+            </value>
+            <value>
+                <fullName>Unincorporated (Sole Proprietorship, Sole Trader, Association or Investment Club)</fullName>
+                <default>false</default>
+                <label>Unincorporated (Sole Proprietorship, Sole Trader, Association or Investment Club)</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Individual</fullName>
+                <default>false</default>
+                <label>Individual</label>
+            </value>
+            <value>
+                <fullName>Anstalt</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Anstalt</label>
+            </value>
+            <value>
+                <fullName>Association</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Association</label>
+            </value>
+            <value>
+                <fullName>Company Limited by Guarantee having a Share Capital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Company Limited by Guarantee having a Share Capital</label>
+            </value>
+            <value>
+                <fullName>Company Limited by Guarantee not having a Share Capital</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Company Limited by Guarantee not having a Share Capital</label>
+            </value>
+            <value>
+                <fullName>Company Limited by Shares</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Company Limited by Shares</label>
+            </value>
+            <value>
+                <fullName>Company Limited by Shares / Societate in comandita pe actiuni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Company Limited by Shares / Societate in comandita pe actiuni</label>
+            </value>
+            <value>
+                <fullName>Company limited by Guarantee</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Company limited by Guarantee</label>
+            </value>
+            <value>
+                <fullName>Contractual Joint Venture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Contractual Joint Venture</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Andelsselskab med begrænset ansvar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Andelsselskab med begrænset ansvar</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Cooperativa de Responsabilidade Limitada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Cooperativa de Responsabilidade Limitada</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Genossenschaft / Société coopérative / Società cooperativa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Genossenschaft / Société coopérative / Società cooperativa</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Osuuskunta</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Osuuskunta</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Samvinnufélag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Samvinnufélag</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Sociedad Cooperativa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Sociedad Cooperativa</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Société coopérative à responsabilité limitée ou illimitée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Société coopérative à responsabilité limitée ou illimitée</label>
+            </value>
+            <value>
+                <fullName>Cooperative / Szövetkezet</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Cooperative / Szövetkezet</label>
+            </value>
+            <value>
+                <fullName>De Facto Partnership / Partnership by Estoppel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>De Facto Partnership / Partnership by Estoppel</label>
+            </value>
+            <value>
+                <fullName>Designated Activity Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Designated Activity Company</label>
+            </value>
+            <value>
+                <fullName>Economic Interest Grouping</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Economic Interest Grouping</label>
+            </value>
+            <value>
+                <fullName>Equity Joint Venture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Equity Joint Venture</label>
+            </value>
+            <value>
+                <fullName>Equity Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Equity Partnership</label>
+            </value>
+            <value>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Foundation</label>
+            </value>
+            <value>
+                <fullName>General Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership</label>
+            </value>
+            <value>
+                <fullName>General Partnership (Societate in nume colectiv, S.N.C.)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership (Societate in nume colectiv, S.N.C.)</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Ansvarlig Selskap / Selskap med delt ansvar</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Ansvarlig Selskap / Selskap med delt ansvar</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Avoin yhtiö</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Avoin yhtiö</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Handelsbolag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Handelsbolag</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Interessentskab</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Interessentskab</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Kollektivgesellschaft / Société en nom collectif / Società in nome collettivo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Kollektivgesellschaft / Société en nom collectif / Società in nome collettivo</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Offene Gesellschaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Offene Gesellschaft</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Offene Handelsgesellschaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Offene Handelsgesellschaft</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Pilnsabiedrība</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Pilnsabiedrība</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Sameignarfélag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Sameignarfélag</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Sociedad Colectiva</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Sociedad Colectiva</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Société en nom collectif</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Société en nom collectif</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Spółka jawna</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Spółka jawna</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Tikroji ūkinė bendrija</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Tikroji ūkinė bendrija</label>
+            </value>
+            <value>
+                <fullName>General Partnership / Vennootschap onder firma</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / Vennootschap onder firma</label>
+            </value>
+            <value>
+                <fullName>General Partnership / javno trgovačko društvo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / javno trgovačko društvo</label>
+            </value>
+            <value>
+                <fullName>General Partnership / subiratelno druzhestvo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General Partnership / subiratelno druzhestvo</label>
+            </value>
+            <value>
+                <fullName>General partnership / Közkereseti társaság</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General partnership / Közkereseti társaság</label>
+            </value>
+            <value>
+                <fullName>General partnership / Omórrithmi Etaireía</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General partnership / Omórrithmi Etaireía</label>
+            </value>
+            <value>
+                <fullName>General partnership / Società in nome collettivo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General partnership / Società in nome collettivo</label>
+            </value>
+            <value>
+                <fullName>General partnership / Täisühing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General partnership / Täisühing</label>
+            </value>
+            <value>
+                <fullName>General partnership / Verejná obchodná spoločnosť</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>General partnership / Verejná obchodná spoločnosť</label>
+            </value>
+            <value>
+                <fullName>Incorporated</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorporated</label>
+            </value>
+            <value>
+                <fullName>Incorporated Limited Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Incorporated Limited Partnership</label>
+            </value>
+            <value>
+                <fullName>Individual (Custody only)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Individual (Custody only)</label>
+            </value>
+            <value>
+                <fullName>Individual Private Client</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Individual Private Client</label>
+            </value>
+            <value>
+                <fullName>Investment Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Investment Company</label>
+            </value>
+            <value>
+                <fullName>Joint Venture</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Joint Venture</label>
+            </value>
+            <value>
+                <fullName>Limited Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Company</label>
+            </value>
+            <value>
+                <fullName>Limited Company / Spoločnosť s ručením obmedzeným</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Company / Spoločnosť s ručením obmedzeným</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Liability Company</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Company / Korlátolt felelősségű társaság</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Liability Company / Korlátolt felelősségű társaság</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Liability Partnership</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Partnership / Kommandittselskap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Liability Partnership / Kommandittselskap</label>
+            </value>
+            <value>
+                <fullName>Limited Liability Partnership / Spółka partnerska</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Liability Partnership / Spółka partnerska</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Betéti társaság</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Betéti társaság</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Commanditaire vennootschap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Commanditaire vennootschap</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Eterórrithmi Etaireía</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Eterórrithmi Etaireía</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Komanditinė ūkinė bendrija</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Komanditinė ūkinė bendrija</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Komanditna družba</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Komanditna družba</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Komanditná spoločnosť</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Komanditná spoločnosť</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Komanditní společnos</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Komanditní společnos</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Komandītsabiedrība</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Komandītsabiedrība</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Kommanditbolag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Kommanditbolag</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Kommanditgesellschaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Kommanditgesellschaft</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Kommanditgesellschaft / Société en commandite / Società in accomandita</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Kommanditgesellschaft / Société en commandite / Società in accomandita</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Kommanditselskab</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Kommanditselskab</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Samlagsfélag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Samlagsfélag</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Sociedad Comanditaria</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Sociedad Comanditaria</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Societate in comandita simpla</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Societate in comandita simpla</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Société en commandite simple</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Société en commandite simple</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / Spółka komandytowa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / Spółka komandytowa</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / komanditno druzhestvo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / komanditno druzhestvo</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership / komanditno društvo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership / komanditno društvo</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership Company / Sociedades em Comandita</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership Company / Sociedades em Comandita</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership with shares</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership with shares</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership with shares / Spółka komandytowo-akcyjna</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership with shares / Spółka komandytowo-akcyjna</label>
+            </value>
+            <value>
+                <fullName>Limited Partnership/ Usaldusühing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited Partnership/ Usaldusühing</label>
+            </value>
+            <value>
+                <fullName>Limited partnership / Kommandiittiyhtiö</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited partnership / Kommandiittiyhtiö</label>
+            </value>
+            <value>
+                <fullName>Limited partnership / Società in accomandita semplice</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited partnership / Società in accomandita semplice</label>
+            </value>
+            <value>
+                <fullName>Limited partnership with a limited liability company as general partner</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Limited partnership with a limited liability company as general partner</label>
+            </value>
+            <value>
+                <fullName>New Private Limited Company / Idiotiki Kefalaiouchiki Etaireía</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>New Private Limited Company / Idiotiki Kefalaiouchiki Etaireía</label>
+            </value>
+            <value>
+                <fullName>No liability Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>No liability Company</label>
+            </value>
+            <value>
+                <fullName>Nonprofit Association</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Nonprofit Association</label>
+            </value>
+            <value>
+                <fullName>Norwegian Registered Foreign Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Norwegian Registered Foreign Company</label>
+            </value>
+            <value>
+                <fullName>Norwegian Registered Foreign Company / Norskregistrert utenlandsk foretak</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Norwegian Registered Foreign Company / Norskregistrert utenlandsk foretak</label>
+            </value>
+            <value>
+                <fullName>Partnership / Sociedade em Nome coletivo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Partnership / Sociedade em Nome coletivo</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company (Ltd.)</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company (Ltd.)</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Aksjeselskap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Aksjeselskap</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Aktiebolag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Aktiebolag</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Anpartsselskab</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Anpartsselskab</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Besloten Vennootschap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Besloten Vennootschap</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Družba z omejeno odgovornostjo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Družba z omejeno odgovornostjo</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Einkahlutafélag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Einkahlutafélag</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Etaireía Periorisménis Efthínis</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Etaireía Periorisménis Efthínis</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Gesellschaft mit beschränkter Haftung</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Gesellschaft mit beschränkter Haftung</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Gesellschaft mit beschränkter Haftung / Société à responsabilité limitée / Società a garanzia limitata</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Gesellschaft mit beschränkter Haftung / Société à responsabilité limitée / Società a garanzia limitata</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Limitada</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Limitada</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Osakeyhtiö</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Osakeyhtiö</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Sabiedrība ar ierobežotu atbildību</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Sabiedrība ar ierobežotu atbildību</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Sociedad Limitada / Sociedad Limitada Nueva Empresa</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Sociedad Limitada / Sociedad Limitada Nueva Empresa</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Societate cu raspundere limitata</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Societate cu raspundere limitata</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Société par Actions Simplifiées</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Société par Actions Simplifiées</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Société privée à responsabilité limitée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Société privée à responsabilité limitée</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Société à responsabilité limitée</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Société à responsabilité limitée</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Společnost s ručením omezeným</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Společnost s ručením omezeným</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Spółka z ograniczoną odpowiedzialnością</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Spółka z ograniczoną odpowiedzialnością</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Uždaroji akcinė bendrovė</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Uždaroji akcinė bendrovė</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / Zártkörűen működő részvénytársaság</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / Zártkörűen működő részvénytársaság</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / drujestvo s ogranichena otgovornost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / drujestvo s ogranichena otgovornost</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company / društvo s ograničenom odgovornošću</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company / društvo s ograničenom odgovornošću</label>
+            </value>
+            <value>
+                <fullName>Private Limited Company Startup / Iværksætterselskab</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Company Startup / Iværksætterselskab</label>
+            </value>
+            <value>
+                <fullName>Private Limited Liability Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private Limited Liability Company</label>
+            </value>
+            <value>
+                <fullName>Private limited company / Osaühing</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Private limited company / Osaühing</label>
+            </value>
+            <value>
+                <fullName>Proprietary Limited Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Proprietary Limited Company</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Akciju sabiedrība</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Akciju sabiedrība</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Akcinė bendrovė</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Akcinė bendrovė</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Akciová společnost</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Akciová společnost</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Akciová spoločnosť</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Akciová spoločnosť</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Aktiengesellschaft</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Aktiengesellschaft</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Aktiengesellschaft / Société anonyme / Società anonima</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Aktiengesellschaft / Société anonyme / Società anonima</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Aktieselskab</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Aktieselskab</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Allmennaksjeselskap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Allmennaksjeselskap</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Anónimi Etaireía</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Anónimi Etaireía</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Delniška družba</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Delniška družba</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Hlutafélag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Hlutafélag</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Julkinen osakeyhtiö</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Julkinen osakeyhtiö</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Naamloze vennootschap</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Naamloze vennootschap</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Publiktaktiebolag</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Publiktaktiebolag</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Sociedad Anónima</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Sociedad Anónima</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Sociedade Anónima</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Sociedade Anónima</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Societate pe actiuni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Societate pe actiuni</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Società per azioni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Società per azioni</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Société anonyme</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Société anonyme</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / Spółka akcyjna</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / Spółka akcyjna</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / aktsionerno Drujestvo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / aktsionerno Drujestvo</label>
+            </value>
+            <value>
+                <fullName>Public Limited Company / dioničko društvo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Company / dioničko društvo</label>
+            </value>
+            <value>
+                <fullName>Public Limited Liability Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public Limited Liability Company</label>
+            </value>
+            <value>
+                <fullName>Public limited company / Aktsiaselts</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public limited company / Aktsiaselts</label>
+            </value>
+            <value>
+                <fullName>Public limited company / Nyilvánosan működő részvénytársaság</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Public limited company / Nyilvánosan működő részvénytársaság</label>
+            </value>
+            <value>
+                <fullName>Publicly Traded Partnership</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Publicly Traded Partnership</label>
+            </value>
+            <value>
+                <fullName>Registered Political Party</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Registered Political Party</label>
+            </value>
+            <value>
+                <fullName>Simple Limited Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Simple Limited Company</label>
+            </value>
+            <value>
+                <fullName>Simple Limited Company / jednostavno društvo s ograničenom odgovornošću</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Simple Limited Company / jednostavno društvo s ograničenom odgovornošću</label>
+            </value>
+            <value>
+                <fullName>Simplified Private Limited Company / Società a responsabilità limitata semplificata</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Simplified Private Limited Company / Società a responsabilità limitata semplificata</label>
+            </value>
+            <value>
+                <fullName>Single Member Ltd</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Single Member Ltd</label>
+            </value>
+            <value>
+                <fullName>Sole Proprietorship</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sole Proprietorship</label>
+            </value>
+            <value>
+                <fullName>Sole Trader / Sole Proprietorship</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Sole Trader / Sole Proprietorship</label>
+            </value>
+            <value>
+                <fullName>Traditional Private Limited Company / Società a responsabilità limitata</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Traditional Private Limited Company / Società a responsabilità limitata</label>
+            </value>
+            <value>
+                <fullName>Unlimited Company</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unlimited Company</label>
+            </value>
+            <value>
+                <fullName>Unlimited Company / Družba z neomejeno odgovornostjo</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unlimited Company / Družba z neomejeno odgovornostjo</label>
+            </value>
+            <value>
+                <fullName>Unlimited Liability Cooperative</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unlimited Liability Cooperative</label>
+            </value>
+            <value>
+                <fullName>Unlimited Liability Corporations</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unlimited Liability Corporations</label>
+            </value>
+            <value>
+                <fullName>Unlimited Proprietary</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Unlimited Proprietary</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

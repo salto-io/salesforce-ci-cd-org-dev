@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BD_Dapp_Sub_Type_Other</fullName>
+    <active>true</active>
+    <description>SFCC-986: Mandatory if DAPP Sub-Type has &quot;Other&quot; value selected</description>
+    <errorConditionFormula>AND(
+ RecordType.DeveloperName = &apos;Business_Development_Partnerships&apos;,
+ INCLUDES(Dapp_Sub_Type__c , &apos;Other&apos;),
+ ISBLANK(Dapp_Sub_Type_Other__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Dapp_Sub_Type_Other__c</errorDisplayField>
+    <errorMessage>This field should be filled in when Dapp Sub-type has &quot;Other&quot; value</errorMessage>
+</ValidationRule>

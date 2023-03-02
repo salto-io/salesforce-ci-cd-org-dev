@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>EST - Eastern Standard Time - GMT-5:00</fullName>
+        <default>false</default>
+        <label>EST - Eastern Standard Time - GMT-5:00</label>
+    </customValue>
+    <customValue>
+        <fullName>CST - Central Standard Time - GMT-6:00</fullName>
+        <default>false</default>
+        <label>CST - Central Standard Time - GMT-6:00</label>
+    </customValue>
+    <customValue>
+        <fullName>PST - Pacific Standard Time - GMT-8:00</fullName>
+        <default>false</default>
+        <label>PST - Pacific Standard Time - GMT-8:00</label>
+    </customValue>
+    <customValue>
+        <fullName>GMT - Greenwich Mean Time - GMT</fullName>
+        <default>false</default>
+        <label>GMT - Greenwich Mean Time - GMT</label>
+    </customValue>
+    <customValue>
+        <fullName>ECT - European Central Time - GMT+1:00</fullName>
+        <default>false</default>
+        <label>ECT - European Central Time - GMT+1:00</label>
+    </customValue>
+    <customValue>
+        <fullName>EET - Eastern European Time - GMT+2:00</fullName>
+        <default>false</default>
+        <label>EET - Eastern European Time - GMT+2:00</label>
+    </customValue>
+    <customValue>
+        <fullName>VST - Vietnam Standard Time - GMT+7:00</fullName>
+        <default>false</default>
+        <label>VST - Vietnam Standard Time - GMT+7:00</label>
+    </customValue>
+    <customValue>
+        <fullName>CTT - China Taiwan Time - GMT+8:00</fullName>
+        <default>false</default>
+        <label>CTT - China Taiwan Time - GMT+8:00</label>
+    </customValue>
+    <customValue>
+        <fullName>JST - Japan Standard Time - GMT+9:00</fullName>
+        <default>false</default>
+        <label>JST - Japan Standard Time - GMT+9:00</label>
+    </customValue>
+    <customValue>
+        <fullName>UTC - Universal Coordinated Time - GMT</fullName>
+        <default>false</default>
+        <label>UTC - Universal Coordinated Time - GMT</label>
+    </customValue>
+    <customValue>
+        <fullName>ART - (Arabic) Egypt Standard Time - GMT+2:00</fullName>
+        <default>false</default>
+        <label>ART - (Arabic) Egypt Standard Time - GMT+2:00</label>
+    </customValue>
+    <customValue>
+        <fullName>EAT - Eastern African Time - GMT+3:00</fullName>
+        <default>false</default>
+        <label>EAT - Eastern African Time - GMT+3:00</label>
+    </customValue>
+    <customValue>
+        <fullName>MET - Middle East Time - GMT+3:30</fullName>
+        <default>false</default>
+        <label>MET - Middle East Time - GMT+3:30</label>
+    </customValue>
+    <customValue>
+        <fullName>NET - Near East Time - GMT+4:00</fullName>
+        <default>false</default>
+        <label>NET - Near East Time - GMT+4:00</label>
+    </customValue>
+    <customValue>
+        <fullName>PLT - Pakistan Lahore Time - GMT+5:00</fullName>
+        <default>false</default>
+        <label>PLT - Pakistan Lahore Time - GMT+5:00</label>
+    </customValue>
+    <customValue>
+        <fullName>IST - India Standard Time - GMT+5:30</fullName>
+        <default>false</default>
+        <label>IST - India Standard Time - GMT+5:30</label>
+    </customValue>
+    <customValue>
+        <fullName>BST - Bangladesh Standard Time - GMT+6:00</fullName>
+        <default>false</default>
+        <label>BST - Bangladesh Standard Time - GMT+6:00</label>
+    </customValue>
+    <customValue>
+        <fullName>ACT - Australia Central Time - GMT+9:30</fullName>
+        <default>false</default>
+        <label>ACT - Australia Central Time - GMT+9:30</label>
+    </customValue>
+    <customValue>
+        <fullName>AET - Australia Eastern Time - GMT+10:00</fullName>
+        <default>false</default>
+        <label>AET - Australia Eastern Time - GMT+10:00</label>
+    </customValue>
+    <customValue>
+        <fullName>SST - Solomon Standard Time - GMT+11:00</fullName>
+        <default>false</default>
+        <label>SST - Solomon Standard Time - GMT+11:00</label>
+    </customValue>
+    <customValue>
+        <fullName>NST - New Zealand Standard Time - GMT+12:00</fullName>
+        <default>false</default>
+        <label>NST - New Zealand Standard Time - GMT+12:00</label>
+    </customValue>
+    <customValue>
+        <fullName>MIT - Midway Islands Time - GMT-11:00</fullName>
+        <default>false</default>
+        <label>MIT - Midway Islands Time - GMT-11:00</label>
+    </customValue>
+    <customValue>
+        <fullName>HST - Hawaii Standard Time - GMT-10:00</fullName>
+        <default>false</default>
+        <label>HST - Hawaii Standard Time - GMT-10:00</label>
+    </customValue>
+    <customValue>
+        <fullName>AST - Alaska Standard Time - GMT-9:00</fullName>
+        <default>false</default>
+        <label>AST - Alaska Standard Time - GMT-9:00</label>
+    </customValue>
+    <customValue>
+        <fullName>PNT - Phoenix Standard Time - GMT-7:00</fullName>
+        <default>false</default>
+        <label>PNT - Phoenix Standard Time - GMT-7:00</label>
+    </customValue>
+    <customValue>
+        <fullName>MST - Mountain Standard Time - GMT-7:00</fullName>
+        <default>false</default>
+        <label>MST - Mountain Standard Time - GMT-7:00</label>
+    </customValue>
+    <customValue>
+        <fullName>IET - Indiana Eastern Standard Time - GMT-5:00</fullName>
+        <default>false</default>
+        <label>IET - Indiana Eastern Standard Time - GMT-5:00</label>
+    </customValue>
+    <customValue>
+        <fullName>PRT - Puerto Rico and US Virgin Islands Time - GMT-4:00</fullName>
+        <default>false</default>
+        <label>PRT - Puerto Rico and US Virgin Islands Time - GMT-4:00</label>
+    </customValue>
+    <customValue>
+        <fullName>CNT - Canada Newfoundland Time - GMT-3:30</fullName>
+        <default>false</default>
+        <label>CNT - Canada Newfoundland Time - GMT-3:30</label>
+    </customValue>
+    <customValue>
+        <fullName>AGT - Argentina Standard Time - GMT-3:00</fullName>
+        <default>false</default>
+        <label>AGT - Argentina Standard Time - GMT-3:00</label>
+    </customValue>
+    <customValue>
+        <fullName>BET - Brazil Eastern Time - GMT-3:00</fullName>
+        <default>false</default>
+        <label>BET - Brazil Eastern Time - GMT-3:00</label>
+    </customValue>
+    <customValue>
+        <fullName>CAT - Central African Time - GMT-1:00</fullName>
+        <default>false</default>
+        <label>CAT - Central African Time - GMT-1:00</label>
+    </customValue>
+    <masterLabel>Timezones</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

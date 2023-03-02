@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wallet_Opportunity_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Wallet Opportunity Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coinbase Wallet Integration</fullName>
+                <default>false</default>
+                <label>Coinbase Wallet Integration</label>
+            </value>
+            <value>
+                <fullName>Wallet Campaign/Quest</fullName>
+                <default>false</default>
+                <label>Wallet Campaign/Quest</label>
+            </value>
+            <value>
+                <fullName>Dapp Discovery Browsers</fullName>
+                <default>false</default>
+                <label>Dapp Discovery Browsers</label>
+            </value>
+            <value>
+                <fullName>Dapp Marketplace Integration</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Dapp Marketplace Integration</label>
+            </value>
+            <value>
+                <fullName>DmP Qualification</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>DmP Qualification</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

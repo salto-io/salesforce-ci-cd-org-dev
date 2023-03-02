@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UBO_ID__c</fullName>
+    <businessOwnerGroup>Data_Owner_CX</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <caseSensitive>false</caseSensitive>
+    <externalId>true</externalId>
+    <label>UBO ID</label>
+    <length>255</length>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Discord</fullName>
+        <default>false</default>
+        <label>Discord</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Phone</fullName>
+        <default>false</default>
+        <label>Phone</label>
+    </customValue>
+    <customValue>
+        <fullName>Slack</fullName>
+        <default>false</default>
+        <label>Slack</label>
+    </customValue>
+    <customValue>
+        <fullName>Telegram</fullName>
+        <default>false</default>
+        <label>Telegram</label>
+    </customValue>
+    <customValue>
+        <fullName>Twitter</fullName>
+        <default>false</default>
+        <label>Twitter</label>
+    </customValue>
+    <masterLabel>Preferred Contact Method</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Qualified but Did Not Pass Rejection Rules</fullName>
+        <default>false</default>
+        <label>Qualified but Did Not Pass Rejection Rules</label>
+    </customValue>
+    <description>SFDCCCM-4110
+This can help Lead, Account, Contact and Opportunity be in sync</description>
+    <masterLabel>Lead Assessment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

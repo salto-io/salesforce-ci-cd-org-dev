@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acct_Mgmt_Reason</fullName>
+    <active>true</active>
+    <description>Requires a case reason on Acct. Management cases.</description>
+    <errorConditionFormula>AND (
+ISPICKVAL( Reason , &quot;&quot;),
+RecordType.Name = &quot;Acct Management&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Reason</errorDisplayField>
+    <errorMessage>Please specify a case reason</errorMessage>
+</ValidationRule>

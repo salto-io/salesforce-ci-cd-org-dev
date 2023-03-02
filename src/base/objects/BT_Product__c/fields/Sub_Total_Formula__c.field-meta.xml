@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Total_Formula__c</fullName>
+    <description>This is the subtotal of the participation and subscription fees for this node opportunity.</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISPICKVAL(Product_Type__c,&apos;Wallet-as-a-Service&apos;)),
+
+
+IF(OR(ISBLANK(Node_Price__c), Node_Price__c = 0.00), 
+(Quantity__c * Node__r.Base_Node_Price__c * 12), 
+(Quantity__c * Node_Price__c * 12)) +   
+IF(Transaction_Fee_Rewards__c = TRUE, (Avg_Transaction_Volume__c * Avg_Transaction_Fee__c) * (Tokens_Staked__c /  Avg_Total_Staked__c) * Participatory_Fee__c * 12, IF(TEXT(Node__r.Node_Family__c) = &quot;Delegation&quot;,  (Node__r.Delegation_Fee__c  * Tokens_Staked__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), IF(ISBLANK(Participatory_Fee__c), (Node__r.Participatory_Fee__c * Tokens_Staked__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), (Participatory_Fee__c * Tokens_Staked__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c)))),
+
+
+
+IF(OR(ISBLANK(Node_Price__c), Node_Price__c = 0.00),
+(Quantity__c * Node__r.Base_Node_Price__c * 12),
+(Quantity__c * Node_Price__c * 12)) +
+IF(Transaction_Fee_Rewards__c = TRUE, (Avg_Transaction_Volume__c * Avg_Transaction_Fee__c) * (Unique_Active_Wallet__c / Avg_Total_Staked__c) * Participatory_Fee__c * 12, IF(TEXT(Node__r.Node_Family__c) = &quot;Delegation&quot;, (Node__r.Delegation_Fee__c * Unique_Active_Wallet__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), IF(ISBLANK(Participatory_Fee__c), (Node__r.Participatory_Fee__c * Unique_Active_Wallet__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c), (Participatory_Fee__c * Unique_Active_Wallet__c * Node__r.Protocol__r.Inflation_Rate__c * Node__r.Protocol__r.Price__c))))
+
+
+
+
+
+
+)</formula>
+    <inlineHelpText>This is the subtotal of the participation and subscription fees for this node opportunity.</inlineHelpText>
+    <label>Sub Total Formula</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

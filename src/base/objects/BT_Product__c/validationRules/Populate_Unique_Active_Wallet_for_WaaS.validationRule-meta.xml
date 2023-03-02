@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Populate_Unique_Active_Wallet_for_WaaS</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Product_Type__c,&apos;Wallet-as-a-Service&apos;),
+Unique_Active_Wallet__c &lt;= 0
+
+
+
+
+
+)</errorConditionFormula>
+    <errorDisplayField>Unique_Active_Wallet__c</errorDisplayField>
+    <errorMessage>Unique Active Wallet field must be populated if Product Type is WaaS</errorMessage>
+</ValidationRule>

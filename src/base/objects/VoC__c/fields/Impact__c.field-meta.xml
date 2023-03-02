@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Impact__c</fullName>
+    <externalId>false</externalId>
+    <label>Impact</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Blocker</fullName>
+                <default>false</default>
+                <label>Blocker</label>
+            </value>
+            <value>
+                <fullName>Challenge</fullName>
+                <default>false</default>
+                <label>Challenge</label>
+            </value>
+            <value>
+                <fullName>Nice to have</fullName>
+                <default>false</default>
+                <label>Nice to have</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

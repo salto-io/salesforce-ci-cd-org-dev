@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Coinbase_Wallet_connected__c</fullName>
+    <description>SFCC-859</description>
+    <externalId>false</externalId>
+    <label>Is Coinbase Wallet connected?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Choice_Options</valueSetName>
+    </valueSet>
+</CustomField>

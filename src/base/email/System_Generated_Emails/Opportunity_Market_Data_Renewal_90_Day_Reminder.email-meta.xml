@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Opportunity Market Data Renewal Opportunity Alerts 90</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opportunity Market Data Renewal 90 Day Reminder</name>
+    <style>none</style>
+    <subject>{!Opportunity.Name} 90 Days from Renewal</subject>
+    <textOnly>Hello {!Opportunity.Name},
+{!Opportunity.Name} is 90 days from the renewal date of . Please ensure you have contacted the client to begin the renewal process.
+
+Link to Opportunity:  {!Opportunity.Name}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

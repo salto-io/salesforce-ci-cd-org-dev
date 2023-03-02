@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Segment__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <description>Institutional Customer Segmentation https://jira.coinbase-corp.com/browse/SFDC1-5436</description>
+    <externalId>false</externalId>
+    <label>Sub Segment</label>
+    <required>false</required>
+    <securityClassification>Internal</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Segment__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Sub_Segment</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Traditional Asset Manager</controllingFieldValue>
+            <valueName>Mutual Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Asset Manager</controllingFieldValue>
+            <valueName>Closed-end Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Asset Manager</controllingFieldValue>
+            <valueName>Unit Investment Trust</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Asset Manager</controllingFieldValue>
+            <valueName>ETF/ETP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Equity Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Event Driven Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Credit Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Relative Value Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Macro Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Hedge Fund of Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Managed Futures / CTA Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Hedge Fund</controllingFieldValue>
+            <valueName>Multi-Strategy Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional VC / PE</controllingFieldValue>
+            <valueName>Early Stage Only VC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional VC / PE</controllingFieldValue>
+            <valueName>Growth Only VC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional VC / PE</controllingFieldValue>
+            <valueName>Multi-Stage VC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional VC / PE</controllingFieldValue>
+            <valueName>Private Equity Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional VC / PE</controllingFieldValue>
+            <valueName>Venture Fund of Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Principal / HF Trader</controllingFieldValue>
+            <valueName>High Frequency Trader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Principal / HF Trader</controllingFieldValue>
+            <valueName>Market Maker / Prop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Administrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Auditor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Tax Advisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Law Firm</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>OMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>PMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>EMS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Compliance Advisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Corporation / Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Accounting System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>eCommerce / Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Social Media / Tech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Re-distribution Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Payments / Processors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Corporate / Enterprise</controllingFieldValue>
+            <valueName>Gaming</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Net Worth Individual</controllingFieldValue>
+            <valueName>Individual HNWI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>High Net Worth Individual</controllingFieldValue>
+            <valueName>Crypto HNWI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web3</controllingFieldValue>
+            <valueName>DeFi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web3</controllingFieldValue>
+            <valueName>NFTs / Collectibles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web3</controllingFieldValue>
+            <valueName>GameFi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web3</controllingFieldValue>
+            <valueName>On-Chain Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Web3</controllingFieldValue>
+            <valueName>DeSo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Custody</controllingFieldValue>
+            <valueName>Crypto Custody</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Non-Profit / Non-Governmental Organization (NPO/NGO)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Financial Institution</controllingFieldValue>
+            <valueName>Crypto Brokerage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Financial Institution</controllingFieldValue>
+            <valueName>Crypto Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Financial Institution</controllingFieldValue>
+            <valueName>Crypto Lender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Financial Institution</controllingFieldValue>
+            <valueName>Crypto OTC Desk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Financial Institution</controllingFieldValue>
+            <valueName>Bank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Financial Institution</controllingFieldValue>
+            <valueName>Fintech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Financial Institution</controllingFieldValue>
+            <valueName>Prime Brokerage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Financial Institution</controllingFieldValue>
+            <valueName>Traditional Brokerage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Traditional Financial Institution</controllingFieldValue>
+            <valueName>Traditional Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miner / Mining Pool</controllingFieldValue>
+            <valueName>Miner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Miner / Mining Pool</controllingFieldValue>
+            <valueName>Mining Pool</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto / Blockchain Company</controllingFieldValue>
+            <valueName>Crypto Merchant / Business</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto / Blockchain Company</controllingFieldValue>
+            <valueName>Crypto Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto / Blockchain Company</controllingFieldValue>
+            <valueName>Crypto Wallet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto / Blockchain Company</controllingFieldValue>
+            <valueName>Other Crypto / Blockchain Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Corporate Investor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Endowment Plan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Foundation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Government Agency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Insurance Company</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Investment Bank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Private Sector Pension Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Public Pension Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Sovereign Wealth Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Allocator</controllingFieldValue>
+            <valueName>Supperannuation Scheme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Asset Manager</controllingFieldValue>
+            <valueName>Crypto Asset Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Hedge Fund</controllingFieldValue>
+            <valueName>Crypto Fundamental L/O or L/S Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Hedge Fund</controllingFieldValue>
+            <valueName>Crypto Systematic / Quant Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Hedge Fund</controllingFieldValue>
+            <valueName>Crypto Hedge Fund of Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Hedge Fund</controllingFieldValue>
+            <valueName>Crypto Multi-Strategy Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Hedge Fund</controllingFieldValue>
+            <valueName>Crypto Venture Hybrid Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Crypto Venture Fund</controllingFieldValue>
+            <valueName>Crypto Venture Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Private Wealth</controllingFieldValue>
+            <valueName>Multi Family Offices</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Private Wealth</controllingFieldValue>
+            <valueName>Private Wealth Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Private Wealth</controllingFieldValue>
+            <valueName>Single Family Office</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

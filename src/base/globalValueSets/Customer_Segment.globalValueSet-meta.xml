@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Enterprise</fullName>
+        <default>false</default>
+        <label>Enterprise</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Services</fullName>
+        <default>false</default>
+        <label>Financial Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Individual</fullName>
+        <default>false</default>
+        <label>Individual</label>
+    </customValue>
+    <customValue>
+        <fullName>Institutional Investor</fullName>
+        <default>false</default>
+        <label>Institutional Investor</label>
+    </customValue>
+    <customValue>
+        <fullName>Internal Coinbase Team</fullName>
+        <default>false</default>
+        <label>Internal Coinbase Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Startup</fullName>
+        <default>false</default>
+        <label>Startup</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Service - Traditional</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Financial Service - Traditional</label>
+    </customValue>
+    <customValue>
+        <fullName>Financial Service - Crypto Native</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Financial Service - Crypto Native</label>
+    </customValue>
+    <customValue>
+        <fullName>Startups</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Startups</label>
+    </customValue>
+    <masterLabel>Customer Segment</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

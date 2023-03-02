@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Products__c</fullName>
+    <businessOwnerGroup>Data_Owner_Sales_Trading_Prime</businessOwnerGroup>
+    <businessStatus>Active</businessStatus>
+    <externalId>false</externalId>
+    <label>Products</label>
+    <required>false</required>
+    <securityClassification>Public</securityClassification>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prime</fullName>
+                <default>false</default>
+                <label>Prime</label>
+            </value>
+            <value>
+                <fullName>Exchange</fullName>
+                <default>false</default>
+                <label>Exchange</label>
+            </value>
+            <value>
+                <fullName>Custody</fullName>
+                <default>false</default>
+                <label>Custody</label>
+            </value>
+            <value>
+                <fullName>Trade Finance</fullName>
+                <default>false</default>
+                <label>Trade Finance</label>
+            </value>
+            <value>
+                <fullName>Custody Lending</fullName>
+                <default>false</default>
+                <label>Custody Lending</label>
+            </value>
+            <value>
+                <fullName>Shorting</fullName>
+                <default>false</default>
+                <label>Shorting</label>
+            </value>
+            <value>
+                <fullName>Margin</fullName>
+                <default>false</default>
+                <label>Margin</label>
+            </value>
+            <value>
+                <fullName>Enhanced Cash</fullName>
+                <default>false</default>
+                <label>Enhanced Cash</label>
+            </value>
+            <value>
+                <fullName>Marketplace</fullName>
+                <default>false</default>
+                <label>Marketplace</label>
+            </value>
+            <value>
+                <fullName>Exchange API</fullName>
+                <default>false</default>
+                <label>Exchange API</label>
+            </value>
+            <value>
+                <fullName>Prime Analytics</fullName>
+                <default>false</default>
+                <label>Prime Analytics</label>
+            </value>
+            <value>
+                <fullName>Coinbase Managed Commerce</fullName>
+                <default>false</default>
+                <label>Coinbase Managed Commerce</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

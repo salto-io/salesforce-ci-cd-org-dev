@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trial_Validation</fullName>
+    <active>true</active>
+    <description>This rule ensures tickets have all required data attached to them before they are moved to the trial stage.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(StageName, &quot;Trial&quot;),
+  OR(
+    ISBLANK(Primary_Contact__c),
+    ISBLANK(TEXT(Ideal_Timezone__c)) 
+  ) 
+)</errorConditionFormula>
+    <errorMessage>The customer&apos;s ideal timezone and primary contact are required to move an opportunity to the trial phase!</errorMessage>
+</ValidationRule>

@@ -1,0 +1,2600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Onboarding_Pipeline</fullName>
+    <active>true</active>
+    <businessProcess>Onboarding Process</businessProcess>
+    <compactLayoutAssignment>Custom_Case_Compact</compactLayoutAssignment>
+    <description>This is the standard pipeline for the Onboarding Process.</description>
+    <label>Onboarding Pipeline</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Advanced Trading API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Wallet SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delegate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Exchange%2FPro API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General API Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Cloud Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Node</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Participate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prime API</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Country__c</picklist>
+        <values>
+            <fullName>Afghanistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aland Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Albania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Andorra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Angola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Anguilla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antarctica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Antigua and Barbuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Argentina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Armenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aruba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Austria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Azerbaijan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahamas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bahrain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bangladesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Barbados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belarus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belgium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Belize</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Benin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bermuda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhutan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bolivia%2C Plurinational State of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bonaire%2C Sint Eustatius and Saba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bosnia and Herzegovina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Botswana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bouvet Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brazil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>British Indian Ocean Territory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Brunei Darussalam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bulgaria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burkina Faso</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Burundi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cambodia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cameroon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cape Verde</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cayman Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Central African Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Christmas Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cocos %28Keeling%29 Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Colombia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Comoros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Congo%2C the Democratic Republic of the</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cook Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Costa Rica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cote d%E2%80%99Ivoire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Croatia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cuba</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Curaçao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cyprus</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Czech Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Denmark</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Djibouti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dominican Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ecuador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Egypt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Salvador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Equatorial Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eritrea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Estonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethiopia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falkland Islands %28Malvinas%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faroe Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fiji</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Guiana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Polynesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Southern Territories</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gabon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gambia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Georgia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ghana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gibraltar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greece</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greenland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Grenada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guadeloupe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guatemala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guernsey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guinea-Bissau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Guyana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Haiti</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heard Island and McDonald Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Holy See %28Vatican City State%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honduras</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hungary</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iceland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>India</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indonesia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iran%2C Islamic Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iraq</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ireland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Isle of Man</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Israel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jamaica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jersey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jordan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kazakhstan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kenya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kiribati</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea%2C Democratic People%E2%80%99s Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Korea%2C Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kuwait</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kyrgyzstan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lao People%E2%80%99s Democratic Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latvia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lebanon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lesotho</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liberia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Libya</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liechtenstein</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lithuania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Luxembourg</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macao</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Macedonia%2C the former Yugoslav Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Madagascar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malawi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malaysia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maldives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mali</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Martinique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauritania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mauritius</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayotte</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moldova%2C Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monaco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mongolia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montenegro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Montserrat</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Morocco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mozambique</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Myanmar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Namibia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nauru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nepal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Caledonia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Zealand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nicaragua</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nigeria</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Niue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norfolk Island</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Norway</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oman</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pakistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Palestine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Panama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Papua New Guinea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paraguay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peru</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Philippines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pitcairn</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portugal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Qatar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reunion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Romania</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Russian Federation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rwanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Barthélemy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Helena%2C Ascension and Tristan da Cunha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Kitts and Nevis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Lucia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Martin %28French part%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Pierre and Miquelon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saint Vincent and the Grenadines</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Samoa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Marino</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sao Tome and Principe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Saudi Arabia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Senegal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Serbia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seychelles</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sierra Leone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Singapore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sint Maarten %28Dutch part%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovakia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slovenia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solomon Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Somalia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Africa</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Georgia and the South Sandwich Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sri Lanka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sudan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suriname</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Svalbard and Jan Mayen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swaziland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweden</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Switzerland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Syrian Arab Republic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tajikistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tanzania%2C United Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Thailand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timor-Leste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Togo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tokelau</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tonga</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trinidad and Tobago</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tunisia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turkmenistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Turks and Caicos Islands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tuvalu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uganda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ukraine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Arab Emirates</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United Kingdom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>United States</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uruguay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uzbekistan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vanuatu</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Venezuela%2C Bolivarian Republic of</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vietnam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Virgin Islands%2C British</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallis and Futuna</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western Sahara</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yemen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zambia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zimbabwe</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L1_Workflow__c</picklist>
+        <values>
+            <fullName>Ecosystem Ops</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L2_Workflow__c</picklist>
+        <values>
+            <fullName>Cloud Support</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>L3_Workflow__c</picklist>
+        <values>
+            <fullName>ACH - Buy %2F Add Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACH - Disable Buy Flag</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACH - Sell %2F Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACH - Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACH Quick-Wins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>API Basic Questions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ATO Investigations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Deletion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Recovery - IDV Friction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Security Guarantee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Account Statements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address Book %26 Whitelisting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Address Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Admin Override</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Advanced Query APIs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aggregator Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>All Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Bugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>App Navigation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Appeals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apple Pay Buys</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Approving Joint Deposits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Asset Ratings and Reviews</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Attacker in Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bank Cash Out %28ITB%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bidding %28Offers %2B Auctions%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Borrow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Buying %28Fixed Price%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bypass FCA High Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COPPA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CX Email Compromised</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Can%27t Send Crypto - Security Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Buy %2F Deposit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Deposit From CX Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card - Canceled Buy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card - Fees %2F Unknown Charges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card - Instant Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card - Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Card Dispute</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Clawback Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cloud Product Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Asset Hub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Card - Blocked Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Card - EU %26 UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Card - US</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase One Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Account Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Conversions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Integrations and API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Invoicing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Merchant Account Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Merchant Trust</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commerce Product Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Compliance Bans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consumer Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Country Change to Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Creator Drops</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto Gifts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto Labels</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto Question Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto Quick Wins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto TX Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto to Crypto Conversions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer is Traveling</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEX Trading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dapp Browser Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dapp Marketplace</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Deletion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Privacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DeFi Yield</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Death Of Account Holder %28DOAH%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposit %2F Withdrawal - Canada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposit Policy Restriction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposits and Withdrawals %28Crypto%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deposits%2FWithdrawals - GBP Faster Payments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Destination Tag Recon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Developer Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Direct Deposit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disable Security Key %28U2F%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disable TOTP or Authy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disputes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duplicate Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Easy Bank Transfer - Add Cash - UK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eligibility Requirements</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error Codes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalation Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FCA - High Risk Customer ID %26 Fiat Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FURM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facematch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Faster Payments - Add Cash%2FCash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Features and Bugs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fees and Limits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Funds Sent to Input Address</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GDAX Balance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>General Privacy Inquiries</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generating Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geofence %2F Unsupported Asset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICCO Receipts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDV %28Jumio%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDV %2B eKYC Failure Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDV - Jumio Failed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDV Quick Win</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IDV%2FEDP Bypass</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPS - Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IMPS - Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IP%2FDMCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Identity Document Verification %28IDV%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Information Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instant Card Withdrawal %28RTP%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International Country Verification%3A Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>International USD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JPM SEPA - Add Cash %2F Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan T1 Zengin Deposit Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan T1 Zengin Withdrawal Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan T2 Quick Deposit Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japan T2 Zengin Withdrawal Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC %2F IDV Onboarding Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC Failure %28Idology%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC Migration and Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC Refresh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KYC Verification Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LHV SEPA - Add Cash %2F Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Learning Rewards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legal Name</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit %26 Level Increase Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit Adjustments</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Limit Increase Requests</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Linking Bank Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Listing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Locating a Payment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Access - Balance Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Access - Security Key %28U2F%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost Device %2F 2FA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MACd User - Privacy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MUFG - Withdrawal Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mandatory Account Closure %28MAC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual SEPA Transfer Matching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Misrouted coinbase%2Ecom cases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Incoming</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Outgoing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing SEPA Deposit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing SEPA Withdrawal or Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Wire Deposit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Wire Transfer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Missing Wire Withdraw</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Coinbase Accounts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multiple Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCC Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NFT APIs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NFT Internal Verifications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NFT Product Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Node 101</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Node APIs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Node Scaled Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-DMCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Enough Information</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Receiving SMS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Valid - 24 hours</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Valid - No CS Contact</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Valid - Repeat Final Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orders and Trades Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIX - Add Cash%2FCash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partnership Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayID - Add Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayID - Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayID - Verfication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal - Buy %2F Add Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal - Sell %2F Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal - Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Verification %2F Name Mismatch Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PayPal Withdraw %2F Sell Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Issues - Customer Reaching Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Issues - Merchant Reaching Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Method Restrictions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Method Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment Stuck in Created</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending Screening Flags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Port Account Takeovers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Scam Victim</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Physical Check Procedure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Plaid Verification Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portfolios</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pricing Changes %28Oct 2019%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Privacy Regulatory Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Mobile App</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Mobile Ordering Remediation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pro Payments Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Providing POA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Payments - SIFT Score Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Payments - User Credential Review</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Push Payments Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate Limits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recall Process - Kumimodoshi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recall Process - Multi Bank</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Receipt Request</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recurring Transactions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referrals%2C Incentives%2C Sweepstakes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Repeat Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reports</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Advanced Trade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Advanced Trading API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail App Receives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail App Sends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Onboarding - Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Onboarding - Japan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Onboarding - Multi Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail Onboarding - U%2ES%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rewards</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Risk IDV Reviews</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEPA Fraud Flags</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Access Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanctioned Country</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sanctioned Transactions %28OFAC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scaling and Display Issue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Session Compromise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shell Case Escalation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sherlock IPPQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign In Disabled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sign in with Coinbase API</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silvergate SEN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Spin the Wheel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Staking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subpoenas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sweepstakes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1 Escalation to Client Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TestNet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TextMatch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be confirmed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trading Performance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transfer Risk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferring Funds %28Internally%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transferring between Wallet and Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UAC %2F UPM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UK %2F EU Complaints</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Eligibility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Fees</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - General Features</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Limits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Loans</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Margin Calls %26 Liquidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Orders</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Waitlist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USD Margin - Waitlist%2C Eligibility %26 Signup</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USDC Interest</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USDC Recovery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Login - 2FA Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Login - Non 2FA Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unable to Verify Phone Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unauthorized Account Creation %28UAC%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unauthorized Activity Reported</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unban Workflow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Underage User</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unexpected Operations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unsupported Country %2F Country Change</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valid Submission</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vault Withdrawals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verf %2F Missing Deposit - FP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification %26 Errors for UK Bank Accts</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification - CDV Troubleshooting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification - Manual SEPA Bank Acct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Verification Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WBL Hold Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Account Access</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Account Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Basics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Conversions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Management</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Quick Wins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Receives</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Security</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet Sends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wallet and Retail App Transfers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire - Add Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire - Cash Out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wire Withdrawal Verification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wires Point of No Return</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawal %2F Return - Missing FP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Withdrawing Crypto from Coinbase Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>XTZ Staking Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zengin - Deposit Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zengin - Withdrawal Issues</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>iDeal %2F Sofort - Add Cash</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>BT Decision</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BT Service Related - Missing Functionality %2F Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BT Service Related - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BT Service Related - Price Sensitivity %2F Competition</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-BT Service Related - Asset Liquidation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-BT Service Related - Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-BT Service Related - Protocol Issues</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Element</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telegram</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upload</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Product__c</picklist>
+        <values>
+            <fullName>Coinbase Cloud</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Commerce</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase NFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Wallet</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Protocol__c</picklist>
+        <values>
+            <fullName>Acala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Algorand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Aptos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Avalanche</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Axelar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Binance Smart Chain</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bitcoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bitcoin Cash</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bitcoin SV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cardano</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Celo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coinbase Pay SDK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cosmos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crypto%2Ecom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Decred</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dogecoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Edgeware</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Eth2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethereum 1%2EX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethereum Classic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Evmos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Keep</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kusama</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Litecoin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Livepeer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mina</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moonbeam</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Moonriver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NuCypher</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oasis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ontology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Osmosis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Polkadot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Terra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tezos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>The Graph</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Threshold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Zcash</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Account Plan Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Infrastructure Activity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Meeting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Offboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding Close-out</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Platform</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Research</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subcategory__c</picklist>
+        <values>
+            <fullName>General Feedback</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Onboarding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trial</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

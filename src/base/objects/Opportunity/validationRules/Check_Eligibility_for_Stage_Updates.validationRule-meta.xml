@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_Eligibility_for_Stage_Updates</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+OR(
+ISNEW(),
+ISCHANGED(StageName)
+),
+OR(
+ISPICKVAL(StageName,&apos;Signed&apos;),
+ISPICKVAL(StageName,&apos;Executed&apos;),
+ISPICKVAL(StageName,&apos;Closed Won&apos;)
+),
+RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Dapp Discovery Browsers&apos;),
+Eligibility__c == &apos;Pending&apos;
+
+)</errorConditionFormula>
+    <errorMessage>In order to move to Signed stage or beyond, Eligibility must not be PENDING for Wallet Opportunity Type = Dapp Discovery Browsers</errorMessage>
+</ValidationRule>

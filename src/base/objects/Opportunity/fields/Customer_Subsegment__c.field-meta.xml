@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Subsegment__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Upon creation, Customer Subsegment is defaulted from Account</inlineHelpText>
+    <label>Customer Subsegment</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Customer_Segment__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Customer_Subsegment</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>Social Media</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>Ecommerce/Retail</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>Payments</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>Consulting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>Auditor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>Technology Providers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Enterprise</controllingFieldValue>
+            <valueName>NPO / NGO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Bank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Fintech</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Traditional Brokers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Traditional Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Brokers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Custody</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Financial Services</controllingFieldValue>
+            <valueName>Crypto Exchange</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Developers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Digital Artist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Celebrity/Influencers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Musicians</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Individual</controllingFieldValue>
+            <valueName>Sports</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto Asset Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto Hedge Funds</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto Venture Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Crypto HNWI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>ETF/ETP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Allocators</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Institutional Private Wealth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Traditional Asset Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Traditional Hedge Fund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Institutional Investor</controllingFieldValue>
+            <valueName>Traditional VC / PE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>Protocol Foundation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>Wallets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>DeFi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>NFTs / Collectibles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>GameFi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>On-Chain Data</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>Other Crypto / Blockchain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Startup</controllingFieldValue>
+            <valueName>Web 3.0</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Coinbase Cloud</fullName>
+        <default>false</default>
+        <label>Coinbase Cloud</label>
+    </customValue>
+    <customValue>
+        <fullName>Coinbase Commerce</fullName>
+        <default>false</default>
+        <label>Coinbase Commerce</label>
+    </customValue>
+    <customValue>
+        <fullName>Coinbase Wallet</fullName>
+        <default>false</default>
+        <label>Coinbase Wallet</label>
+    </customValue>
+    <customValue>
+        <fullName>Coinbase NFT</fullName>
+        <default>false</default>
+        <label>Coinbase NFT</label>
+    </customValue>
+    <masterLabel>Product</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

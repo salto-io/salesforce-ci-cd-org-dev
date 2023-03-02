@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Company</fieldNames>
+        <fieldNames>Website</fieldNames>
+        <fieldNames>Industry</fieldNames>
+        <fieldNames>AnnualRevenue</fieldNames>
+        <fieldNames>NumberOfEmployees</fieldNames>
+        <info>&lt;strong&gt;Learn about and contact your new lead quickly.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Use Salesforce leads to separate prospects from the Salesforce contacts you’ve already sold to.&lt;br&gt;&lt;br&gt;Respond to your lead within five minutes to increase your chances of converting the lead record to an opportunity. 
+&lt;ul&gt;&lt;li&gt;Visit your lead’s website to learn about your lead’s business and industry.&lt;/li&gt;&lt;li&gt;Find your lead on social networks to determine how to best engage and connect.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;strong&gt;Congratulations! &lt;/strong&gt;Now it’s time to convert the lead record to an opportunity. Then, continue the qualification process with your new contact.</info>
+        <picklistValueName>Qualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Rating</fieldNames>
+        <info>&lt;strong&gt;Nurture your lead so that you’re top-of-mind.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Send emails based on time intervals and your leads’ actions on our website. Nurturing leads helps to free up time to focus on other opportunities in your pipeline.
+&lt;ul&gt;&lt;li&gt;Assign a rating to your lead based on what you’ve learned during the qualification process.&lt;/li&gt;&lt;li&gt;Work with marketing to add your lead to campaigns to further nurture the relationship.&lt;/li&gt;&lt;li&gt;Before you mark your lead Unqualified, schedule six follow-up tasks to email or call your lead.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Stale</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>Title</fieldNames>
+        <fieldNames>Email</fieldNames>
+        <fieldNames>MobilePhone</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <info>&lt;strong&gt;Verify contact information and qualify your lead.&lt;/strong&gt;&lt;br&gt;&lt;br&gt;Gather as much contact information as you can. Get tips from the pros about &lt;u&gt;the importance of qualifying your lead&lt;/u&gt;.
+
+&lt;ul&gt;&lt;li&gt;Get your lead’s email address, phone number, and title so that you can include your lead in future campaigns.&lt;/li&gt;&lt;li&gt;Email your lead first, and immediately follow up with a phone call.&lt;/li&gt;&lt;li&gt;Rehearse your call scripts so that you sound confident and the flow of your conversation is more natural.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Working</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

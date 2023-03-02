@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><br></div>Hi Team,<div><br></div><div>A new lead has been generated from the Marketing website. The details can be found below.</div><div><br></div><div>Email:&nbsp;{!Lead.Email}</div><div><br></div><div>Name:&nbsp;{!Lead.Name}</div><div><br></div><div>Protocol of Interest:&nbsp;{!Lead.RecordType}</div><div><br></div><div>Message:&nbsp;{!Lead.Description}</div><div><br></div><div>Link:&nbsp;{!Lead.Link}</div>]]></td>
+</tr>
+</table>

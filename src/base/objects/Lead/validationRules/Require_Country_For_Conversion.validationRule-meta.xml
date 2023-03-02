@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Country_For_Conversion</fullName>
+    <active>true</active>
+    <description>[SFCC-396] Require Country for Lead Conversion</description>
+    <errorConditionFormula>AND(
+RecordType.DeveloperName = &apos;Standard_Lead&apos;,
+  IsConverted,
+  ISBLANK(Countries_of_Incorporation__c) 
+)</errorConditionFormula>
+    <errorDisplayField>Countries_of_Incorporation__c</errorDisplayField>
+    <errorMessage>Countries of Incorporation should be entered before lead conversion!</errorMessage>
+</ValidationRule>

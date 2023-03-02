@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Set_Opportunity_Amount</name>
+        <label>Set Opportunity Amount</label>
+        <locationX>50</locationX>
+        <locationY>278</locationY>
+        <assignmentItems>
+            <assignToReference>record.Amount</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_CalculatedAmountValue</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Opportunity_Amount_Override</name>
+        <label>Opportunity Amount Override?</label>
+        <locationX>182</locationX>
+        <locationY>158</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>(1 AND 2) OR 3</conditionLogic>
+            <conditions>
+                <leftValueReference>record.Total_Node_Value__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.Amount_Override__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.Estimated_Value__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Opportunity_Amount</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>[SFCC-1292]: This overrides the default opportunity value using our custom subtotals.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>for_CalculatedAmountValue</name>
+        <dataType>Number</dataType>
+        <expression>IF(
+OR(
+{!record.Total_Node_Value__c} &gt; 0,
+ISPICKVAL({!record.Estimated_Value__c},&quot;&quot;)
+),
+{!record.Total_Node_Value__c},
+IF(
+ISPICKVAL({!record.Estimated_Value__c}, &quot;Low (&lt;70k)&quot;),
+35000,
+IF(
+ISPICKVAL({!record.Estimated_Value__c}, &quot;Mid (&gt;70k, &lt;300k)&quot;),
+185000,
+IF(
+ISPICKVAL({!record.Estimated_Value__c}, &quot;High (&gt;300k)&quot;),
+300000,
+0
+)
+)
+)
+)</expression>
+        <scale>0</scale>
+    </formulas>
+    <interviewLabel>TA_Opportunity_SetCalculatedAmount {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TA Opportunity SetCalculatedAmount</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Opportunity_Amount_Override</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+</Flow>

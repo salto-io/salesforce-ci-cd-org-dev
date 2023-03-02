@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead_Diamond_Logo</letterhead>
+    <name>CBDC Auto-Reply</name>
+    <style>freeForm</style>
+    <subject>Thank You for Downloading Our Report</subject>
+    <textOnly>Thank you for downloading the Infrastructure and Design of Central Bank Digital Currencies report from Bison Trails. To learn more about our product offerings, contact sales@bisontrails.co. </textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>Example</name>
+    </fieldSets>
+    <layouts>	
+        <layout>Account Institutional Layout</layout>	
+        <sections>	
+            <label></label>	
+            <section>Additional Information</section>	
+        </sections>	
+        <sections>	
+            <label></label>	
+            <section>Client Summary / Strategy</section>	
+        </sections>	
+        <sections>	
+            <label></label>	
+            <section>Growth and Churn Indicators</section>	
+        </sections>	
+    </layouts>
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Location and Contract Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Size and Segmentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Support Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Business Development &amp; Partnerships</layout>
+        <sections>
+            <label></label>
+            <section>Team Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Account_Wallet_Details</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Update_Account_For_Opportunities</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>tr_wc1__New_Screening</name>
+    </quickActions>
+    <recordTypes>
+        <description></description>
+        <label></label>
+        <name>Business_Development_Partnerships</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Cloud_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Institutional</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BD_Chain_Supported_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BD_Dapp_Sub_Type_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BD_Partner_Category_DAPP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BD_Partner_Category_Other</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>BD_Pay_Competitor_Other</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>Billing</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Ironclad_NDA</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>tr_wc1__New_Screening</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Default</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Loss_Reason__c</fieldNames>
+        <info>&lt;strong&gt;Revise techniques to increase future wins.&lt;/strong&gt;
+
+&lt;ul&gt;&lt;li&gt;What contributed to losing this opportunity?&lt;/li&gt;&lt;li&gt;What do we need to do differently to improve our chances of winning?&lt;/li&gt;&lt;li&gt;Schedule a follow-up task or event for this account.&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <info>&lt;img alt=&quot;User-added image&quot; src=&quot;https://bisontrails--lavanya.sandbox.file.force.com/servlet/rtaImage?eid=1CF4W000000HV8Y&amp;amp;feoid=Info&amp;amp;refid=0EM4W000001rnAu&quot; style=&quot;height: 118px; width: 500px;&quot;&gt;&lt;/img&gt;</info>
+        <picklistValueName>Closed Won</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <info>&lt;strong&gt;Negotiate value and resolve objections.&lt;/strong&gt;
+
+&lt;ul&gt;&lt;li&gt;Have you confirmed all key decision makers are on board?&lt;/li&gt;&lt;li&gt;Have you focused enough on selling the value to negotiate the best price?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Negotiation</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>ROI_Analysis_Completed__c</fieldNames>
+        <info>&lt;div style=&quot;font-family: arial, sans, sans-serif;&quot;&gt;&lt;strong&gt;Present the solution and understand the buying process.&lt;/strong&gt;&lt;/div&gt;
+
+&lt;ul&gt;&lt;li&gt;Where are they in the buying cycle?&lt;/li&gt;&lt;li&gt;What&amp;#39;s the process to generate purchase orders?&lt;/li&gt;&lt;li&gt;Who are the key decision makers?  Have you added them to the opportunity?&lt;/li&gt;&lt;li&gt;How can you communicate the value of our solutions to those decision makers?&lt;/li&gt;&lt;li&gt;What&amp;#39;s the status of quantifying ROI with them?&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Proposal</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>CloseDate</fieldNames>
+        <fieldNames>Description</fieldNames>
+        <fieldNames>Budget_Confirmed__c</fieldNames>
+        <info>&lt;p class=&quot;p1&quot;&gt;&lt;strong&gt;&lt;span class=&quot;s1&quot;&gt;Qualify the opportunity and confirm budget.&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;span class=&quot;s1&quot;&gt;What&amp;#39;s their business?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;s1&quot;&gt;What problems are they trying to solve?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;s1&quot;&gt;How does solving these problems help them?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;s1&quot;&gt;Is the timing good for them?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;s1&quot;&gt;What&amp;#39;s their budget?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;s1&quot;&gt;What other solutions are they considering?&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>__MASTER__</recordTypeName>
+</PathAssistant>

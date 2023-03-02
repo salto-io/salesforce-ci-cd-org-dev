@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New Business</fullName>
+        <default>false</default>
+        <label>New Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cross-sell</fullName>
+        <default>false</default>
+        <label>Cross-sell</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upsell</fullName>
+        <default>false</default>
+        <label>Upsell</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Renewal</fullName>
+        <default>false</default>
+        <label>Renewal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Revenue Generating</fullName>
+        <default>false</default>
+        <label>Revenue Generating</label>
+    </standardValue>
+</StandardValueSet>

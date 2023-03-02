@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <assignments>
+        <name>Set_Customer_Tier_Value</name>
+        <label>Set Customer Tier Value</label>
+        <locationX>446</locationX>
+        <locationY>830</locationY>
+        <assignmentItems>
+            <assignToReference>record.Customer_Tier__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>for_CustomerTierValue</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>Are_both_the_type_of_business_and_company_size_populated</name>
+        <label>Are both the type of business and company size populated?</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Both_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>record.Type_of_Business__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.Company_Size__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Customer_Tier_Value</targetReference>
+            </connector>
+            <label>Yes Both Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Both_Populated_And_Company_Size_Customer_Tier_is_Changed</name>
+        <label>Both Populated And Company Size/ Customer Tier is Changed?</label>
+        <locationX>490</locationX>
+        <locationY>398</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Both_Populated_And_Either_one_Changed</name>
+            <conditionLogic>1 AND 2 AND (3 OR 4)</conditionLogic>
+            <conditions>
+                <leftValueReference>record.Type_of_Business__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.Company_Size__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.Company_Size__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>recordPrior.Company_Size__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.Customer_Tier__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>recordPrior.Customer_Tier__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Set_Customer_Tier_Value</targetReference>
+            </connector>
+            <label>Yes Both Populated And Either one Changed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>DML_Event</name>
+        <label>DML Event?</label>
+        <locationX>446</locationX>
+        <locationY>278</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Before_Insert_Event</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordPrior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Are_both_the_type_of_business_and_company_size_populated</targetReference>
+            </connector>
+            <label>Before Insert Event</label>
+        </rules>
+        <rules>
+            <name>Before_Update_Event</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>recordPrior</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Both_Populated_And_Company_Size_Customer_Tier_is_Changed</targetReference>
+            </connector>
+            <label>Before Update Event</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>RecordType</name>
+        <label>RecordType?</label>
+        <locationX>776</locationX>
+        <locationY>158</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>BD_StandardLead</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Business_Development_Partnerships</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standard_Lead</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>DML_Event</targetReference>
+            </connector>
+            <label>BD &amp; StandardLead</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>for_CustomerTierValue</name>
+        <dataType>String</dataType>
+        <expression>IF(
+AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Startup&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Developer&apos;)
+),
+ISPICKVAL({!record.Company_Size__c}, &apos;1 - 10&apos;)
+), &apos;5&apos; ,
+IF(
+AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Startup&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Developer&apos;)
+),
+ISPICKVAL({!record.Company_Size__c}, &apos;11 - 50&apos;)
+), &apos;4&apos; , 
+IF(
+OR(
+(AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Enterprise&apos;),
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!record.Company_Size__c},&apos;1 - 10&apos;)
+)),
+(AND(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Enterprise&apos;),
+ISPICKVAL({!record.Company_Size__c},&apos;11 - 50&apos;)
+)),
+(AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Startup&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Enterprise&apos;),
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Developer&apos;)
+),
+ISPICKVAL({!record.Company_Size__c},&apos;51 - 200&apos;)
+))
+)
+, &apos;3&apos; , 
+IF(
+OR(
+(AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!record.Company_Size__c},&apos;11 - 50&apos;)
+)),
+(AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!record.Company_Size__c},&apos;51 - 200&apos;)
+)),
+(AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Startup&apos;),
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Developer&apos;),
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Enterprise&apos;)
+),
+ISPICKVAL({!record.Company_Size__c},&apos;201 - 1000&apos;)
+))
+)
+, &apos;2&apos; , 
+IF(
+OR(
+(AND(
+OR(
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Financial Services&apos;), 
+ISPICKVAL({!record.Type_of_Business__c}, &apos;Institutional Investor&apos;)
+),
+ISPICKVAL({!record.Company_Size__c},&apos;201 - 1000&apos;)
+)),
+(ISPICKVAL({!record.Company_Size__c},&apos;1001+&apos;))
+)
+, &apos;1&apos; , NULL)))))</expression>
+    </formulas>
+    <interviewLabel>TA_Lead_SetCustomerTier {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TA_Lead_SetCustomerTier</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>650</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>RecordType</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>record</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+    <variables>
+        <name>recordPrior</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Lead</objectType>
+    </variables>
+</Flow>

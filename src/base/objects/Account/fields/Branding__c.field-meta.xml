@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Branding__c</fullName>
+    <description>SFCC-859</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does the Partner&apos;s Platform adhere to all of Coinbase&apos;s branding requirements?</inlineHelpText>
+    <label>Branding?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Choice_Options</valueSetName>
+    </valueSet>
+</CustomField>

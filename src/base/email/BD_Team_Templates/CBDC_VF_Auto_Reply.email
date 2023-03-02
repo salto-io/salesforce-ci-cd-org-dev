@@ -1,0 +1,28 @@
+<messaging:emailTemplate subject="Thank You for Downloading Our Report" recipientType="Lead" replyTo="sales@bisontrails.co">
+<messaging:htmlEmailBody >
+        <html>
+            <head>
+                <link rel="stylesheet" href="https://bisontrails.co/mobile.css"/>
+                <meta name="color-scheme" content="light dark"/>
+                <meta name="supported-color-schemes" content="light dark"/>
+            </head>
+            <body style="max-width: 600px; margin: auto;">
+                <div class="light-img-wrapper">
+                    <div style="text-align:center;"><img src="https://bisontrails--c.documentforce.com/servlet/servlet.ImageServer?id=0154W00000D0TaH&oid=00D4W000008GlwG&lastMod=1619872882000" width="150" height="auto" style="display: block; height: auto; margin: 40px auto;" class="light-img"/></div>
+                </div>
+                <div class="dark-img-wrapper" style="mso-hide: all; display: none">
+                    <div style="text-align:center;"><img src="https://bisontrails--c.documentforce.com/servlet/servlet.ImageServer?id=0154W00000D0T3a&oid=00D4W000008GlwG&lastMod=1619703678000" width="100" height="auto" class="dark-img" style="display: none; margin: 40px auto;"/></div>
+                </div>
+                <div style="max-width: 600px; margin: auto; margin-bottom:30px;"><p style="color: #212121; font-size: 18px; font-family: 'Helvetica', 'Arial', sans-serif;">Thank you for downloading <em>Infrastructure and Design of Central Bank Digital Currencies</em> from Bison Trails. Contact <a style="text-decoration-color: #FFFFFF; color: #2335D8; font-family: 'Helvetica', 'Arial', sans-serif;" href="mailto:sales@bisontrails.co">sales@bisontrails.co</a> to learn more about our product offerings.</p></div>
+                <hr style="color: #f5f5f5; max-width: 600px; margin: auto;"></hr>
+                <div style="clear: both; max-width: 600px; margin: auto;">
+                    <p style="float: left;"><a style="text-decoration-color: #FFFFFF; color: #2335D8; font-family: 'Helvetica', 'Arial', sans-serif;" href="https://bisontrails.co">bisontrails.co</a></p>
+                    <p style="float: right;"><a style="text-decoration-color: #FFFFFF; color: #2335D8; font-family: 'Helvetica', 'Arial', sans-serif;" href="mailto:support@bisontrails.co">support@bisontrails.co</a></p>
+                </div>
+            </body>
+        </html>
+</messaging:htmlemailbody>
+<messaging:plainTextEmailBody >
+Thank you for downloading Infrastructure and Design of Central Bank Digital Currencies from Bison Trails. Contact sales@bisontrails.co to learn more about our product offerings.
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

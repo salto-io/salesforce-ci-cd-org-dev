@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Support_Case_BPO</fullName>
+    <fields>Subject</fields>
+    <fields>CaseNumber</fields>
+    <fields>CreatedDate</fields>
+    <fields>SuppliedEmail</fields>
+    <fields>AccountId</fields>
+    <fields>ContactId</fields>
+    <label>Support Case - BPO</label>
+</CompactLayout>

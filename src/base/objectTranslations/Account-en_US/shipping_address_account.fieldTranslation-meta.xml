@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Address</value>
+    </caseValues>
+    <name>shipping_address_account</name>
+    <startsWith>Consonant</startsWith>
+</CustomFieldTranslation>

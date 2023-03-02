@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OPP_001</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(RecordType.DeveloperName = &quot;Market_Data_Renewal&quot;,
+NOT(ISPICKVAL(Original_Opportunity__r.StageName,&quot;Closed Won&quot;)))</errorConditionFormula>
+    <errorMessage>Original Opportunity is not Closed Won. Close the opportunity before saving this renewal opportunity. [OPP_001]</errorMessage>
+</ValidationRule>

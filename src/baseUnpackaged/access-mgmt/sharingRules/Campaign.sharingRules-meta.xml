@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Cloud_Temp_Role_Access</fullName>
+        <accessLevel>All</accessLevel>
+        <description>[SFCC-1578] Opening sharing for Temp role user</description>
+        <label>Cloud Temp Role Access</label>
+        <sharedTo>
+            <role>Cloud_Temp_Role</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>IsActive</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_ID__c</fullName>
+    <externalId>true</externalId>
+    <inlineHelpText>Organization ID is the Coinbase Cloud ID assigned to each customer. Org ID can be found in the Coinbase Cloud Console.</inlineHelpText>
+    <label>Organization ID</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

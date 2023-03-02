@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Alert to CS that there is a new Trial in the pipeline.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>BT_Letterhead</letterhead>
+    <name>New Trial Alert</name>
+    <style>freeForm</style>
+    <subject>New Trial in the Pipeline</subject>
+    <textOnly>Hi CS Team!
+
+There is a new Trial ready to be run through the pipeline.
+
+Account Name: {!Opportunity.Account}
+
+Ideal Timezone: {!Opportunity.Ideal_Timezone__c}
+
+Trial Link: {!Case.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants users the ability to select Commerce when creating an opportunity. This permission set assigns the Commerce record type for the Opportunity object.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity Commerce</label>
+    <recordTypeVisibilities>
+        <recordType>Opportunity.Commerce</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+</PermissionSet>

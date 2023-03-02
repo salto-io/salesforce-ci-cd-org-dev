@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <description>[SFCC-396] Account Region based on Countries of Incorporation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Region is based on Countries of Incorporation. If multiple countries from different Regions are selected, then Region is Global.</inlineHelpText>
+    <label>Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Region</valueSetName>
+    </valueSet>
+</CustomField>

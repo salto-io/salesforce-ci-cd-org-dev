@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Countries_of_Incorporation__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Upon creation, Countries of Incorporation is defaulted from Account</inlineHelpText>
+    <label>Countries of Incorporation</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Countries_of_Incorporation</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

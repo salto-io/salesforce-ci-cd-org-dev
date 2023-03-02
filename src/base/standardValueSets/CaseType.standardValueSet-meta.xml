@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>Acct Management</fullName>
+        <default>false</default>
+        <label>Acct Management</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Billing</fullName>
+        <default>false</default>
+        <label>Billing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Support</fullName>
+        <default>false</default>
+        <label>General Support</label>
+    </standardValue>
+    <standardValue>
+        <fullName>New Asset</fullName>
+        <default>false</default>
+        <label>New Asset</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Onboarding</fullName>
+        <default>false</default>
+        <label>Onboarding</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Trial</fullName>
+        <default>false</default>
+        <label>Trial</label>
+    </standardValue>
+</StandardValueSet>

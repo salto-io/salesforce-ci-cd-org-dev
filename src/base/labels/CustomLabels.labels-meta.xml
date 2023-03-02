@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Call_Out_Threshold</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Call_Out_Threshold</shortDescription>
+        <value>5</value>
+    </labels>
+    <labels>
+        <fullName>Lead_Integration_User_Id</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Lead_Integration_User_Id</shortDescription>
+        <value>0054W00000EBnG1QAL</value>
+    </labels>
+    <labels>
+        <fullName>Validation_Error_Wallet_Opp_Type_And_NoFiles</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Validation_Error_Wallet_Opp_Type_And_NoFiles</shortDescription>
+        <value>You cannot move Stage to Executed or beyond if Wallet Opportunity Type is Wallet Campaign/Quest and there is no file associated with the opportunity</value>
+    </labels>
+</CustomLabels>

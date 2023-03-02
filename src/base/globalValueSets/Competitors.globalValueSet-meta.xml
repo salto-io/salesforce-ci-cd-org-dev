@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Metamask</fullName>
+        <default>false</default>
+        <label>Metamask</label>
+    </customValue>
+    <customValue>
+        <fullName>Wallet Connect</fullName>
+        <default>false</default>
+        <label>Wallet Connect</label>
+    </customValue>
+    <customValue>
+        <fullName>Trust Wallet</fullName>
+        <default>false</default>
+        <label>Trust Wallet</label>
+    </customValue>
+    <customValue>
+        <fullName>Rainbow</fullName>
+        <default>false</default>
+        <label>Rainbow</label>
+    </customValue>
+    <customValue>
+        <fullName>Phantom</fullName>
+        <default>false</default>
+        <label>Phantom</label>
+    </customValue>
+    <description>SFCC-859</description>
+    <masterLabel>Competitors</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

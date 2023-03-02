@@ -1,0 +1,96 @@
+<aura:component
+    controller="OpportunityPathComponentController"
+    implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId"
+    access="global"
+>
+    <aura:attribute name="variant" type="String" default="linear" />
+    <aura:attribute name="hideUpdateButton" type="Boolean" default="false" />
+    <aura:attribute name="coreSalesOpportunity" type="Opportunity" />
+    <aura:attribute name="coreSalesRecordTypeId" type="String" />
+    <aura:attribute name="noCoreSalesOppExist" type="Boolean" default="true" />
+
+    <aura:attribute name="accountRecord" type="Object" />
+    <aura:attribute name="recordLoadError" type="String" />
+    <force:recordData
+        aura:id="recordLoader"
+        recordId="{!v.recordId}"
+        fields="Name"
+        targetFields="{!v.accountRecord}"
+        targetError="{!v.recordLoadError}"
+    />
+    <aura:attribute name="loading" type="Boolean" default="true" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:card>
+        <aura:set attribute="title">
+            <div>
+                <div class="slds-clearfix">
+                    <div class="slds-float_left">
+                        <div class="slds-m-top_xx-small">
+                            <lightning:icon iconName="standard:opportunity" size="medium" />
+                        </div>
+                    </div>
+                    <div class="slds-float_left slds-p-left_small slds-text-align_left">
+                        <span class="slds-text-body_small slds-text-color_weak objectname"
+                            >Opportunity</span
+                        >
+                        <aura:if isTrue="{!v.noCoreSalesOppExist}">
+                            <p>
+                                There are no Core Sales opportunities related to this
+                                account&nbsp;<lightning:buttonIcon
+                                    iconName="utility:refresh"
+                                    onclick="{! c.refreshView }"
+                                    size="small"
+                                    alternativeText="refresh"
+                                    title="refresh"
+                                    variant="border-filled"
+                                />
+                            </p>
+                            <aura:set attribute="else">
+                                <p>
+                                    <a onclick="{!c.navigateToOpportunityDetail}"
+                                        >{!v.coreSalesOpportunity.Name}</a
+                                    >
+                                    &nbsp;<lightning:buttonIcon
+                                        iconName="utility:refresh"
+                                        onclick="{! c.refreshView }"
+                                        size="small"
+                                        alternativeText="refresh"
+                                        title="refresh"
+                                        variant="border-filled"
+                                    />
+                                </p>
+                            </aura:set>
+                        </aura:if>
+                    </div>
+                </div>
+            </div>
+        </aura:set>
+        <aura:set attribute="actions">
+            <aura:if isTrue="{!v.noCoreSalesOppExist}">
+                <lightning:button
+                    label="New Core Sales Opportunity"
+                    onclick="{!c.createNewCoreSalesOpportunity}"
+                />
+            </aura:if>
+        </aura:set>
+
+        <aura:if isTrue="{!v.noCoreSalesOppExist}">
+            <aura:set attribute="else">
+                <p class="slds-p-horizontal_small">
+                    <lightning:path
+                        aura:id="path"
+                        recordId="{!v.coreSalesOpportunity.Id}"
+                        variant="{!v.variant}"
+                        hideUpdateButton="{!v.hideUpdateButton}"
+                    />
+                </p>
+            </aura:set>
+        </aura:if>
+        <div>
+            <aura:if isTrue="{! v.loading }">
+                <lightning:spinner alternativeText="Loading" />
+            </aura:if>
+        </div>
+    </lightning:card>
+</aura:component>

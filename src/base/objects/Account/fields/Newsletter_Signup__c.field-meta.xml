@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Newsletter_Signup__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>SFCC-1196 : Newsletter Signup field updates for BD records</description>
+    <externalId>false</externalId>
+    <label>Newsletter Signup</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participation Sales Process</fullName>
+    <description>Process for logging participation sales</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Discovery%2FScoping</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Proposal</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Stale</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Trial</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

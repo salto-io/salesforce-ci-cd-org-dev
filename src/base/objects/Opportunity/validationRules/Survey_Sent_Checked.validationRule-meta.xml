@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Survey_Sent_Checked</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        ISNEW(),
+        ISCHANGED(StageName)
+    ),
+    OR(
+        /* Wallet Opportunity */
+        AND(
+            RecordType.DeveloperName == &apos;Wallet_Opportunity&apos;,
+            ISPICKVAL(Wallet_Opportunity_Type__c,&apos;Coinbase Wallet Integration&apos;)
+        )
+    ),
+    ISPICKVAL(StageName,&apos;Closed Won&apos;),
+    !Survey_Sent__c,
+    !Already_Connected__c
+)</errorConditionFormula>
+    <errorMessage>Send Survey Task Completion Required to Close Won this opportunity</errorMessage>
+</ValidationRule>

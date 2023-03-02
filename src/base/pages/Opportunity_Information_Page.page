@@ -1,0 +1,27 @@
+<apex:page controller="OpportunityInformationPage" lightningStylesheets="TRUE" showHeader="TRUE"  docType="html-5.0">
+    <apex:SectionHeader title="New Opportunity"> 
+        <apex:form id="oppForm">
+            <apex:pageBlock title="Add Opportunity" >
+                <apex:pageMessages />
+                <apex:pageBlockButtons >
+                    <apex:commandButton action="{!saveto}" value="Save"/>
+                    <!--<apex:commandButton action="{!cancel}" value="Cancel" immediate="true" 
+                    html-formnovalidate="formnovalidate" />-->
+                </apex:pageBlockButtons> 
+                <apex:pageBlockSection >
+                    <apex:inputField value="{!oppstring.Name}" />
+                    <apex:inputField value="{!oppstring.OwnerId}" />
+                    <apex:inputField value="{!oppstring.AccountId}" />
+                    <apex:inputField value="{!oppstring.Stagename}" /> 
+                    <apex:inputField value="{!oppstring.Type}" /> 
+                    <apex:inputField showDatePicker="TRUE" value="{!oppstring.CloseDate}" required="TRUE" /> 
+                    <apex:inputField value="{!oppstring.Product_Type__c}"/>
+                    <apex:inputField value="{!oppstring.RecordTypeId}"/>
+                    <apex:inputField value="{!oppstring.Primary_Contact__c}"/>
+                    <apex:inputField value="{!oppstring.Estimated_Value__c}"/>
+
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:form>
+    </apex:SectionHeader>
+</apex:page>
