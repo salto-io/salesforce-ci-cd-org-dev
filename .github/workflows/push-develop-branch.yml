@@ -6,7 +6,7 @@ on:
     push:
       branches: [ integration ]
       paths:
-        - 'force-app/**'
+        - 'src/**'
             
 
 # Jobs to be executed
@@ -46,14 +46,14 @@ jobs:
             - name: 'Create delta packages for new, modified or deleted metadata'
               run: | 
                   mkdir changed-sources
-                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source src/
 
             # Authenticate to org
             - name: 'Authenticate to Integration Org'
               run: sfdx auth:sfdxurl:store -f ./SFDX_INTEGRATION_URL.txt -s -a integration
 
             - name: 'Deploy the entire branch to Integration org'
-              run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json
+              run: sfdx force:source:deploy -p src --testlevel RunLocalTests --json
 
             - name: 'Deploy destructive changes (if any) to Integration org'
               run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
@@ -63,7 +63,7 @@ jobs:
               run: sfdx auth:sfdxurl:store -f ./SFDX_STAGING_URL.txt -s -a staging
 
             - name: 'Deploy the entire branch'
-              run: sfdx force:source:deploy -p force-app --testlevel RunLocalTests --json
+              run: sfdx force:source:deploy -p src --testlevel RunLocalTests --json
 
             - name: 'Deploy destructive changes (if any) to Staging org'
               run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings
