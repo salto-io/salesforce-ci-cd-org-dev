@@ -1,5 +1,5 @@
 # Unique name for this workflow
-name: Validate PR on develop branch
+name: Validate PR on staging branch
 
 # Definition when the workflow should run
 on:
@@ -9,9 +9,9 @@ on:
       # to a branch that has an existing pull request
       types: [opened, synchronize]
       # The branches filter allows to specify that this workflow should only
-      # run if the branch name is "develop". This way we prevent this workflow
+      # run if the branch name is "staging". This way we prevent this workflow
       # from running when PRs are opened on other branches
-      branches: [ develop ]
+      branches: [ staging ]
       # We only care about changes to the force-app directory, which is the
       # root directory of the sfdx project. This prevents the job from running
       # when changing non-salesforce files (like this yml file).
@@ -22,7 +22,7 @@ on:
 # Jobs to be executed when the above conditions are met
 jobs:
     # This is the name of the job. You can give it whatever name you want
-    validate-deployment-on-develop-org:
+    validate-deployment-on-staging-org:
         # As mentioned in the blog post, this job runs inside a VM. Here we
         # can specify which OS this VM should run on. 
         # In this case, we are going to run our commands on the latest version
