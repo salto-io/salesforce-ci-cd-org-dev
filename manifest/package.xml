@@ -33,4 +33,7 @@
         <name>StaticResource</name>
     </types>
     <version>52.0</version>
+     <version>52.0</version>
+
+    #this is to test SF DX merge to master
 </Package>
