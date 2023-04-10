@@ -1,8 +1,10 @@
 # Unique name for this workflow
-name: Deploy integration branch to integration and staging/uat orgs
+name: Deploy Pull Request to Dev org
 
 # Definition when the workflow should run
 on:
+    # The workflow will run whenever an event happens on a pull request
+    pull_request:
     push:
       branches: [ integration ]
       paths:

@@ -1,5 +1,5 @@
 # Unique name for this workflow
-name: Validate PR on develop branch
+name: Validate PR on main branch
 
 # Definition when the workflow should run
 on:
@@ -9,9 +9,9 @@ on:
       # to a branch that has an existing pull request
       types: [opened, synchronize]
       # The branches filter allows to specify that this workflow should only
-      # run if the branch name is "develop". This way we prevent this workflow
+      # run if the branch name is "main". This way we prevent this workflow
       # from running when PRs are opened on other branches
-      branches: [ develop ]
+      branches: [ main ]
       # We only care about changes to the force-app directory, which is the
       # root directory of the sfdx project. This prevents the job from running
       # when changing non-salesforce files (like this yml file).
@@ -182,5 +182,5 @@ jobs:
               run: |
                   sfdx force:source:deploy -p "changed-sources/force-app" --checkonly --testlevel RunLocalTests  --json
 
-            - name: 'Deploy destructive changes (if any)'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
+            #- name: 'Deploy destructive changes (if any)'
+            #  run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
