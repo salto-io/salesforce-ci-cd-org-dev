@@ -1,0 +1,65 @@
+<aura:component implements="force:appHostable" controller="GDM_Controller" access="global">
+        <aura:attribute name="distanceWrapper" type="Object"/>
+
+    <div class="slds-box slds-theme_default">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-3" style="max-width: 400px;">
+                <lightning:inputAddress
+                    aura:id="origin_address"
+                    addressLabel="Origin Address"
+                    streetLabel="Street"
+                    cityLabel="City"
+                    countryLabel="Country"
+                    provinceLabel="Province"
+                    postalCodeLabel="PostalCode"
+                    street="Calle Rumanía 30"
+                    city="Madrid"
+                    country="España"
+                    province="Madrid"
+                    postalCode="28022"
+                    required="true"
+                    fieldLevelHelp="Origin inputAddress field"
+                    showAddressLookup="true"
+                />
+            </div>
+
+            <div class="slds-col slds-size_1-of-3" style="max-width: 400px;">
+                <lightning:inputAddress
+                    aura:id="destination_address"
+                    addressLabel="Destination Address"
+                    streetLabel="Street"
+                    cityLabel="City"
+                    countryLabel="Country"
+                    provinceLabel="Province"
+                    postalCodeLabel="PostalCode"
+                    street="Calle de Manuel Ferrero 13"
+                    city="Madrid"
+                    country="España"
+                    province="Madrid"
+                    postalCode="28036"
+                    required="true"
+                    fieldLevelHelp="Destination inputAddress field"
+                    showAddressLookup="true"
+                />
+            </div>
+
+            <div class="slds-col slds-size_1-of-3" style="max-width: 400px;">
+                <ul class="slds-has-dividers_bottom-space">
+                    <li class="slds-item">Status: {!v.distanceWrapper.status}</li>
+                    <li class="slds-item">Duration: {!v.distanceWrapper.durationStr}</li>
+                    <li class="slds-item">Distance: {!v.distanceWrapper.distanceStr}</li>
+                </ul>
+            </div>
+
+        <!-- Grid End-->
+        </div>
+
+        <!-- Calculate Distance Btn -->
+        <div class="slds-clearfix">
+            <div class="slds-float_right">
+                <lightning:button variant="brand" label="Calculate Distance" title="Calculate Distance" onclick="{! c.calculateDistance }" />
+            </div>
+        </div>
+    </div>
+
+</aura:component>

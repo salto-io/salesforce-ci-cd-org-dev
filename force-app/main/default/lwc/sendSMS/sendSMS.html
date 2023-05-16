@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="sendSMS" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <p class="slds-var-m-top_medium">
+                Send SMS
+            </p>
+            <lightning-combobox label="Audience" 
+                value={audience}
+                onchange={handleAudienceChange}
+                options={audienceOptions}
+                placeholder="Select audience"
+                required="true">
+            </lightning-combobox>
+            <lightning-textarea name="message" 
+                label="Message"
+                value={message}
+                onchange={handleMessageChange}
+                placeholder="type here..." >
+            </lightning-textarea>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Send SMS" onclick={handleSendSMS}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,44 @@
+.main-container{
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: column;
+}
+
+.cal-header{
+    display: flex;
+}
+
+.cal-container{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.cal-date-container{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+}
+
+.cal-date{
+    flex: 1 1 auto;
+}
+
+.cal-days-container{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+}
+
+.cal-day{
+    flex: 1 1 auto;
+    background-color: yellow;
+}
+
+.cal-timezone{
+    flex: 1 1 1rem;
+}
+
+.cal-hour{
+
+}

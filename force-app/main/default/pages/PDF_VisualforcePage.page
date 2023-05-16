@@ -1,0 +1,8 @@
+<apex:page renderAs="pdf">
+    <h1>My page as PDF Testing</h1>
+    
+    <apex:outputPanel id="theReportPanel" layout="block">
+        <apex:iframe src="/00O1t000009ZehsEAC?isdtp=mn"/>
+
+    </apex:outputPanel>
+</apex:page>

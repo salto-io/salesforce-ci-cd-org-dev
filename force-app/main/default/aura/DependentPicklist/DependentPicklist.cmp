@@ -1,0 +1,51 @@
+<aura:component controller="DependantPicklistCmpController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+	  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+   
+    <!-- aura attributes--> 
+    <aura:attribute name="parentList" type="list" default="[]" description=""/>
+    <aura:attribute name="childList" type="list" default="[]"/>
+    <aura:attribute name="pickListMap" type="map"/>
+    <aura:attribute name="disabledChildField" type="boolean" default="true"/>
+    
+    <aura:attribute name="objectName" type="string" default="Opportunity"/>
+    <aura:attribute name="parentFieldAPI" type="string" default="StageName"/>
+    <aura:attribute name="childFieldAPI" type="string" default="Status__c"/>
+    <aura:attribute name="parentFieldLabel" type="string" />
+    <aura:attribute name="childFieldLabel" type="string"/>
+    <aura:attribute name="parentValue" type="string" default=""/>
+    <aura:attribute name="childValue" type="string" default=""/>
+    
+    <lightning:card title="">
+        <div class="slds-p-around_medium">
+            <h2>Select the stage and status to create the new Opportunities.</h2>
+    
+            <!-- Controller Field -->
+            <div class="slds-col slds-size_6-of-12 slds-m-bottom_small">
+                <lightning:select name="parentField" aura:id="parentField"
+                                  value="{!v.parentValue}"
+                                  label="{!v.parentFieldLabel}"
+                                  onchange="{!c.parentFieldChange}">
+                    <aura:iteration items="{!v.parentList}" var="value">
+                        <option value="{!value}">{!value}</option>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+            </div>
+    
+            <!--Dependent Field-->
+            <div class="slds-col slds-size_6-of-12 slds-m-bottom_small">
+                <lightning:select name="childField"
+                                  value="{!v.childValue}"
+                                  label="{!v.childFieldLabel}"
+                                  disabled="{!v.disabledChildField}">
+                    <aura:iteration items="{!v.childList}" var="value">
+                        <option value="{!value}">{!value}</option>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            <div class="slds-col slds-size_6-of-12">
+            </div>
+        </div>
+    </lightning:card> 
+</aura:component>

@@ -1,0 +1,28 @@
+<aura:component implements="force:appHostable" access="global" controller="CSV_Controller">
+
+    <aura:attribute name="accept" type="List" default="['.csv', '.CSV']" />
+    <aura:attribute name="multiple" type="Boolean" default="false" />
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="showLoadingSpinner" type="boolean" default="false" />
+
+    <div class="slds-box slds-theme_default">
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_1-of-3" style="max-width: 400px;">
+                <lightning:fileUpload name="fileUploader" 
+                                        label="Demo Upload" 
+                                        multiple="{!v.multiple}"
+                                        accept="{!v.accept}" 
+                                        disabled="{!v.disabled}" 
+                                        recordId="0051t000002We4LAAS"
+                                        onuploadfinished="{! c.handleUploadFinished }" />
+            </div>
+
+            <div class="slds-col slds-size_1-of-3" style="max-width: 400px;">
+                <lightning:button label="Process file" iconName="utility:edit" iconPosition="left"  variant="brand" onclick="{! c.processFileTest }"/>
+            </div>
+
+            <div class="slds-col slds-size_1-of-3" style="max-width: 400px;">
+            </div>
+        </div>
+    </div>
+</aura:component>
