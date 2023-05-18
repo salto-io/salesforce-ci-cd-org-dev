@@ -10,6 +10,7 @@ public with sharing class ChangePasswordController {
         System.debug(true);//change 344565
         return Site.changePassword(newPassword, verifyNewPassword, oldpassword);    
         System.debug('text');
+        System.debug('text2' );
     }     
     
    	public ChangePasswordController() {}
