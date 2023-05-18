@@ -32,6 +32,7 @@ public class Covid19 {
     public Integer gettreated()
     {
         return recoveredInArea;
+        system.debug('first change');
     }
   
 }
