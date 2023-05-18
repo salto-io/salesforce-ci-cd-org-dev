@@ -11,12 +11,12 @@ public class Fitness {
     
      public Decimal caculatepace(Decimal km,Decimal min)
     {
-        Decimal total;
+        Decimal mytotal;
         decimal hr=min/60;
-        total=km/hr;
+        mytotal=km/hr;
         
         
-        return total;
+        return mytotal;
     }
     
     
