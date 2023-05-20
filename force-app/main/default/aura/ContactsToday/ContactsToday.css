@@ -1,0 +1,72 @@
+.THIS .alert-div {
+	border-left: 1px solid blue;
+}
+
+.THIS .forceListRecord {
+    cursor: pointer;
+}
+
+.THIS .forceCard { color: rgb(60, 61, 62); margin: 14px; border-radius: 0.3125rem; overflow: hidden; background-color: rgb(255, 255, 255); }
+.THIS .forceCard a { display: block; }
+.THIS .forceCard .card-header { padding: 14px; color: rgb(60, 61, 62); font-size: 1rem; font-family: ProximaNovaSoft-Regular; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(245, 246, 247); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; }
+.THIS .forceCard .card-header.has-icon { line-height: 2.375rem; }
+.THIS .forceCard .card-header:active { background-color: rgb(245, 246, 247); }
+.THIS .forceCard .card-header-more { float: right; color: rgb(60, 61, 62); font-size: 0.875rem; }
+.THIS .forceCard .card-header-more:active { color: rgb(72, 92, 112); }
+.THIS .forceCard .header-icon { float: left; margin-right: 14px; }
+.THIS .forceDetailPanel .message { padding: 30px 30px 0px; }
+.THIS .forceCanvasApp .mask { position: absolute; left: 0px; bottom: 0px; top: 0px; right: 0px; opacity: 0.05; z-index: 1; background: rgb(255, 255, 255); }
+.THIS .forceEclairChartListView .left { float: left; width: 60%; word-wrap: break-word; }
+.THIS .forceEclairChartListView .right { float: right; width: 30%; word-wrap: break-word; }
+.THIS .forceFilterCriteriaMenuItem .label { float: left; width: 60%; vertical-align: middle; font-size: 1rem; padding-top: 3px; }
+.THIS .forceFilterCriteriaMenuItem .truncate { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.THIS .forceFilterList.uiAbstractList .loadingIndicator { display: none; }
+.THIS .forceFilterList .filterListSorterTrigger { float: right; font-family: ProximaNovaSoft-Semibold; font-size: 1.125rem; color: rgb(104, 108, 112); line-height: 1.25; }
+.THIS .forceFilterList ul { margin: 0px; padding: 0px; }
+.THIS .forceFilterList li { list-style-type: none; }
+.THIS .forceFilterList .pillItem { border-width: 1px 1px 1px 4px; border-style: solid; border-color: rgb(51, 51, 51); font-weight: bold; margin-bottom: 1.5em; padding: 0.3em; border-radius: 1em; }
+.THIS .forceFilterList .pillItemName { font-size: 1.5em; font-weight: bold; }
+.THIS .forceFilterList .pillItemDetails { font-style: italic; }
+.THIS .forceFilterList .loadingIndicator .background { opacity: 0; }
+.THIS .forceFilterList .emptyListContent { padding: 100px 1.75rem 0.875rem; color: rgb(104, 108, 112); font-size: 0.9375rem; }
+.THIS .forceFilterList .listTitleContainer { padding: 0.875rem 0.875rem 0px; }
+.THIS .forceFilterList .listTitle { font-size: 1.125rem; color: rgb(60, 61, 62); padding-left: 0.875rem; }
+.THIS .forceFilterList .listTitle .totalItemsLabel, .THIS .forceFilterList .listTitle .filterLabel { font-size: 0.8125rem; font-family: ProximaNovaSoft-Regular; color: rgb(104, 108, 112); padding-top: 2px; display: block; }
+.THIS .forceFilterList .listTitle .filterLabel { text-overflow: ellipsis; }
+.THIS .forceFilterList .listTitleContainer .triggerContainer { display: inline-block; }
+.THIS .forceFilterList .listTitleContainer .triggerIcon { position: relative; top: 10px; left: 10px; }
+.THIS .forceFilterList .filterSelectorIcon { margin-left: 0.4375rem; font-size: 0.8125rem; }
+.THIS .forceFilterList .filterSelectorContainer { position: relative; margin-top: 0.875rem; }
+.THIS .forceFilterList .filterSelector { position: absolute; z-index: 100; }
+.THIS .forceFilterList.hiddenContent .listContent { visibility: hidden; }
+.THIS .forceFilterList .hidden { visibility: hidden; }
+.THIS .forceFilterList a.disabled { cursor: default; }
+.THIS .forceFilterList.errorMessageContainer { text-align: justify; padding: 0.875rem; }
+.THIS .forceListView .hideEl { display: none; }
+.THIS .forceListView .uiDataGrid.VIEW tbody td .uiButton { border: none; display: inline-block; height: 100%; }
+.THIS .forceListView .pagerControl .label { position: absolute; border: 0px; clip: rect(0px 0px 0px 0px); width: 1px; height: 1px; margin: -1px; padding: 0px; overflow: hidden; }
+.THIS .forceRelatedList .listContent { min-height: 0px; }
+.THIS .forceRelatedList .loadingIndicator .background { opacity: 0; }
+.THIS .forceRelatedList.showEmptyContent .listContent { height: 100%; width: 100%; }
+.THIS .forceRelatedList.showEmptyContent .listContent .emptyListContent { position: absolute; top: 20%; width: 100%; }
+.THIS .forceRelatedList .forceListRecord { border-radius: 0.3125rem; background-color: rgb(255, 255, 255); }
+.THIS .forceRelatedList.uiAbstractList .loadingIndicator { display: none; }
+.THIS .forceListRecord { list-style: none; }
+.THIS .forceListRecord .body { padding: 14px; }
+.THIS .forceListRecord.light { border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(245, 246, 247); }
+.THIS .forceListRecord.actionable:active { background-color: rgb(255, 255, 255); }
+.THIS .forceListRecord .itemTitle { color: rgb(60, 61, 62); font-size: 1rem; font-family: ProximaNovaSoft-Regular; padding-bottom: 3px; }
+.THIS .forceListRecord .itemTitle, .THIS .forceListRecord .itemTitle div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.THIS .forceListRecord .itemRows { color: rgb(60, 61, 62); font-size: 0.875rem; font-family: ProximaNovaSoft-Regular; list-style: none; margin: 0px; padding: 0px; }
+.THIS .forceListRecord .tableRowGroup { list-style: none; }
+.THIS .forceListRecordItem { display: flex; }
+.THIS .forceListRecordItem .label { color: rgb(104, 108, 112); padding-right: 14px; -webkit-box-flex: 2; flex: 2 1 0%; max-width: 125px; }
+.THIS .forceListRecordItem .value { -webkit-box-flex: 3; flex: 3 1 0%; }
+.THIS .forceListRecordItem .recordCell { padding: 2px 14px 2px 0px; line-height: 1rem; }
+.THIS .forceListRecordItem .recordCell img { vertical-align: top; }
+.THIS .forceLookupCard .template .tableRowGroup { list-style: none; }
+.THIS .forceLookupCard .header-label { line-height: inherit; }
+.THIS .forceRelatedCardContainer .container { padding-bottom: 0.875rem; }
+.THIS .forceRelatedCardContainer .message { text-align: center; color: rgb(104, 108, 112); font-size: 0.9375rem; font-family: ProximaNovaSoft-Semibold; padding: 0.875rem; }
+.THIS .forceRelatedCardContainer .container .forceCard:first-child { margin-top: 0px; }
+.THIS .forceRelatedListCard.card-header-mini .card-header { border-bottom-width: 0px; }

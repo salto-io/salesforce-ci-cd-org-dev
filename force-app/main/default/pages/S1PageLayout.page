@@ -1,0 +1,9 @@
+<apex:page docType="html-5.0" 
+			showHeader="false" 
+			sidebar="false" 
+			standardStylesheets="false" 
+			applyHtmlTag="false" 
+			applyBodyTag="false" >
+
+	<c:S1PageLayout objectId="{!$CurrentPage.parameters.id}"/>		
+</apex:page>

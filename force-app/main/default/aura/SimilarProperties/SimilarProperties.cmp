@@ -1,0 +1,16 @@
+<aura:component controller="MyPropertyController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="similarProperties" type="Object[]"/>
+    <aura:handler name="init" value="{! this}" action="{!c.doInit}"/>
+    <lightning:card iconName="custom:custom85" title="Similar Properties">
+        <div class="slds-p-left_medium slds-p-right_medium">
+            <ul class="slds-list_vertical slds-has-dividers_top-space">
+                <aura:iteration items="{!v.similarProperties}" var="item">
+                    <li class="slds-list__item">
+                        <c:SimilarProperty property="{!item}"/>
+                    </li>
+                </aura:iteration>
+            </ul>
+        </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,12 @@
+<apex:page standardController="Property__c" extensions="GetPropertiesApexController">
+    <apex:pageBlock >
+      <apex:pageBlockTable value="{! properties }" var="ct" id="leads_list">
+            <apex:column value="{! ct.name}" />
+            <apex:column value="{! ct.beds__c}" />
+            <apex:column value="{! ct.baths__c}" />
+            <apex:column value="{! ct.broker__c}" />
+            <apex:column value="{! ct.price__c}" />
+            <apex:column value="{! ct.status__c}" />
+        </apex:pageBlockTable>
+   </apex:pageBlock>
+</apex:page>

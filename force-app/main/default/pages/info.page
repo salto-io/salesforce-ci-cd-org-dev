@@ -1,0 +1,36 @@
+<apex:page controller="Information" setup="false" sidebar="false">
+    
+    <apex:sectionHeader title="Information Edit" subtitle="Employee Info"/>
+    
+    <apex:form >
+        
+        <apex:pageBlock title="Employees" rendered="{!Createrecord}">
+            
+            <apex:pageBlockButtons location="top">
+                
+                <apex:commandButton action="{!Createnew}" value="Create New"/>
+                
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="New Record" rendered="{!InputDisplay}">
+            
+            <apex:pageBlockButtons location="top">
+                
+                <apex:commandButton action="{!Create}" value="Create Record"/>
+                
+            </apex:pageBlockButtons>
+            
+        </apex:pageBlock>
+        
+        <apex:pageBlock title="Save Record" rendered="{!outputdisplay}">
+            
+            <apex:pageBlockButtons location="top">
+                
+                <apex:commandButton action="{!Save}" value="Save record"/>
+                
+            </apex:pageBlockButtons>         
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

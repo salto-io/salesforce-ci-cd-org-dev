@@ -1,0 +1,10 @@
+<aura:event type="COMPONENT" description="LookupChooseEvent">
+    <aura:attribute name="recordId" type="String"
+                    required="true"
+                    description="Used to send selected record Id"/>
+
+    <aura:attribute name="recordLabel"
+                    type="String"
+                    description="Used to send selected record Name"
+                    required="true"/>
+</aura:event>

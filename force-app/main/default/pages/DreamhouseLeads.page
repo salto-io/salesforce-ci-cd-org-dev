@@ -1,0 +1,24 @@
+<apex:page controller="DreamhouseProspects">
+        <apex:pageBlock >
+            <apex:sectionHeader title="Leads" subtitle="Home"/>
+            <apex:form >
+                <div style="text-align:center;">
+                    <apex:commandButton action="{!URLFOR($Action.Lead.New)}" value="New"/>
+                </div>
+                <apex:outputLabel value="Sort: " for="sortList" />
+                <apex:selectList value="{! sortOrder}" size="1" id="sortList">
+                    <apex:selectOption itemvalue="LastName" />
+                    <apex:selectOption itemvalue="FirstName" />
+                </apex:selectList>
+                <apex:commandButton value="Sort Table" action="{!sortList}" reRender="leads_list"/>
+                <apex:pageBlockTable value="{! leads }" var="ct" id="leads_list">
+                    <apex:column headerValue="First Name">
+                        <apex:outputLink value="/{! ct.Id}">{! ct.FirstName }</apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{! ct.LastName }"/>
+                    <apex:column value="{! ct.Email }"/>
+                    <apex:column value="{! ct.Phone }"/>
+                </apex:pageBlockTable>              
+            </apex:form>
+        </apex:pageBlock>
+</apex:page>

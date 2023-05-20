@@ -1,0 +1,25 @@
+<!--
+    showToast Lightning Flow Action Component
+    Enhanced by Eric Smith - 12/14/19
+
+    Version: 2.0 (12/14/19)
+        Added support for configurable title, icon, mode, and duration
+        Added support for a clickable url link in the message
+     
+ Copyright (c) 2018, salesforce.com, inc.
+ All rights reserved.
+
+ Licensed under the BSD 3-Clause license.
+ For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
+
+-->
+<aura:component implements="lightning:availableForFlowActions">
+    <aura:attribute name="type" type="string" default="success" />
+    <aura:attribute name="title" type="string" />
+    <aura:attribute name="message" type="string" />    
+    <aura:attribute name="key" type="string" default="" />
+    <aura:attribute name="mode" type="string" default="dismissable" />
+    <aura:attribute name="duration" type="string" default="10" />
+    <aura:attribute name="urlLink" type="string" />
+    <aura:attribute name="urlLabel" type="string" />
+</aura:component>

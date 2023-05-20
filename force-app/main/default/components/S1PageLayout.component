@@ -1,0 +1,23 @@
+<apex:component controller="S1PageLayoutCompController" >
+    <apex:attribute name="objectId" description="Record ID of incoming record" type="Id" assignTo="{!recordId}" required="required"/> 
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <head>
+            <apex:stylesheet value="{!URLFOR($Resource.S1PageLayoutResources,'lib/slds214/assets/styles/salesforce-lightning-design-system.css')}"/>
+        </head>
+     
+        <body class="slds-m-around--small">
+        	<div class ="slds-form--stacked">
+                <div class="slds-form-element">
+                    <apex:repeat value="{!fields}" var="f">
+                        <span class="slds-form-element__label slds-p-top--small">{!f.label}</span>
+                        <div class="slds-form-element__control slds-has-divider--bottom slds-p-bottom--small slds-text-heading--small">
+                            <apex:outputField value="{!obj[f.fieldPath]}"/>&nbsp;
+                        </div>
+                    </apex:repeat>
+                </div>
+            </div>
+        </body>
+
+    </html>     
+</apex:component>

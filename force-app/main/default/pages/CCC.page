@@ -1,0 +1,26 @@
+<apex:page controller="CustomerCalculator" setup="false" sidebar="false" showheader="true" tabStyle="Contact" >
+<apex:sectionHeader title="Calculator" subtitle="Custom Calculator"/>
+<apex:form >
+    <apex:pagemessages id="errors"> </apex:pagemessages>
+    
+    <apex:pageblock title="Basic Calculator">
+        <apex:pageblockButtons location="bottom" >
+            <apex:commandButton value="Addition" action="{!Addition}" reRender="res , errors"/>
+            <apex:commandButton value="Subtraction" action="{!Subtraction}" reRender="res, errors"/>
+            <apex:commandButton value="Multiplication" action="{!Multiplication}" reRender="res, errors"/>
+            <apex:commandButton value="Division" action="{!Division}" reRender="res, errors"/>
+        
+        </apex:pageblockButtons>
+        
+        <apex:pageblockSection collapsible="false" columns="1" title="Calculator">
+            <apex:inputtext label="Enter First Number" value="{!firstNumber}"/>
+            <apex:inputtext label="Enter Second Number" value="{!secondNumber}"/>
+            <apex:outputLabel id="res" >Result is ....: {!result} </apex:outputLabel>
+        </apex:pageblockSection>
+        
+    
+    </apex:pageblock>
+
+</apex:form>
+  
+</apex:page>

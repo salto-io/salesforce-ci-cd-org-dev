@@ -1,0 +1,23 @@
+<apex:page controller="contactinfo"  >
+<apex:form >
+    <apex:sectionHeader title="Contact Edit" subtitle="New Contact"/>
+<apex:pageBlock title="Contact Edit" tabStyle="contact" >
+<apex:pageBlockButtons >
+        <apex:commandButton action="{!save}" value="save"/>
+        <apex:commandButton action="{!save_new}" value="save&new"/>
+        <apex:commandButton action="{!cancel}" Value="cancel"/>
+        </apex:pageBlockButtons>
+<apex:pageBlockSection >
+    
+    <apex:inputField value="{!my.Department}"/>
+    <apex:inputField value="{!my.Title}"/>
+    <apex:inputField value="{!my.Phone}"/>
+    <apex:inputField value="{!my.HomePhone}"/>
+   
+</apex:pageBlockSection>
+        
+    </apex:pageBlock>
+    
+</apex:form>
+    
+</apex:page>

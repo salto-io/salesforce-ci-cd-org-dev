@@ -1,0 +1,27 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:hasRecordId"
+                access="global">
+    
+    <!-- Id of the Record the page hosting this component is showing -->
+    <aura:attribute name="recordId" type="Id"/>
+	
+    <aura:attribute name="pictures" type="Array"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}" />
+
+    <div>
+    	<h2> Picture Gallery</h2>
+        <div ondragover="{!c.onDragOver}" ondrop="{!c.onDrop}">
+            <div class="placeholder">
+	            <img src="https://s3-us-west-1.amazonaws.com/sfdc-demo/icon-camera.png"/>
+    	        <div>Drag pictures here</div>
+            </div>
+            <div class="gallery">
+                <aura:iteration items="{!v.pictures}" var="picture" indexVar="index">
+                    <img src="{!picture}"/>
+                </aura:iteration>    
+            </div>
+        </div>
+    </div>
+    
+    
+</aura:component>

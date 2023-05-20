@@ -1,0 +1,50 @@
+<apex:page extensions="MassDeleteExtension" standardController="Solution" recordSetVar="sobjects"  standardStylesheets="false" sidebar="false" applyBodyTag="false" docType="html-5.0">
+
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <head>
+            <apex:stylesheet value="{!URLFOR($Resource.mdslds212, 'assets/styles/salesforce-lightning-design-system-vf.css')}" />
+        </head>
+
+        <body>
+            <div class="mass-delete">
+
+
+
+
+                <div>
+  <div aria-hidden="false" aria-labelledby="prompt-heading-id" aria-describedby="prompt-message-wrapper" role="alertdialog" class="slds-modal slds-modal--prompt slds-fade-in-open">
+    <div class="slds-modal__container slds-modal--prompt" role="document" id="prompt-message-wrapper" tabindex="0">
+      <div class="slds-modal__header slds-theme--warning slds-theme--alert-texture">
+        <h2 class="slds-text-heading--medium" id="prompt-heading-id">Confirm Delete</h2>
+      </div>
+      <div class="slds-modal__content slds-p-around--medium">
+        <div>
+          <p>Are you sure you want to delete {!mySelectedSize} records?</p>
+        </div>
+      </div>
+      <div class="slds-modal__footer slds-theme--default">
+       <apex:form >
+              <apex:commandLink action="{!cancel}" value="" id="cancel">
+<button class="slds-button slds-button--neutral">Cancel</button></apex:commandLink>
+       <apex:commandLink action="{!deleteRecords}" value="" id="delete">
+<button class="slds-button slds-button--neutral">Delete Records</button></apex:commandLink>
+</apex:form>
+      </div>
+    </div>
+  </div>
+  <div class="slds-backdrop slds-backdrop--open"></div>
+</div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </body>
+    </html>
+</apex:page>

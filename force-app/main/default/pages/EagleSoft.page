@@ -1,0 +1,18 @@
+<apex:page Controller="EagleSoft" sidebar="false" setup="false" showHeader="true">
+<apex:sectionHeader title="Account Edit" subtitle="New Account"/>
+    <apex:form >
+        <apex:pageBlock title="Employees">
+            <apex:pageBlockButtons location="Top">
+                <apex:commandButton value="Save" action="{!Save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Employee Information" >
+                <apex:pageBlockTable value="{!data}" var="it" >
+                    <apex:column headervalue="First Name" value="{!it.Firstname}"/>
+                    <apex:column headervalue="Age" value="{!it.age}"/>
+                    <apex:column headervalue="EMployee ID" value="{!it.EmployeeID}"/>
+                    <apex:column headervalue="Mobile No." value="{!it.MobileNo}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection> 
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

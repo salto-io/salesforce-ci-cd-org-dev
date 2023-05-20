@@ -1,0 +1,65 @@
+<aura:component >
+    <aura:attribute name="property" type="Property__c"/>
+    <lightning:recordViewForm aura:id="viewForm" recordId="{!v.property.Id}" objectApiName="Property__c">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <img src="{!v.property.Thumbnail__c}" class="slds-avatar_large slds-avatar_circle" alt="{!v.targetFields.Title_c}"/>
+            </div>
+            <div class="slds-media__body">
+                <lightning:layout class="slds-hint-parent">
+                    <a onclick="{!c.navToRecord}">
+                        <h3 class="slds-text-heading_small slds-m-bottom_xx-small">{!v.property.Name}</h3>
+                    </a>
+                    <lightning:buttonIcon iconName="utility:edit" class="slds-col_bump-left" iconClass="slds-button__icon_hint" variant="bare" alternativeText="Edit Record" onclick="{!c.editRecord}" />
+                </lightning:layout>
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="6">
+                        <lightning:outputField fieldName="Beds__c"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6">
+                        <lightning:outputField fieldName="Baths__c"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6">
+                        <lightning:outputField fieldName="Price__c"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6"  >
+                        <lightning:outputField fieldName="Status__c"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+        </div>
+    </lightning:recordViewForm>
+    <lightning:recordEditForm aura:id="editForm" recordId="{!v.property.Id}" objectApiName="Property__c" class="slds-hide" onsuccess="{!c.handleSuccess}">
+        <div class="slds-media">
+            <div class="slds-media__figure">
+                <img src="{!v.property.Thumbnail__c}" class="slds-avatar_large slds-avatar_circle" alt="{!v.targetFields.Title_c}" />
+            </div>
+            <div class="slds-media__body">
+                <lightning:layout>
+                    <a onclick="{!c.navToRecord}">
+                        <h3 class="slds-text-heading_small slds-m-bottom_xx-small">{!v.property.Name}</h3>
+                    </a>
+                </lightning:layout>
+                <lightning:layout multipleRows="true">
+                    <lightning:layoutItem size="6">
+                        <lightning:inputField fieldName="Beds__c"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6">
+                        <lightning:inputField fieldName="Baths__c"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6">
+                        <lightning:inputField fieldName="Price__c"/>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="6">
+                        <lightning:inputField fieldName="Status__c"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+                <lightning:layout horizontalAlign="center" class="slds-m-top_large">
+                    <lightning:button variant="neutral" label="Cancel" title="Cancel" type="text" onclick="{!c.handleCancel}"/>
+                    <lightning:button variant="brand" label="Submit" title="Submit" type="submit"/>
+                </lightning:layout>
+            </div>
+        </div>
+    </lightning:recordEditForm>
+    
+</aura:component>
