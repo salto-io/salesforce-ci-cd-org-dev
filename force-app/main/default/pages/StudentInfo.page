@@ -1,0 +1,68 @@
+<apex:page Controller="studinfo" sidebar="false" tabStyle="Contact" setup="false" showHeader="true">
+
+  <apex:sectionHeader title="Account Edit" subtitle="New Account"/>
+  
+  <apex:form >
+  
+    <apex:pageblock id="pgBlock" title="Student Information">
+    
+    <apex:pageblockButtons location="both" >
+    
+            <apex:commandButton value="Save" action="{!Save}"/>
+            
+            <apex:commandButton value="Edit" action="{!Edit}"/>
+            
+            <apex:commandButton value="Del" action="{!Del}"/>
+            
+        </apex:pageblockButtons>
+        
+        <apex:pageblockSection title="Student Account Information" columns="2" >
+    
+            <apex:inputText label="First Name" value="{!sin.Firstname }" />
+            
+            <apex:inputtext label="Last Name" value="{!sin.lastname}"/>
+       
+            <apex:inputtext label="Date of Birth" value="{!sin.dob}"/>
+               
+            <apex:inputText label="Employee ID" value="{!sin.EmployeeID}"/>
+            
+            <apex:inputText label="age" Value="{!sin.age}"/>
+            
+            <apex:inputtext label="Mobile No." value="{!sin.MobileNo}"/>
+            
+            <apex:inputtext label="Email" value="{!sin.email}"/>
+            
+            </apex:pageblocksection>
+            
+            <apex:pageblockSection title="Address Information" columns="2" >
+            
+            <apex:inputtext label="Mailing Street" value="{!add.street}"/>
+            
+            <apex:inputtext label="Mailing City" value="{!add.city}"/>
+            
+            <apex:inputtext label="Mailing State" value="{!add.state}"/>
+            
+            <apex:inputtext label="Country" value="{!add.country}"/>
+            
+            <apex:inputtext label="Postal/ZIP code" value="{!add.ZIPcode}"/>
+           
+             </apex:pageblocksection>
+             
+             <apex:pageblockSection title="Additional Information" columns="2" >
+             
+             <apex:inputtext label="Known Languages" value="{!adinfo.languages}"/>
+             
+             <apex:selectList label="Level of language" value="{!adinfo.level}" size="1">
+             <apex:selectOption itemlabel="None" itemvalue="none"/>
+             <apex:selectOption itemlabel="Primary" itemvalue="Primary"/>
+             <apex:selectOption itemlabel="Secondary" itemvalue="Secondary"/>
+             <apex:selectOption itemlabel="Tertiary" itemvalue="tertiary"/>
+             <apex:selectOption itemlabel="Advanced" itemvalue="Advanced"/>
+             </apex:selectList>
+            
+             <apex:inputtext label="Previous Experience" value="{!adinfo.experience}"/>
+
+             </apex:pageblocksection>
+  </apex:pageblock>
+</apex:form>  
+</apex:page>

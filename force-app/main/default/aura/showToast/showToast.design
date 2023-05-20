@@ -1,0 +1,19 @@
+<!--
+
+ Copyright (c) 2018, salesforce.com, inc.
+ All rights reserved.
+
+ Licensed under the BSD 3-Clause license.
+ For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
+
+-->
+<design:component >
+    <design:attribute name="type" label="Type (success, error, warning, info, other)" default="success" />
+    <design:attribute name="title" label="Title" />
+    <design:attribute name="message" label="Message" />
+    <design:attribute name="key" label="Icon (only for Type=other)" />
+    <design:attribute name="mode" label="Dismissal Mode (dismissible, pester, sticky)" default="dismissible" />
+    <design:attribute name="duration" label="Duration in Seconds (minimum is 5, default is 10)" default="10" />
+    <design:attribute name="urlLink" label="URL Link" />
+    <design:attribute name="urlLabel" label="URL Label" />
+</design:component>

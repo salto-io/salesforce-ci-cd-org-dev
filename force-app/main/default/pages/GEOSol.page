@@ -1,0 +1,18 @@
+<apex:page controller="GSsolutions" sidebar="false" setup="true" showHeader="true">
+    <apex:sectionHeader title="Employee Edit" subtitle="Employees"/>
+    <apex:form >
+        <apex:pageBlock title="Employee Information">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!Save}" Value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="All Employees">
+                <apex:pageBlockTable value="{!EMP}" var="ems">
+                    <apex:column headerValue="First Name" value="{!ems.Firstname}"/>
+                    <apex:column headerValue="Last Name" value="{!ems.lastname}"/>
+                    <apex:column headerValue="Age" value="{!ems.age}"/>
+                    <apex:column headerValue="Employee ID" value="{!ems.EmployeeID}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

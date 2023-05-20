@@ -1,0 +1,35 @@
+<apex:page standardController="Account" sidebar="false" tabStyle="Contact" setup="false" showHeader="true">
+<apex:sectionHeader title="Account Edit" subtitle="New Account"/>
+<apex:form >
+    <apex:pageblock id="pgBlock" title="Account Information">
+    <apex:pageblockButtons location="both" >
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Cancel" action="{!Cancel}"/>
+            <apex:commandButton value="Delete" action="{!Delete}"/>
+        </apex:pageblockButtons>
+        <apex:pageblockSection title="Account Information Section">
+            <apex:inputField value="{!Account.Name }" required="true" />
+            <apex:inputfield value="{!Account.Rating}"/>
+            <apex:inputText value="{!Account.Rating}"/>
+            <apex:inputField value="{!Account.ParentId}"/>
+            <apex:inputField value="{!Account.Fax}" />
+            <apex:inputfield value="{!Account.Industry}"/>
+            <apex:outputText ></apex:outputText>
+            <apex:inputField value="{!Account.Type}"/>
+            <apex:inputField value="{!Account.Phone}"/> 
+        </apex:pageblockSection>
+        <apex:pageblockSection title="Address Information" >
+            <apex:inputField value="{!Account.BillingStreet}"/>
+            <apex:inputField value="{!Account.ShippingStreet}"/>
+            <apex:inputField value="{!Account.BillingCity}"/>
+            <apex:inputField value="{!Account.ShippingCity}"/>
+            <apex:inputField value="{!Account.BillingState}"/>
+            <apex:inputField value="{!Account.ShippingState}"/>
+            <apex:inputField value="{!Account.BillingPostalCode}"/>
+            <apex:inputField value="{!Account.ShippingPostalCode}"/>
+            <apex:inputField value="{!Account.BillingCountry}"/>
+            <apex:inputField value="{!Account.ShippingCountry}"/>
+        </apex:pageblockSection>
+    </apex:pageblock>
+</apex:form>  
+</apex:page>

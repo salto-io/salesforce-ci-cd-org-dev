@@ -1,0 +1,5 @@
+<design:component label="Opportunity Alert">
+	<design:attribute name="daysSinceLastModified" label="Days Since Last Modified" description="Filter the list by how stagnant the opportunity has become" />
+	<design:attribute name="oppStage" label="Opportunity Stage" description="Filter the list to a specific opportunity stage" />
+	<design:attribute name="hasTasks" label="Has Open Tasks" description="Filter the list to only opportunites with open tasks" />
+</design:component>

@@ -1,0 +1,5 @@
+<aura:event type="COMPONENT" >
+    
+            <aura:attribute name="autocomplete" type="sObject"/>
+
+</aura:event>

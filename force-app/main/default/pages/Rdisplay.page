@@ -1,0 +1,62 @@
+<apex:page controller="Result" sidebar="false" tabStyle="Contact">
+    <apex:form >
+        <apex:sectionHeader title="Result Edit" subtitle="Result"/>
+        <apex:pageBlock title="Create Result" rendered="{!NewResult}">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!NewResult}" Value="New Result"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+        <apex:Pageblock title="Add Result" rendered="{!ResultInput}">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!save}" value="Save"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Add Information" collapsible="true" rendered="{!ResultInput}" columns="1" >
+                    <apex:inputText label="Name" value="{!name}"/>
+                    <apex:inputText label="Hallticket Number" value="{!HtNo}"/>
+                    <apex:inputText label="Secured Marks" value="{!marksSecured}"/>
+                </apex:pageBlockSection> 
+        </apex:Pageblock>
+       <apex:pageblock title="Result" rendered="{!ResultOutput}">
+           <apex:pageBlockButtons location="top">
+               <apex:commandButton action="{!Add}" value="ADD"/>
+           </apex:pageBlockButtons>
+           <apex:pageBlockSection title="Output Result" columns="1">
+               <apex:outputText label="Name" value="{!name}"/>
+               <apex:outputText label="HallTicket No." value="{!HtNo}"/>
+               <apex:outputText label="Total Marks" value="{!Totalmarks}"/>
+               <apex:outputText label="Marks Secured" value="{!marksSecured}"/>
+               <apex:outputText label="Percentage" value="{!percent}"/>
+               <apex:outputText label="Grade Secured" value="{!grade}"/>
+           </apex:pageBlockSection>
+        </apex:pageblock>
+        <apex:pageblock title="Result Table" rendered="{!DisplayResult}">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!NewResult}" value="New Result" disabled="{!if(count == 3,true,false)}"/>
+                <apex:commandButton action="{!SRD}" value="Search" disabled="{!if(count = 2,false,true)}"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!res}" var="Display" rows="6">
+                <apex:column headerValue="Hall-Ticket No." value="{!Display.HtNo}"/>
+                <apex:column headerValue="Name." value="{!Display.name}"/>
+                <apex:column headerValue="Total Marks" value="{!Display.Totalmarks}"/>
+                <apex:column headerValue="Marks Secured" value="{!Display.marksSecured}"/>
+                <apex:column headerValue="Percentage" value="{!Display.Percent}"/>
+                <apex:column headerValue="Grade" value="{!Display.grade}"/>
+            </apex:pageBlockTable>
+        </apex:pageblock>
+        <apex:pageBlock title="Search" rendered="{!SearchResult}">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton action="{!search}" value="Search"/>
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection title="Search" collapsible="true">
+                <apex:selectList label="Grade" size="1">
+                    <apex:selectOption itemLabel="A+" itemValue="A+"/>
+                    <apex:selectOption itemLabel="A" itemValue="A"/>
+                    <apex:selectOption itemLabel="B" itemValue="B"/>
+                    <apex:selectOption itemLabel="C" itemValue="C"/>
+                    <apex:selectOption itemLabel="D" itemValue="D"/>
+                    <apex:selectOption itemLabel="Fail" itemValue="Fail"/>
+                </apex:selectList>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

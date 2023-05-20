@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuraDefinitionBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>46.0</apiVersion>
+    <description>Created to allow for the redirection at the end of a Flow to a Record page in either Edit or View mode.
+
+Eric Smith - 9/19/19
+https://success.salesforce.com/ProfileView?u=005300000095v5FAAQ
+https://github.com/ericrsmith35</description>
+</AuraDefinitionBundle>

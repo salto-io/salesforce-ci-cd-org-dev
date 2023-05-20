@@ -1,0 +1,20 @@
+<apex:page controller="StudentId" sidebar="false"  docType="HTML-5.0">
+    <apex:sectionHeader title="Student Edit" subtitle="New Student"/>
+    <apex:form >
+        <apex:pageBlock title="Student Information">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}"/>
+            </apex:pageBlockButtons>
+            <apex:pageblockSection title="Student Information" columns="2" rendered="{!input}">
+                <apex:inputText label="Full Name" value="{!name}" />
+                <apex:inputText label="Student ID" value="{!StudentID}" />
+                <apex:inputText label="Mobile No." value="{!MobileNo}" />
+            </apex:pageblockSection>
+            <apex:pageblocksection title="Stud Information" columns="2" rendered="{!output}">
+                <apex:outputText label="Full Name" value="{!name}" />
+                <apex:outputText label="Student ID" value="{!StudentID}" />
+                <apex:outputText label="Mobile No." value="{!MobileNo}"/>
+            </apex:pageblocksection>        
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

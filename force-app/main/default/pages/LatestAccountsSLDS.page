@@ -1,0 +1,72 @@
+<apex:page showHeader="false" standardStylesheets="false" sidebar="false" applyHtmlTag="false" applyBodyTag="false" docType="html-5.0">
+  <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>SLDS LatestAccounts Visualforce Page in Salesforce Mobile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!-- Import the Design System style sheet -->
+      <apex:slds />
+ 	</head>   
+      	<apex:remoteObjects >
+  		<apex:remoteObjectModel name="Account" fields="Id,Name,LastModifiedDate"/>
+		</apex:remoteObjects>
+    <body>
+      <!-- REQUIRED SLDS WRAPPER -->
+      <div class="slds-scope">
+         <!-- PRIMARY CONTENT WRAPPER -->
+         <div class="myapp">
+         </div>
+         <!-- / PRIMARY CONTENT WRAPPER -->
+          <!-- ACCOUNT LIST TABLE -->
+         <div id="account-list" class="slds-p-vertical--medium"></div>
+          <!-- / ACCOUNT LIST TABLE -->
+      </div>
+      <!-- / REQUIRED SLDS WRAPPER -->
+      <script>
+(function() {
+  var outputDiv = document.getElementById('account-list');
+  var account = new SObjectModel.Account();
+  var updateOutputDiv = function() {
+    account.retrieve(
+      { orderby: [{ LastModifiedDate: 'DESC' }], limit: 10 },
+      function(error, records) {
+        if (error) {
+          alert(error.message);
+        } else {
+          // create data table
+          var dataTable = document.createElement('table');
+           dataTable.className = 'slds-table slds-table--bordered slds-text-heading_small';
+          // add header row
+          var tableHeader = dataTable.createTHead();
+          var tableHeaderRow = tableHeader.insertRow();
+          var tableHeaderRowCell1 = tableHeaderRow.insertCell(0);
+          tableHeaderRowCell1.appendChild(document.createTextNode('Latest Accounts'));
+          tableHeaderRowCell1.setAttribute('scope', 'col');
+          tableHeaderRowCell1.setAttribute('class', 'slds-text-heading_medium');
+          // build table body
+          var tableBody = dataTable.appendChild(document.createElement('tbody'))
+          var dataRow, dataRowCell1, recordName, data_id;
+          records.forEach(function(record) {
+            dataRow = tableBody.insertRow();
+            dataRowCell1 = dataRow.insertCell(0);
+            recordName = document.createTextNode(record.get('Name'));
+            dataRowCell1.appendChild(recordName);
+          });
+          if (outputDiv.firstChild) {
+            // replace table if it already exists
+            // see later in tutorial
+            outputDiv.replaceChild(dataTable, outputDiv.firstChild);
+          } else {
+            outputDiv.appendChild(dataTable);
+          }
+        }
+      }
+    );
+  }
+  updateOutputDiv();
+})();
+</script>
+    </body>
+  </html>
+</apex:page>

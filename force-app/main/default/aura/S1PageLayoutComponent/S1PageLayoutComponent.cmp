@@ -1,0 +1,4 @@
+<aura:component access="GLOBAL" implements="force:lightningQuickAction,force:hasRecordId" >
+	<aura:attribute name="recordId" type="String" />
+	<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+</aura:component>

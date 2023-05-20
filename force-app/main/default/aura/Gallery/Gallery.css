@@ -1,0 +1,34 @@
+.THIS h2 {
+    font-size: 1.125rem;
+    line-height: 1;
+    padding: 1rem 0;
+}
+
+.THIS>div {
+    width: 100%;
+    min-height: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.THIS .placeholder {
+    padding-top: 50px;
+    position: absolute;
+	text-align: center;
+    color: #DFDFDF;
+    width: 100%;
+}
+
+.THIS .placeholder>img {
+	margin-bottom: 4px;    
+}
+
+
+.THIS>div>div {
+    position:absolute;
+}
+
+.THIS .gallery>img {
+    width:100%;
+    margin-bottom: 4px;
+}

@@ -1,0 +1,4 @@
+<apex:page showHeader="false">
+    
+    <apex:sectionHeader title="DisplayUserInfo"/>
+</apex:page>
