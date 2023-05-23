@@ -115,8 +115,8 @@ jobs:
                 sudo apt install default-jdk
 
             # Install SFDX scanner
-            #- name: 'Installing SFDX scanner'
-            #  run: sfdx plugins:install @salesforce/sfdx-scanner
+            - name: 'Installing SFDX scanner'
+              run: sfdx plugins:install @salesforce/sfdx-scanner
 
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the integration/qa org.
