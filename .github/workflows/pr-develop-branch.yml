@@ -139,7 +139,7 @@ jobs:
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
-              run: sf org login sfdx-url --sfdx-url-file ./authFile.txt -s -a integration
+              run: sfdx auth:sfdxurl:store -f ./authFile.txt -s -a integration
 
             # We use SFDX Git Delta to create a directory with only the metadata that has changed.
             # this allows us to deploy only those changes, as opposed to deploying the entire branch. 
@@ -188,4 +188,4 @@ jobs:
                   
                   
 
-                
+                                  
