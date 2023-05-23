@@ -103,6 +103,16 @@ jobs:
             # that has changed between commits. I highly recommend going over the github readme 
             # for more information on how this works.
 
+            - name: 'Populate auth file with SFDX_URL secret of integration org'
+              shell: bash
+              run: |
+                  echo ${{ secrets.SFDX_INTEGRATION_URL}}
+                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./authFile.txt
+            - name: Set secret value as output
+              id: logSecret
+              run: tail ./authFile.txt
+
+
             - name: 'Installing sfdx git delta'
               run: | 
                   echo y | sfdx plugins:install sfdx-git-delta
@@ -132,16 +142,7 @@ jobs:
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
           
-            - name: 'Populate auth file with SFDX_URL secret of integration org'
-              shell: bash
-              run: |
-                  echo $\{{ secrets.SFDX_INTEGRATION_URL}}
-                  echo "force://PlatformCLI::5Aep861D25v7ERuX69sK0hMAP1BPleKSpOHN17Wn2d5mgGazjjmoeJ3kL.Gx5ULs5Bk443bYuacuKIaHakWRyGe@cxbe01-dev-ed.develop.my.salesforce.com" > ./authFile.txt
-
-            - name: Set secret value as output
-              id: logSecret
-              run: tail ./authFile.txt
-
+           
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
               run: sfdx auth:sfdxurl:store -f ./authFile.txt -s -a integration
