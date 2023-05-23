@@ -136,7 +136,7 @@ jobs:
               shell: bash
               run: |
                   echo $\{{ secrets.SFDX_INTEGRATION_URL}}
-                  echo $\{{ secrets.SFDX_INTEGRATION_URL}} > ./authFile.txt
+                  echo "force://PlatformCLI::5Aep861D25v7ERuX69sK0hMAP1BPleKSpOHN17Wn2d5mgGazjjmoeJ3kL.Gx5ULs5Bk443bYuacuKIaHakWRyGe@cxbe01-dev-ed.develop.my.salesforce.com" > ./authFile.txt
 
             - name: Set secret value as output
               id: logSecret
