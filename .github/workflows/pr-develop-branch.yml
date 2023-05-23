@@ -135,8 +135,8 @@ jobs:
             - name: 'Populate auth file with SFDX_URL secret of integration org'
               shell: bash
               run: |
-                  echo $\{{ secrets.SFDX_INTEGRATION_URL }}
-                  echo $\{{ secrets.SFDX_INTEGRATION_URL }} > ./authFile.txt
+                  echo $\{{ secrets.SFDX_INTEGRATION_URL}}
+                  echo $\{{ secrets.SFDX_INTEGRATION_URL}} > ./authFile.txt
 
             - name: Set secret value as output
               id: logSecret
