@@ -115,8 +115,8 @@ jobs:
                 sudo apt install default-jdk
 
             # Install SFDX scanner
-            - name: 'Installing SFDX scanner'
-              run: sfdx plugins:install @salesforce/sfdx-scanner
+            #- name: 'Installing SFDX scanner'
+            #  run: sfdx plugins:install @salesforce/sfdx-scanner
 
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the integration/qa org.
@@ -131,16 +131,16 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
-            - name: Set secret value as output
-              id: logSecret
-              run: echo "::set-output name=SECRET_VALUE::${{ secrets.SFDX_INTEGRATION_URL }}"
-
+          
             - name: 'Populate auth file with SFDX_URL secret of integration org'
               shell: bash
               run: |
                   echo $\{{ secrets.SFDX_INTEGRATION_URL }}
                   echo $\{{ secrets.SFDX_INTEGRATION_URL }} > ./authFile.txt
 
+            - name: Set secret value as output
+              id: logSecret
+              run: tail ./authFile.txt
 
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
