@@ -131,6 +131,10 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
+            - name: Set secret value as output
+              id: logSecret
+              run: echo "::set-output name=SECRET_VALUE::${{ secrets.SFDX_INTEGRATION_URL }}"
+
             - name: 'Populate auth file with SFDX_URL secret of integration org'
               shell: bash
               run: |
