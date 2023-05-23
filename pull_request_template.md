@@ -4,7 +4,7 @@ Please include a summary of the change and what has changed.
 
 ### Jira Ticket
 
-CRM-XXX
+TICKET-XXX
 
 ### Apex Tests to Run
 
