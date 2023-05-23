@@ -134,12 +134,11 @@ jobs:
             - name: 'Populate auth file with SFDX_URL secret of integration org'
               shell: bash
               run: |
-                  echo "$\{{ secrets.SFDX_INTEGRATION_URL }}" > authFile.json
-                  export SFDX_INTEGRATION_URL=$(pwd)/authFile.json
+                  echo "$\{{ secrets.SFDX_INTEGRATION_URL }}" > ./authFile.json
 
             # Authenticate to org using the URL stored in the text file
-            #- name: 'Authenticate to Integration Org'
-            #  run: sf org login sfdx-url --sfdx-url-file ./authFile.json -s -a integration
+            - name: 'Authenticate to Integration Org'
+              run: sf org login sfdx-url --sfdx-url-file ./authFile.json -s -a integration
 
             # We use SFDX Git Delta to create a directory with only the metadata that has changed.
             # this allows us to deploy only those changes, as opposed to deploying the entire branch. 
