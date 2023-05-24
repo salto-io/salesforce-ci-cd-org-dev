@@ -1,0 +1,31 @@
+name: Generate Tag
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config user.name "Your Name"
+          git config user.email "your.email@example.com"
+
+      - name: Generate Tag
+        id: tag
+        run: |
+          DATE=$(date +%d-%m-%y)
+          PR_COUNT=$(git rev-list --count HEAD)
+          TAG="$DATE-$PR_COUNT"
+          echo "::set-output name=TAG::$TAG"
+
+      - name: Create and push tag
+        run: |
+          git tag -a ${{ steps.tag.outputs.TAG }} -m "Auto-generated tag: ${{ steps.tag.outputs.TAG }}"
+          git push origin ${{ steps.tag.outputs.TAG }}
