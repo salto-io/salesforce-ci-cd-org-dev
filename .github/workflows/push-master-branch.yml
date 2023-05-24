@@ -66,7 +66,7 @@ jobs:
               id: tag
               run: |
                 DATE=$(date +%d-%m-%y)
-                PR_COUNT=$(git rev-list --count HEAD)
+                PR_COUNT=$(git log --merges --format=%cd --date=short | grep $DATE | wc -l | xargs)
                 TAG="$DATE-$PR_COUNT"
                 echo "::set-output name=TAG::$TAG"
       
@@ -74,3 +74,6 @@ jobs:
               run: |
                 git tag -a ${{ steps.tag.outputs.TAG }} -m "Auto-generated tag: ${{ steps.tag.outputs.TAG }}"
                 git push origin ${{ steps.tag.outputs.TAG }}
+
+
+               
