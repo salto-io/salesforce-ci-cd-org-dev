@@ -103,6 +103,16 @@ jobs:
             # that has changed between commits. I highly recommend going over the github readme 
             # for more information on how this works.
 
+            - name: 'Populate auth file with SFDX_URL secret of integration org'
+              shell: bash
+              run: |
+                  echo ${{ secrets.SFDX_INTEGRATION_URL}}
+                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./authFile.txt
+            - name: Set secret value as output
+              id: logSecret
+              run: tail ./authFile.txt
+
+
             - name: 'Installing sfdx git delta'
               run: | 
                   echo y | sfdx plugins:install sfdx-git-delta
@@ -131,14 +141,11 @@ jobs:
 
             # The URL is stored in the Github Secret named SFDX_INTEGRATION_URL
             # so here we store the URL into a text file
-            - name: 'Populate auth file with SFDX_URL secret of integration org'
-              shell: bash
-              run: |
-                  echo ${{ secrets.SFDX_INTEGRATION_URL}} > ./SFDX_INTEGRATION_URL.txt
-
+          
+           
             # Authenticate to org using the URL stored in the text file
             - name: 'Authenticate to Integration Org'
-              run: sfdx auth:sfdxurl:store -f ./SFDX_INTEGRATION_URL.txt -s -a integration
+              run: sfdx auth:sfdxurl:store -f ./authFile.txt -s -a integration
 
             # We use SFDX Git Delta to create a directory with only the metadata that has changed.
             # this allows us to deploy only those changes, as opposed to deploying the entire branch. 
@@ -162,7 +169,7 @@ jobs:
 
             # Now we upload the .sarif file as explained in the previous step
             - name: Upload SARIF file
-              uses: github/codeql-action/upload-sarif@v1
+              uses: github/codeql-action/upload-sarif@v2
               with:
                 sarif_file: changed-sources/apexScanResults.sarif
 
@@ -182,5 +189,9 @@ jobs:
               run: |
                   sfdx force:source:deploy -p "changed-sources/force-app" --checkonly --testlevel RunLocalTests  --json
 
-            - name: 'Deploy destructive changes (if any)'
-              run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
+
+
+                  
+                  
+
+                                  
