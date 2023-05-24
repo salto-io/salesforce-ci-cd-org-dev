@@ -57,6 +57,11 @@ jobs:
             # - name: 'Deploy destructive changes (if any) to Production org'
             #   run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
 
+            - name: Set up Git
+              run: |
+                git config user.name "Dang Huynh"
+                git config user.email "dhuynh@skedulo.com"
+
             - name: Generate Tag
               id: tag
               run: |
