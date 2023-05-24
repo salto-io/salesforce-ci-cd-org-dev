@@ -25,10 +25,10 @@ jobs:
             #       ~/sfdx/bin/sfdx version
 
             # install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
-            - name: 'Installing sfdx git delta'
-              run: | 
-                  echo y | sfdx plugins:install sfdx-git-delta
-                  sfdx plugins 
+            # - name: 'Installing sfdx git delta'
+            #   run: | 
+            #       echo y | sfdx plugins:install sfdx-git-delta
+            #       sfdx plugins 
 
             # Checkout the source code
             - name: 'Checkout source code'
