@@ -16,7 +16,7 @@ on:
       # root directory of the sfdx project. This prevents the job from running
       # when changing non-salesforce files (like this yml file).
       paths:
-        - 'force-app/**'
+        
             
 
 # Jobs to be executed when the above conditions are met
@@ -109,11 +109,9 @@ jobs:
                   sfdx plugins 
 
 
-            # Install SFDX scanner
-            - name: 'Installing SFDX scanner'
-              run:|
-               npm install sfdx-cli --global
-               sfdx force --help
+             - name: Install the SFDX CLI Scanner
+              run: |
+                   echo 'y' | sfdx plugins:install @salesforce/sfdx-scanner
 
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the integration/qa org.
