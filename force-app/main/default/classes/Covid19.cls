@@ -12,7 +12,7 @@ public class Covid19 {
     //asnaubs
 //checking fr full without class name
     ///asguiageyuawgdyuvgd
-
+//saauigsyuyyu
     //aioshuih
    /* public Covid19()
     {
