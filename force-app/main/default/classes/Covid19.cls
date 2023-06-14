@@ -12,6 +12,8 @@ public class Covid19 {
     //asnaubs
 //checking fr full without class name
     ///asguiageyuawgdyuvgd
+
+    //aioshuih
    /* public Covid19()
     {
         system.debug('blank construtor is called');

@@ -118,6 +118,11 @@ jobs:
             - name: 'Installing SFDX scanner'
               run: sfdx plugins:install @salesforce/sfdx-scanner
 
+            # Install SFDX scanner
+            - name: Install the JEST Plugin
+              run: npm install @salesforce/sfdx-lwc-jest --save-dev 
+                 
+
             # Prior to setting up this workflow, you have to create a Github Secret
             # that contains the sfdx url of the integration/qa org.
 
@@ -184,3 +189,9 @@ jobs:
 
             - name: 'Deploy destructive changes (if any)'
               run: sfdx force:mdapi:deploy -d "changed-sources/destructiveChanges" --checkonly --ignorewarnings 
+
+            - name: Run the Jest coverage script
+               if: github.event.pull_request.merged == true
+              run: |
+                  npm run test:unit:coverage
+                  echo "Run the Jest coverage script"
